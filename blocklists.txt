@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: Blocklist Minimal (AdGuard format)
-! Version: 2026.11.05.1239
-! Last modified: 2026-11-05T12:39:21Z
+! Version: 2026.11.05.1258
+! Last modified: 2026-11-05T12:58:24Z
 ! Expires: 12 hours (update frequency)
 ! Description: Resolvable domains merged from multiple blocklists, converted to AdGuard syntax.
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
@@ -7696,6 +7696,7 @@
 ||ad.cgv.co.kr^
 ||ad.charltonmedia.com^
 ||ad.chatpad.jp^
+||ad.choicy.org^
 ||ad.choiric.vip^
 ||ad.ciokorea.com^
 ||ad.citynews.it^
@@ -10399,7 +10400,6 @@
 ||ads.comunidades.net^
 ||ads.connectedinteractive.com^
 ||ads.consents-management.prod.aws.statista.com^
-||ads.contentabc.com^
 ||ads.contents.fc2.com^
 ||ads.context2.ai^
 ||ads.contextweb.com^
@@ -15715,7 +15715,6 @@
 ||am.doggyandmoggie.co.uk^
 ||am.everestop.io^
 ||am.g.ireader.com^
-||am.getlittlekoala.com^
 ||am.ikavos.com^
 ||am.justtube.net^
 ||am.medialaben.no^
@@ -16391,6 +16390,7 @@
 ||analytics-collect.karakuri.ai^
 ||analytics-collection.submittable.com^
 ||analytics-collector.brame-gamification.com^
+||analytics-conomi.line.me^
 ||analytics-dal-nfl.yinzcam.com^
 ||analytics-data.classlink.com^
 ||analytics-dataplane.invideo.io^
@@ -22500,7 +22500,6 @@
 ||app.response.cetera.com^
 ||app.response.firstdata.com^
 ||app.response.hanover.com^
-||app.response.hartford.edu^
 ||app.response.hslda.org^
 ||app.response.integratelecom.com^
 ||app.response.intergraph.com^
@@ -35713,7 +35712,6 @@
 ||cdn.sportlabs.online^
 ||cdn.spotscenered.info^
 ||cdn.spotxcdn.com.edgekey.net^
-||cdn.spotxchange.com^
 ||cdn.sprida.se^
 ||cdn.sprig.com^
 ||cdn.sprysmile.com^
@@ -74048,7 +74046,6 @@
 ||glq.mybluehost.me^
 ||glqmnlrtncjni.website^
 ||glqomjkpepqam.site^
-||glqxmrisxuaq.com^
 ||glrnb.wmpeyewear.com^
 ||glrzl.skullshaver.com^
 ||glsmjzxxqjryc.website^
@@ -75922,6 +75919,7 @@
 ||grfz.de^
 ||grgalylnihcym.space^
 ||grgr.blue^
+||grhgq.printique.com^
 ||grht.perchemtl.com^
 ||grid-bidder.criteo.com^
 ||grid.bidswitch.net^
@@ -97585,6 +97583,7 @@
 ||korenizsemi.net^
 ||koreomneity.com^
 ||korexo.com^
+||korgiejoinyou.com^
 ||korku.tv^
 ||korlumo.com^
 ||kormzi.gotrackier.com^
@@ -112043,6 +112042,7 @@
 ||madmanbiological.com^
 ||madmen2.alastonsuomi.com^
 ||madmini.com^
+||madnessbuzz.com^
 ||madnesscoupon.com^
 ||madnet.ru^
 ||madnet.yadro.ru^
@@ -172652,7 +172652,6 @@
 ||smetrics.saseurobonusmastercard.se^
 ||smetrics.sasktel.com^
 ||smetrics.saucony.com.au^
-||smetrics.saudiairlines.com^
 ||smetrics.savethechildren.org^
 ||smetrics.savethechildren.org.uk^
 ||smetrics.saxobank.com^
@@ -181442,7 +181441,6 @@
 ||sslomni.canadiantire.ca^
 ||sslp.vendexcompany.com^
 ||sslph.com^
-||sslproxy.gateway3advisorgroup-uat.app.ariba-privatwww.thrive-matomo.wdprapps-qaalsengineeringv.hicloudcam.com^
 ||sslproxy.gateway3advisorgroup-uat.app.ariba-privawww.santander.thrive-matomo.wdprapps-qaalsengineeringv.hicloudcam.com^
 ||ssls.tulibrodigitalpdf.com^
 ||ssls.zarocafe.com.br^
@@ -184211,6 +184209,7 @@
 ||sst.karmaandluck.com^
 ||sst.karmamarketing.io^
 ||sst.karnavalfestival.nl^
+||sst.karpal.pl^
 ||sst.karunaskin.com^
 ||sst.katanajp.co^
 ||sst.kayanastore.com.br^
@@ -190475,7 +190474,6 @@
 ||stape.pronavenda.com.br^
 ||stape.propdaddy.com^
 ||stape.propertyknowhow.net^
-||stape.propositumparquet.com.br^
 ||stape.proteo.com.br^
 ||stape.proterlink.com.br^
 ||stape.protocolocamasuada.com.br^
@@ -207884,6 +207882,7 @@
 ||tracking.plex.com^
 ||tracking.plex.rockwellautomation.com^
 ||tracking.plinga.de^
+||tracking.ploegendienst.nl^
 ||tracking.portal.wida.us^
 ||tracking.portofrotterdam.com^
 ||tracking.post.japanpost.jp^
@@ -223125,7 +223124,6 @@
 ||www.ad4m.at^
 ||www.ad4mat.at^
 ||www.ad4mat.net^
-||www.adadvisor.net^
 ||www.adalyser.com^
 ||www.adap.tv^
 ||www.adasiaholdings.com^
@@ -232134,6 +232132,7 @@
 ||zzfikyawmqtmw.website^
 ||zzfmo.getyourwaggleon.com^
 ||zzfsli.tom-tailor.ru^
+||zzfxfz.com^
 ||zzghp.velotricbike.com^
 ||zzgmtalhhma.com^
 ||zzhengre.com^
