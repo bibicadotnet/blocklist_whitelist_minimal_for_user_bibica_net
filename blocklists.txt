@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: Blocklist Minimal (AdGuard format)
-! Version: 2026.11.05.1134
-! Last modified: 2026-11-05T11:34:41Z
+! Version: 2026.11.05.1148
+! Last modified: 2026-11-05T11:48:05Z
 ! Expires: 12 hours (update frequency)
 ! Description: Resolvable domains merged from multiple blocklists, converted to AdGuard syntax.
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
-! Homepage: https://filters.bibica.net/blocklists.txt
+! Homepage: https://lists.bibica.net/blocklists.txt
 !
 ||0-1.ir^
 ||0-105.com^
@@ -10398,6 +10398,7 @@
 ||ads.comunidades.net^
 ||ads.connectedinteractive.com^
 ||ads.consents-management.prod.aws.statista.com^
+||ads.contentabc.com^
 ||ads.contents.fc2.com^
 ||ads.context2.ai^
 ||ads.contextweb.com^
@@ -12197,6 +12198,7 @@
 ||adstk.io^
 ||adstmanger.djaxadserver.com^
 ||adstock.pro^
+||adstock.ru^
 ||adstoo.com^
 ||adstook.com^
 ||adstorage.kr^
@@ -22498,7 +22500,6 @@
 ||app.response.cetera.com^
 ||app.response.firstdata.com^
 ||app.response.hanover.com^
-||app.response.hartford.edu^
 ||app.response.hslda.org^
 ||app.response.integratelecom.com^
 ||app.response.intergraph.com^
@@ -35711,7 +35712,6 @@
 ||cdn.sportlabs.online^
 ||cdn.spotscenered.info^
 ||cdn.spotxcdn.com.edgekey.net^
-||cdn.spotxchange.com^
 ||cdn.sprida.se^
 ||cdn.sprig.com^
 ||cdn.sprysmile.com^
@@ -80398,6 +80398,7 @@
 ||gtm.postomonaco.com.br^
 ||gtm.potagermaisonfacile.online^
 ||gtm.poundfit.com^
+||gtm.pousadaaguasdealter.com.br^
 ||gtm.pousadadasereia.com.br^
 ||gtm.pousadadovale.com^
 ||gtm.pousadaiande.com.br^
@@ -114619,7 +114620,6 @@
 ||match.ohmy.bid^
 ||match.p4p.1688.com^
 ||match.prod.bidr.io^
-||match.sharethrough.com^
 ||match.taboola.com^
 ||match.targetrtb.com^
 ||match.thefootballvibe.com^
@@ -132420,7 +132420,6 @@
 ||octillion.tv^
 ||octo25.me^
 ||octoatecopras.cyou^
-||octoberads.space^
 ||octoclick.com^
 ||octolinkcom.me^
 ||octonewjs.com^
@@ -134926,7 +134925,6 @@
 ||orinet.net.mydays.de^
 ||oringmedia.com^
 ||orion.bendingspoons.com^
-||oriondigital.ru^
 ||orionember.com^
 ||oriori.com^
 ||oritooep.win^
@@ -135319,6 +135317,7 @@
 ||ouoyui.win^
 ||oupeng.com^
 ||ouphouch.com^
+||ouptvhdqi.com^
 ||oupvfjtyxfxky.site^
 ||ouq.mybluehost.me^
 ||ouq0y4glur.casesruralscatalunya.com^
@@ -136126,7 +136125,6 @@
 ||p2muoczf5.com^
 ||p2p-punch-v6.xxpkg.com^
 ||p2p-punch.xxpkg.com^
-||p2p.huya.com^
 ||p2p.qq.com^
 ||p2pdh.com^
 ||p2perrorlog.douyucdn.cn^
@@ -141075,7 +141073,6 @@
 ||popunder.net^
 ||popunder.smartcpx.com^
 ||popunderjs.com^
-||popunderoctober.store^
 ||popunderstar.com^
 ||popunderz.com^
 ||popup-static.unisender.com^
@@ -144096,6 +144093,7 @@
 ||pushwoosh.com^
 ||pushwoosh.g5e.com^
 ||pushy.ai^
+||pushy.io^
 ||pushyimmaculateinestimable.com^
 ||pusishegre.com^
 ||pusk.ua^
@@ -154976,7 +154974,6 @@
 ||s.update.moatads.com^
 ||s.update.postimp-ofw.fyber.com^
 ||s.update.rubiconproject.com^
-||s.update.spotxchange.com^
 ||s.update.wo.gumgum.com^
 ||s.upzone.se^
 ||s.usea01.idio.episerver.net^
@@ -166729,7 +166726,6 @@
 ||sgtm.treaudio.com^
 ||sgtm.trein-vertraging.nl^
 ||sgtm.trekantens-elteknik.dk^
-||sgtm.trelleborgvikingeborg.dk^
 ||sgtm.trendevice.com^
 ||sgtm.trendpositioning.com^
 ||sgtm.trendyfyinds.in^
@@ -185851,7 +185847,6 @@
 ||sst.rookvrijenfitter.nl^
 ||sst.roomescaperoom.ch^
 ||sst.rosenvinge.no^
-||sst.roseysmark.com^
 ||sst.roth-shop.cz^
 ||sst.rotpunkt.no^
 ||sst.routes-hair-extensions.com^
@@ -216794,6 +216789,7 @@
 ||videohub.tv^
 ||videoid10006367.blogspot.com^
 ||videoklass.ru^
+||videolink.host^
 ||videology-partners.tremorhub.com^
 ||videomin.ws^
 ||videonow.ru^
@@ -223115,6 +223111,7 @@
 ||www.ad4m.at^
 ||www.ad4mat.at^
 ||www.ad4mat.net^
+||www.adadvisor.net^
 ||www.adalyser.com^
 ||www.adap.tv^
 ||www.adasiaholdings.com^
@@ -232123,6 +232120,7 @@
 ||zzfikyawmqtmw.website^
 ||zzfmo.getyourwaggleon.com^
 ||zzfsli.tom-tailor.ru^
+||zzfxfz.com^
 ||zzghp.velotricbike.com^
 ||zzgmtalhhma.com^
 ||zzhengre.com^
