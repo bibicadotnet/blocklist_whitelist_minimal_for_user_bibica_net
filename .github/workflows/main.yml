@@ -86,7 +86,7 @@ jobs:
               echo "! Expires: 12 hours (update frequency)"
               echo "! Description: $desc"
               echo "! GitHub: https://github.com/$GITHUB_REPOSITORY"
-              echo "! Homepage: https://filters.bibica.net/$out"
+              echo "! Homepage: https://lists.bibica.net/$out"
               echo "!"
               cat "$body"
             } > "$out"
