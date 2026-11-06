@@ -1,5 +1,6 @@
-! Title: Rewrites (AdGuard format)
-! Description: DNS rewrites (CNAME) applied to exact domains only, no subdomains.
+[Adblock Plus 2.0]
+! Title: DNS Rewrites
+! Description: Custom DNS rewrite rules for exact domain matches using AdGuard syntax.
 ! Syntax: |domain^$dnsrewrite=target  (single pipe = exact match)
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/rewrites.txt
