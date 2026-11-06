@@ -1,0 +1,16 @@
+[Adblock Plus 2.0]
+! Title: Apple Update Blocklist
+! Expires: 12 hours (update frequency)
+! Description: Blocks iOS and iPadOS software update downloads and update checks.
+! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
+! Homepage: https://lists.bibica.net/apple-update-block.txt
+
+# iOS/iPadOS Software Update Blocking
+||appldnld.apple.com^
+||appldnld.apple.com.akadns.net^
+||appldnld.g.aaplimg.com^
+||mesu.apple.com^
+||mesu-cdn.apple.com.akadns.net^
+||mesu.g.aaplimg.com^
+||gdmf.apple.com^
+||gdmf.v.aaplimg.com^
