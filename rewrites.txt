@@ -1,0 +1,49 @@
+! Title: Rewrites (AdGuard format)
+! Description: DNS rewrites (CNAME) applied to exact domains only, no subdomains.
+! Syntax: |domain^$dnsrewrite=target  (single pipe = exact match)
+!
+
+! TikTok
+|v19-webapp-prime.tiktok.com^$dnsrewrite=v16-webapp-prime.tiktok.com
+|v16-webapp-prime.tiktok.com^$dnsrewrite=v16-webapp-prime.tiktok.com.bytegeo.akadns.net
+
+! Bilibili web
+|www.bilibili.tv^$dnsrewrite=www.bilibili.tv.w.cdngslb.com
+
+! Bilibili video mirrors
+|upos-sz-mirrorcos.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+|upos-sz-mirrorcosb.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+|upos-sz-mirrorbos.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+|upos-sz-mirrorhw.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+|upos-sz-mirrorhwb.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+|upos-sz-upcdnbda2.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+|upos-sz-upcdnws.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+|upos-sz-mirrorali.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+|upos-sz-mirroraliov.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+|upos-sz-mirror08h.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+|upos-sz-mirrorcosov.bilivideo.com^$dnsrewrite=upos-hz-mirrorakam.akamaized.net
+
+! Medium
+|medium.com^$dnsrewrite=rocket.net
+
+! Pornhub
+|pornhub.com^$dnsrewrite=www.pornhub.com
+
+! Apple
+
+! Amazon
+
+! Ebay
+
+! Douyin / zjcdn
+
+! Shopee
+|deo.shopeemobile.com^$dnsrewrite=deo.shopeemobile.com-v1.edgesuite.net
+|cf.shopee.vn^$dnsrewrite=cf.shopee.vn.akamaized.net
+|down-vn.img.susercontent.com^$dnsrewrite=zshopee.v.baishan-cloud.net
+
+! voz.vn
+|voz.vn^$dnsrewrite=rocket.net
+
+! nikke-en.com
+|nikke-en.com^$dnsrewrite=orzzutfk.ovslegodl.sched.ovscdns.com
