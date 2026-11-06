@@ -1,7 +1,8 @@
 ! Title: Rewrites (AdGuard format)
 ! Description: DNS rewrites (CNAME) applied to exact domains only, no subdomains.
 ! Syntax: |domain^$dnsrewrite=target  (single pipe = exact match)
-!
+! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
+! Homepage: https://lists.bibica.net/rewrites.txt
 
 ! TikTok
 |v19-webapp-prime.tiktok.com^$dnsrewrite=v16-webapp-prime.tiktok.com
