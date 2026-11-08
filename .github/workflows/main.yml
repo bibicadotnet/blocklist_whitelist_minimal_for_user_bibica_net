@@ -15,7 +15,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180 # Tăng timeout vì check nhiều bộ lọc dung lượng lớn
 
     steps:
       - name: Checkout
@@ -32,14 +32,7 @@ jobs:
         run: |
           BLOCK_OUT="blocklists.txt"
           WHITE_OUT="whitelist.txt"
-          BLOCK_TMP="blocklists.tmp"
-          BLOCK_BODY="blocklists.body.tmp"
-          WHITE_BODY="whitelist.body.tmp"
-          VALID_TMP="valid.tmp"
           RESOLVERS_FILE="resolvers.tmp"
-          SERVFAIL_TMP="servfail.tmp"
-          REFUSED_TMP="refused.tmp"
-          PASS1_JSON="pass1.json"
           DL_DIR="dl"
 
           VERSION="$(date -u +%Y.%m.%d.%H%M)"
@@ -48,7 +41,7 @@ jobs:
           printf '%s\n' 8.8.8.8 8.8.4.4 > "$RESOLVERS_FILE"
           mkdir -p "$DL_DIR"
 
-          # Chuẩn hoá mọi định dạng (hosts, adblock, plain domain) về danh sách domain thuần
+          # Hàm chuẩn hoá domain (giữ nguyên gốc)
           normalize() {
             awk -v keep_exceptions="$1" '
               {
@@ -66,7 +59,7 @@ jobs:
               }'
           }
 
-          # Ghi file kèm header.
+          # Hàm ghi file chuẩn AdGuard
           write_list() {
             local out="$1" title="$2" desc="$3" body="$4"
             if [[ -f "$out" ]] && diff -q <(grep -v -e '^!' -e '^\[Adblock' "$out") "$body" > /dev/null; then
@@ -88,7 +81,62 @@ jobs:
             echo "$out: đã cập nhật"
           }
 
-          echo "Downloading..."
+          # Hàm check domain bằng massdns và xuất kết quả ra file
+          check_and_write() {
+            local in_file="$1"
+            local out_file="$2"
+            local title="$3"
+            local desc="$4"
+
+            TOTAL=$(wc -l < "$in_file")
+            echo "Total domains for $out_file: $TOTAL"
+            if [[ "$TOTAL" -eq 0 ]]; then
+              echo "Skip $out_file - No domains."
+              return
+            fi
+
+            # Pass 1
+            massdns -r "$RESOLVERS_FILE" -t A -o J -s 800 --retry SERVFAIL "$in_file" 2>/dev/null > "tmp_pass1.json"
+            jq -r 'select(.status == "NOERROR") | .name | rtrimstr(".")' "tmp_pass1.json" > "tmp_valid.txt"
+            jq -r 'select(.status == "SERVFAIL") | .name | rtrimstr(".")' "tmp_pass1.json" > "tmp_servfail.txt"
+            
+            SERVFAIL_COUNT=$(wc -l < "tmp_servfail.txt")
+            
+            # Pass 2 - Retry
+            if [[ "$SERVFAIL_COUNT" -gt 0 ]]; then
+              massdns -r "$RESOLVERS_FILE" -t A -o J -s 200 --retry SERVFAIL "tmp_servfail.txt" 2>/dev/null \
+              | jq -r 'select(.status == "NOERROR") | .name | rtrimstr(".")' >> "tmp_valid.txt"
+            fi
+            
+            sort -u "tmp_valid.txt" | sed 's/.*/||&^/' > "tmp_body.txt"
+            VALID_COUNT=$(wc -l < "tmp_body.txt")
+            echo "Valid for $out_file: $VALID_COUNT / $TOTAL"
+            
+            write_list "$out_file" "$title" "$desc" "tmp_body.txt"
+            rm -f "tmp_pass1.json" "tmp_valid.txt" "tmp_servfail.txt" "tmp_body.txt"
+          }
+
+          # Hàm xử lý toàn trình (tải, lọc, check) cho 1 link bộ lọc
+          process_remote_list() {
+            local url="$1"
+            local out_file="$2"
+            local title="$3"
+            
+            echo "----------------------------------------"
+            echo "Processing: $title"
+            echo "URL: $url"
+            
+            if curl -fsSL --max-time 120 "$url" -o "tmp_dl.txt"; then
+               normalize 0 < "tmp_dl.txt" | sort -u > "tmp_norm.txt"
+               check_and_write "tmp_norm.txt" "$out_file" "$title (Checked)" "Resolvable domains for $title, checked via massdns."
+               rm -f "tmp_dl.txt" "tmp_norm.txt"
+            else
+               echo "Lỗi: Không thể tải $url"
+            fi
+          }
+
+          # ==================== PHẦN 1: BỘ LỌC CŨ ====================
+          echo "Downloading original sources..."
           curl -fsSL --max-time 90 --parallel --parallel-immediate \
             -o "$DL_DIR/block1.txt" https://adguardteam.github.io/HostlistsRegistry/assets/filter_16.txt \
             -o "$DL_DIR/block2.txt" https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt \
@@ -102,103 +150,36 @@ jobs:
           done
 
           # ---------------- WHITELIST GỐC ----------------
-          cat "$DL_DIR"/white*.txt | normalize 1 | sort -u | sed 's/.*/@@||&^/' > "$WHITE_BODY"
-          echo "Whitelist: $(wc -l < "$WHITE_BODY")"
+          cat "$DL_DIR"/white*.txt | normalize 1 | sort -u | sed 's/.*/@@||&^/' > "whitelist_body.tmp"
+          echo "Whitelist: $(wc -l < "whitelist_body.tmp")"
           write_list "$WHITE_OUT" \
             "Whitelist Minimal (AdGuard format)" \
             "Whitelisted domains merged from multiple sources, converted to AdGuard syntax." \
-            "$WHITE_BODY"
+            "whitelist_body.tmp"
+          rm -f "whitelist_body.tmp"
 
           # ---------------- BLOCKLIST GỐC ----------------
-          cat "$DL_DIR"/block*.txt | normalize 0 | sort -u > "$BLOCK_TMP"
-          TOTAL=$(wc -l < "$BLOCK_TMP")
-          echo "Total: $TOTAL"
+          cat "$DL_DIR"/block*.txt | normalize 0 | sort -u > "original_block_norm.txt"
+          check_and_write "original_block_norm.txt" "$BLOCK_OUT" "Blocklist Minimal (AdGuard format)" "Resolvable domains merged from multiple blocklists, converted to AdGuard syntax."
+          rm -f "original_block_norm.txt"
 
-          echo "Pass 1..."
-          massdns -r "$RESOLVERS_FILE" -t A -o J -s 800 --retry SERVFAIL "$BLOCK_TMP" 2>/dev/null > "$PASS1_JSON"
+          # ==================== PHẦN 2: BỘ LỌC MỚI ====================
+          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt" "hagezi_light.txt" "HaGeZi Light"
+          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt" "hagezi_multi.txt" "HaGeZi Multi NORMAL"
+          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt" "hagezi_pro.txt" "HaGeZi Pro"
+          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt" "hagezi_pro_plus.txt" "HaGeZi Pro++"
+          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt" "hagezi_ultimate.txt" "HaGeZi Ultimate"
+          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt" "hagezi_tif_medium.txt" "HaGeZi Threat Intelligence (Medium)"
+          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt" "hagezi_nsfw.txt" "HaGeZi NSFW"
+          process_remote_list "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" "stevenblack_unified.txt" "StevenBlack Unified Hosts"
+          process_remote_list "https://big.oisd.nl" "oisd_big.txt" "OISD Big"
+          process_remote_list "https://nsfw.oisd.nl" "oisd_nsfw.txt" "OISD NSFW"
 
-          jq -r 'select(.status == "NOERROR")  | .name | rtrimstr(".")' "$PASS1_JSON" > "$VALID_TMP"
-          jq -r 'select(.status == "SERVFAIL") | .name | rtrimstr(".")' "$PASS1_JSON" > "$SERVFAIL_TMP"
-          jq -r 'select(.status == "REFUSED")  | .name | rtrimstr(".")' "$PASS1_JSON" > "$REFUSED_TMP"
-
-          SERVFAIL_COUNT=$(wc -l < "$SERVFAIL_TMP")
-          REFUSED_COUNT=$(wc -l < "$REFUSED_TMP")
-          echo "Pass 1 done – SERVFAIL còn: $SERVFAIL_COUNT | REFUSED: $REFUSED_COUNT"
-
-          if [[ "$SERVFAIL_COUNT" -gt 0 ]]; then
-            echo "Pass 2..."
-            massdns -r "$RESOLVERS_FILE" -t A -o J -s 200 --retry SERVFAIL "$SERVFAIL_TMP" 2>/dev/null \
-            | jq -r 'select(.status == "NOERROR") | .name | rtrimstr(".")' >> "$VALID_TMP"
-          fi
-
-          sort -u "$VALID_TMP" | sed 's/.*/||&^/' > "$BLOCK_BODY"
-          echo "Valid: $(wc -l < "$BLOCK_BODY") / $TOTAL"
-          write_list "$BLOCK_OUT" \
-            "Blocklist Minimal (AdGuard format)" \
-            "Resolvable domains merged from multiple blocklists, converted to AdGuard syntax." \
-            "$BLOCK_BODY"
-
-          rm -rf "$DL_DIR" "$BLOCK_TMP" "$BLOCK_BODY" "$WHITE_BODY" "$VALID_TMP" \
-                 "$RESOLVERS_FILE" "$SERVFAIL_TMP" "$REFUSED_TMP" "$PASS1_JSON"
-                 
-          # ---------------- TẢI VÀ CHECK CÁC BỘ LỌC TỪ JSON ----------------
-          EXTRA_JSON='[{"url":"https://lists.bibica.net/whitelist.txt"},{"label":"DNS Rewrites","url":"https://lists.bibica.net/rewrites.txt"},{"label":"HaGeZi Light","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt"},{"label":"HaGeZi Multi NORMAL","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt"},{"label":"HaGeZi Pro","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt"},{"label":"HaGeZi Pro++","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt"},{"label":"HaGeZi Ultimate","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt"},{"label":"HaGeZi Threat Intelligence (Medium)","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt"},{"label":"HaGeZi NSFW","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt"},{"label":"StevenBlack Unified Hosts","url":"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"},{"label":"OISD Big","url":"https://big.oisd.nl"},{"label":"OISD NSFW","url":"https://nsfw.oisd.nl"}]'
-
-          echo "$EXTRA_JSON" | jq -c '.[]' | while read -r item; do
-            url=$(echo "$item" | jq -r '.url')
-            label=$(echo "$item" | jq -r '.label // empty')
-            
-            if [[ -n "$label" ]]; then
-              filename=$(echo "$label" | tr '[:upper:]' '[:lower:]' | sed 's/++/-plus/g' | sed -E 's/[^a-z0-9]+/-/g' | sed 's/^-//;s/-$//').txt
-            else
-              filename=$(basename "$url")
-              if [[ "$filename" != *.txt ]]; then
-                filename="${filename}.txt"
-              fi
-              label="$filename"
-            fi
-            
-            echo "--- Processing & Checking: $label ---"
-            curl -fsSL --max-time 90 -o "ext_raw.tmp" "$url" || { echo "Tải lỗi: $url"; continue; }
-            
-            is_white=0
-            if [[ "$label" =~ "whitelist" || "$label" =~ "Whitelist" ]]; then
-               is_white=1
-            fi
-            
-            cat "ext_raw.tmp" | normalize "$is_white" | sort -u > "ext_norm.tmp"
-            TOTAL_EXT=$(wc -l < "ext_norm.tmp")
-            echo "Total domains ($label): $TOTAL_EXT"
-            
-            # Pass 1 cho list thêm vào
-            massdns -r "$RESOLVERS_FILE" -t A -o J -s 800 --retry SERVFAIL "ext_norm.tmp" 2>/dev/null > "ext_pass1.json"
-            jq -r 'select(.status == "NOERROR") | .name | rtrimstr(".")' "ext_pass1.json" > "ext_valid.tmp"
-            jq -r 'select(.status == "SERVFAIL") | .name | rtrimstr(".")' "ext_pass1.json" > "ext_servfail.tmp"
-            
-            SERVFAIL_EXT_COUNT=$(wc -l < "ext_servfail.tmp")
-            
-            # Pass 2 cho list thêm vào
-            if [[ "$SERVFAIL_EXT_COUNT" -gt 0 ]]; then
-              massdns -r "$RESOLVERS_FILE" -t A -o J -s 200 --retry SERVFAIL "ext_servfail.tmp" 2>/dev/null \
-              | jq -r 'select(.status == "NOERROR") | .name | rtrimstr(".")' >> "ext_valid.tmp"
-            fi
-            
-            if [[ "$is_white" == 1 ]]; then
-               sort -u "ext_valid.tmp" | sed 's/.*/@@||&^/' > "ext_body.tmp"
-            else
-               sort -u "ext_valid.tmp" | sed 's/.*/||&^/' > "ext_body.tmp"
-            fi
-            
-            VALID_EXT=$(wc -l < "ext_body.tmp")
-            echo "Valid ($label): $VALID_EXT / $TOTAL_EXT"
-            
-            write_list "$filename" "$label" "Checked list from $url" "ext_body.tmp"
-          done
-          
-          rm -f ext_raw.tmp ext_norm.tmp ext_pass1.json ext_valid.tmp ext_servfail.tmp ext_body.tmp
+          # Dọn dẹp
+          rm -rf "$DL_DIR" "$RESOLVERS_FILE"
 
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-update filters"
-          file_pattern: '*.txt'
+          file_pattern: '*.txt' # Đổi rule này để nó tự commit toàn bộ file txt được sinh ra
