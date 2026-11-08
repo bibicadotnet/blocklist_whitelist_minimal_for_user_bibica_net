@@ -154,9 +154,24 @@ jobs:
 
           rm -rf "$DL_DIR" "$BLOCK_TMP" "$BLOCK_BODY" "$WHITE_BODY" "$VALID_TMP" \
                  "$RESOLVERS_FILE" "$SERVFAIL_TMP" "$REFUSED_TMP" "$PASS1_JSON"
+                 
+          # ---------------- TẢI THÊM CÁC FILE TỪ JSON ----------------
+          EXTRA_JSON='[{"url":"https://lists.bibica.net/whitelist.txt"},{"label":"DNS Rewrites","url":"https://lists.bibica.net/rewrites.txt"},{"label":"HaGeZi Light","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt"},{"label":"HaGeZi Multi NORMAL","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt"},{"label":"HaGeZi Pro","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt"},{"label":"HaGeZi Pro++","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt"},{"label":"HaGeZi Ultimate","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt"},{"label":"HaGeZi Threat Intelligence (Medium)","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt"},{"label":"HaGeZi NSFW","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt"},{"label":"StevenBlack Unified Hosts","url":"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"},{"label":"OISD Big","url":"https://big.oisd.nl"},{"label":"OISD NSFW","url":"https://nsfw.oisd.nl"}]'
+
+          echo "$EXTRA_JSON" | jq -c '.[]' | while read -r item; do
+            url=$(echo "$item" | jq -r '.url')
+            filename=$(basename "$url")
+            
+            # Thêm đuôi .txt nếu file chưa có
+            if [[ "$filename" != *.txt ]]; then
+              filename="${filename}.txt"
+            fi
+            
+            curl -fsSL -o "$filename" "$url"
+          done
 
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-update filters"
-          file_pattern: 'blocklists.txt whitelist.txt'
+          file_pattern: '*.txt'
