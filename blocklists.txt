@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: Blocklist Minimal (AdGuard format)
-! Version: 2026.11.08.0743
-! Last modified: 2026-11-08T07:43:05Z
+! Version: 2026.11.08.0756
+! Last modified: 2026-11-08T07:56:56Z
 ! Expires: 12 hours (update frequency)
 ! Description: Resolvable domains merged from multiple blocklists, converted to AdGuard syntax.
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
@@ -15455,7 +15455,6 @@
 ||allfail-all.adadvisor.net^
 ||allfail-www.all.adadvisor.net^
 ||allfail-www.east.adadvisor.net^
-||allfail-www.west.adadvisor.net^
 ||allforyourlife.org^
 ||allfreecounter.com^
 ||allheart.evergage.com^
@@ -15795,7 +15794,6 @@
 ||am.doggyandmoggie.co.uk^
 ||am.everestop.io^
 ||am.g.ireader.com^
-||am.getlittlekoala.com^
 ||am.ikavos.com^
 ||am.justtube.net^
 ||am.medialaben.no^
@@ -19011,7 +19009,6 @@
 ||analytics.webfocus.fr^
 ||analytics.webfokus.no^
 ||analytics.webgains.io^
-||analytics.webproxy.idc.chinamobile.com^
 ||analytics.webpushr.com^
 ||analytics.websolute.it^
 ||analytics.webynize.com^
@@ -22613,6 +22610,7 @@
 ||app.response.cetera.com^
 ||app.response.firstdata.com^
 ||app.response.hanover.com^
+||app.response.hartford.edu^
 ||app.response.hslda.org^
 ||app.response.integratelecom.com^
 ||app.response.intergraph.com^
@@ -31089,7 +31087,6 @@
 ||breakingmedia.com^
 ||breakingunidentifiedperfection.com^
 ||breakthrough.kronos.com^
-||breakthroughtrend.com^
 ||breaktime.com.tw^
 ||brealtime.com^
 ||breastfeedingdelightedtease.com^
@@ -35956,6 +35953,7 @@
 ||cdn.sportlabs.online^
 ||cdn.spotscenered.info^
 ||cdn.spotxcdn.com.edgekey.net^
+||cdn.spotxchange.com^
 ||cdn.sprida.se^
 ||cdn.sprig.com^
 ||cdn.sprysmile.com^
@@ -70643,7 +70641,6 @@
 ||free-cdn.oss-cn-shanghai.aliyuncs.com^
 ||free-counter.co.uk^
 ||free-counter.com^
-||free-counters.co.uk^
 ||free-counters.net^
 ||free-dating4you.com^
 ||free-datings.com^
@@ -114350,6 +114347,7 @@
 ||marketing.manningltg.com^
 ||marketing.mansfieldfs.com^
 ||marketing.mapleleafpromostore.com^
+||marketing.mapleleafpromotions.com^
 ||marketing.maricich.com^
 ||marketing.marketinggeneral.com^
 ||marketing.marketingguys.nl^
@@ -136334,6 +136332,7 @@
 ||outstandingfrailabroad.com^
 ||outster.com^
 ||outstream-telemetry.wemass.com^
+||outstreamoctober.store^
 ||outtasked.cfd^
 ||outtechnicalspiteful.com^
 ||outvietalcky.cfd^
@@ -147483,6 +147482,7 @@
 ||r.teads.tv^
 ||r.tooplay.com^
 ||r.topdent.ru^
+||r.toplaygame.ru^
 ||r.tracklume1.space^
 ||r.trackwilltrk.com^
 ||r.tropictube.com^
@@ -182689,7 +182689,6 @@
 ||sslp.vendexcompany.com^
 ||sslph.com^
 ||sslproxy.gateway3advisorgroup-uat.app.ariba-privatwww.thrive-matomo.wdprapps-qaalsengineeringv.hicloudcam.com^
-||sslproxy.gateway3advisorgroup-uat.app.ariba-privawww.santander.thrive-matomo.wdprapps-qaalsengineeringv.hicloudcam.com^
 ||ssls.tulibrodigitalpdf.com^
 ||ssls.zarocafe.com.br^
 ||sslsa.scrippslifestylestudios.com^
@@ -187181,7 +187180,6 @@
 ||sst.rookvrijenfitter.nl^
 ||sst.roomescaperoom.ch^
 ||sst.rosenvinge.no^
-||sst.roseysmark.com^
 ||sst.roth-shop.cz^
 ||sst.rotpunkt.no^
 ||sst.routes-hair-extensions.com^
@@ -201716,6 +201714,7 @@
 ||tds.io^
 ||tds.org.ua^
 ||tds.tuberl.com^
+||tds.vrcteam.ru^
 ||tds.vss-security.nl^
 ||tds1.vivabox.be^
 ||tdsafe.org^
@@ -229276,7 +229275,6 @@
 ||xue.zbyw.cn^
 ||xueaaaw.cn^
 ||xuehjpsirhyol.space^
-||xuelixue.cn^
 ||xuenq8.4bvue7vc3hg7153vr.cyou^
 ||xueuqxlxsliup.online^
 ||xuexi.hydcd.com^
