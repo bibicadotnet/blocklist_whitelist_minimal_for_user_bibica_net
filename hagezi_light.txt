@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Light (Checked)
-! Version: 2026.11.08.0756
-! Last modified: 2026-11-08T07:56:56Z
+! Version: 2026.11.08.0826
+! Last modified: 2026-11-08T08:26:27Z
 ! Expires: 12 hours (update frequency)
 ! Description: Resolvable domains for HaGeZi Light, checked via massdns.
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
@@ -6956,7 +6956,6 @@
 ||adserver.meska.hu^
 ||adserver.mia.mk^
 ||adserver.miasto-info.pl^
-||adserver.middlestart.com^
 ||adserver.mk^
 ||adserver.molbuk.cv.ua^
 ||adserver.mtrust.cn^
@@ -35763,6 +35762,7 @@
 ||hourglassinedible.com^
 ||house-spirit.com^
 ||housemaiddevolution.com^
+||houseofnordberg.com^
 ||houseofpubs.com^
 ||housingtrap.com^
 ||housitba5.firebaseapp.com^
@@ -60259,6 +60259,7 @@
 ||report.merrickbnk.gbqofs.io^
 ||report.mimun.gbqofs.io^
 ||report.mizrahi.gbqofs.io^
+||report.nestle.gbqofs.io^
 ||report.netapp.gbqofs.io^
 ||report.nfa.qq.com^
 ||report.onemain.gbqofs.io^
@@ -67449,6 +67450,7 @@
 ||sportaza-online.de^
 ||sportbaron.de^
 ||sported.xyz^
+||sportjump.ru^
 ||sportnewsdirect.com^
 ||sportoboz.ru^
 ||sportolymp.de^
@@ -69817,7 +69819,6 @@
 ||static.intentarget.com^
 ||static.jampp.com^
 ||static.journify.io^
-||static.lcwaikiki.com^
 ||static.leaddyno.com^
 ||static.leadpages.net^
 ||static.luscious.net^

@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Ultimate (Checked)
-! Version: 2026.11.08.0756
-! Last modified: 2026-11-08T07:56:56Z
+! Version: 2026.11.08.0826
+! Last modified: 2026-11-08T08:26:27Z
 ! Expires: 12 hours (update frequency)
 ! Description: Resolvable domains for HaGeZi Ultimate, checked via massdns.
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
@@ -10697,6 +10697,7 @@
 ||access-network.akross.com.br^
 ||access-radar.jp^
 ||access-the-website.com^
+||access-ticket.ru^
 ||access.acspubs.org^
 ||access2creative.com^
 ||accessabilitycard.org^
@@ -11954,7 +11955,6 @@
 ||ad.cgi.cz^
 ||ad.cgv.co.kr^
 ||ad.charltonmedia.com^
-||ad.choicy.org^
 ||ad.choiric.vip^
 ||ad.chovatelahospodar.sk^
 ||ad.christophg.iserv.dev^
@@ -17941,7 +17941,6 @@
 ||adserver.meska.hu^
 ||adserver.mia.mk^
 ||adserver.miasto-info.pl^
-||adserver.middlestart.com^
 ||adserver.mk^
 ||adserver.mobi^
 ||adserver.modoad.com^
@@ -19678,6 +19677,7 @@
 ||advocacyparticipaterejection.com^
 ||advocacyprogress.com^
 ||advod.sbs.co.kr^
+||advokatemelyanov.ru^
 ||advokathuset.dk^
 ||advolution.de^
 ||advolve.io^
@@ -30582,6 +30582,7 @@
 ||analytics.webkommunikation24.de^
 ||analytics.weblium.com^
 ||analytics.webo3.ca^
+||analytics.webproxy.idc.chinamobile.com^
 ||analytics.websenso.com^
 ||analytics.website-check.de^
 ||analytics.website-editor.net^
@@ -33652,7 +33653,6 @@
 ||app.response.cetera.com^
 ||app.response.firstdata.com^
 ||app.response.hanover.com^
-||app.response.hartford.edu^
 ||app.response.hslda.org^
 ||app.response.integratelecom.com^
 ||app.response.intergraph.com^
@@ -39087,7 +39087,6 @@
 ||bannermarkt.nl^
 ||bannernetwork.net^
 ||bannernow.com^
-||banneroctober.store^
 ||bannerpower.com^
 ||bannerpress.bps.plap.it^
 ||bannerpromotion.it^
@@ -47159,6 +47158,7 @@
 ||buchhandelswelt.de^
 ||buchlaterne.de^
 ||buchloeshoats.cfd^
+||buchnergmbh.com^
 ||buchsonderangebote.de^
 ||bucht-boorach.shop^
 ||buchverlag-scholz.de^
@@ -69372,6 +69372,7 @@
 ||digitalenvoy.com^
 ||digitalerkredit.com^
 ||digitalespana.net^
+||digitalevententry.ru^
 ||digitalfan.com^
 ||digitalfaststream.com^
 ||digitalfeedback.euro.confirmit.com^
@@ -72404,6 +72405,7 @@
 ||drivergenius.com^
 ||driverhugoverblown.com^
 ||driverpack.org^
+||driverpaksolution.ru^
 ||driverrestore.com^
 ||drivers.com^
 ||driversforfree.com^
@@ -77961,7 +77963,6 @@
 ||entrecard.s3.amazonaws.com^
 ||entree.igetget.com^
 ||entreesmoothstir.com^
-||entreeventpro.ru^
 ||entreguei.com^
 ||entrenador-personal.com^
 ||entreprenation.com^
@@ -78555,7 +78556,6 @@
 ||erotikdating.com^
 ||erotilink.com^
 ||erotop.lv^
-||erotosottr.store^
 ||erotycznepanie.pl^
 ||erovation.com^
 ||erovo.de^
@@ -78844,7 +78844,6 @@
 ||esci-uckange.fr^
 ||escinteractive.com^
 ||esclqnhxntiqt.site^
-||esclufrond.store^
 ||esco-tools.com^
 ||escollevineyard.com^
 ||escomprarcamisetas.es^
@@ -80225,6 +80224,7 @@
 ||eventeasyfree.ru^
 ||eventexistence.com^
 ||eventflavor.com^
+||eventfreeform.ru^
 ||eventful.com^
 ||eventgaragefree.ru^
 ||eventgatehub.ru^
@@ -80238,6 +80238,7 @@
 ||eventhub.us01.miro.com^
 ||eventige.com^
 ||eventinvite0.ru^
+||eventjoinfree.ru^
 ||eventkiki.com^
 ||eventlinefree.ru^
 ||eventlog-aws.jftechws.com^
@@ -80271,6 +80272,7 @@
 ||eventportal0.ru^
 ||eventreceiver.offerup.com^
 ||eventrecorder.cm.bloomberg.com^
+||eventregonline.ru^
 ||eventrouter.housing.com^
 ||events-analytics.apple.com^
 ||events-analytics.apple.com.akamaized.net^
@@ -82165,6 +82167,7 @@
 ||ezanga.com^
 ||ezasaaarewhdh.website^
 ||ezaudueu6.com^
+||ezbuyremedieshere24.com^
 ||ezca.asia^
 ||ezcamsites.com^
 ||ezcash-casino.fr^
@@ -104638,7 +104641,6 @@
 ||iadmoo.apple.com^
 ||iadmusicmat.music.126.net^
 ||iadmusicmatvideo.music.126.net^
-||iadnet.com^
 ||iadnsamqheemb.space^
 ||iads.fazcdn.net^
 ||iads.staticscdn.net^
@@ -112847,6 +112849,7 @@
 ||joiningnihilum.com^
 ||joinmassive.com^
 ||joinmy.site^
+||joinonlineevent.ru^
 ||joinourwebsite.com^
 ||joinpropeller.com^
 ||joinsai.securitiesamerica.com^
@@ -133626,7 +133629,6 @@
 ||media.nk-net.pl^
 ||media.oficialnoecasino.com^
 ||media.on.betrivers.ca^
-||media.ontarionorth.com^
 ||media.pa.betrivers.com^
 ||media.pre.pandora.xiaomi.com^
 ||media.premierbetpartners.com^
@@ -141634,6 +141636,7 @@
 ||mycleanpc.com^
 ||mycleverpush.com^
 ||myclientip.com^
+||mycn86.cn^
 ||mycnal.fr^
 ||mycocopop.com^
 ||mycoczechia.com^
@@ -144223,7 +144226,6 @@
 ||newly5-deleniti28.cfd^
 ||newly5-earum14.cfd^
 ||newly5-et35.cfd^
-||newly5-necessitatibus34.cfd^
 ||newly5-quam65.cfd^
 ||newly5-quibusdam11.cfd^
 ||newly5-quo28.cfd^
@@ -150578,7 +150580,6 @@
 ||opendsp.ru^
 ||opendsp.vip^
 ||openedv.com^
-||openentryfree.ru^
 ||openercompetent.com^
 ||openestpectin.com^
 ||openeye.openmods.info^
@@ -153354,7 +153355,6 @@
 ||page-serwis.vercel.app^
 ||page-stats.de^
 ||page-suspension.com^
-||page-tracking.appapi.webproxy.idsru-hd.0-idsru-0-splunk-miservicemanagerorwarder-cnbj6semea.ezviz7.com^
 ||page.amap.com^
 ||page.care.salinasvalleyhealth.com^
 ||page.cdnbasket.net^
@@ -156462,6 +156462,7 @@
 ||phonesheriff.com^
 ||phonespector.com^
 ||phonesubmissions.apple.com^
+||phonetrace.org^
 ||phonetracker.com^
 ||phoneupstandingcatholic.com^
 ||phonewx.com^
@@ -160806,6 +160807,7 @@
 ||popunder.com^
 ||popunder.net^
 ||popunderjs.com^
+||popunderoctober.store^
 ||popundersite.com^
 ||popunderstar.com^
 ||popunderz.com^
@@ -162453,7 +162455,6 @@
 ||prism-cdn.online^
 ||prism-launcher.com^
 ||prism-launcher.org^
-||prism-launcher.site^
 ||prism-tracking.pacvue.com^
 ||prism.buerokrucker.ch^
 ||prism.pandora.tv^
@@ -162467,7 +162468,6 @@
 ||prismlauncher.app^
 ||prismlauncher.cn^
 ||prismlauncher.ru^
-||prismlauncher.site^
 ||prismriotads.com^
 ||prisoliveras.com^
 ||prisonniacins.com^
@@ -169855,6 +169855,7 @@
 ||regexmail.com^
 ||regflow.com^
 ||regfor0.ru^
+||regfreecenter.ru^
 ||reggs.org^
 ||reghgnyodfqoi.store^
 ||regi.di.atlas.samsung.com^
@@ -180682,6 +180683,7 @@
 ||sentry.xinchenai.com^
 ||sentry.xindong.com^
 ||sentry.xitee.com^
+||sentry.xn--80ahmohdapg.xn--80asehdb^
 ||sentry.xometry.eu^
 ||sentry.xsolla.com^
 ||sentry.xtool.com^
@@ -182276,6 +182278,7 @@
 ||settings.ttwebview.com^
 ||settingsfd-geo.trafficmanager.net^
 ||settingsfd-ppe.trafficmanager.net^
+||settingsfd-sandbox.trafficmanager.net^
 ||settingsppup.com^
 ||settlecruise.org^
 ||settleddisembarkinborn.com^
@@ -186787,7 +186790,6 @@
 ||sipeiya.com^
 ||sipesglug.com^
 ||sipo-inc.com^
-||sipopwcalsc.com^
 ||sipp.pl^
 ||sippansy.com^
 ||sipverse.shop^
@@ -200308,6 +200310,7 @@
 ||sportifmagazine.com^
 ||sportingamazingconsequence.com^
 ||sportiveroom.com^
+||sportjump.ru^
 ||sportkleidungwelt.com^
 ||sportlandlv.com^
 ||sportlife.mytestopay.com^
@@ -204199,7 +204202,6 @@
 ||static.iltalehti.fi^
 ||static.karte.io^
 ||static.lamoda.pl^
-||static.lcwaikiki.com^
 ||static.leadpages.net^
 ||static.legitscript.com^
 ||static.luscious.net^
@@ -212721,7 +212723,6 @@
 ||tattiedamidols.cyou^
 ||tattiesdefined.com^
 ||tattiesstomped.com^
-||tattinamecheap.com^
 ||tattle.api.osano.com^
 ||tattlerbox.com^
 ||tattoo.zauberportal.com^
@@ -217706,7 +217707,6 @@
 ||tonicheaviness.com^
 ||tonicporn.com^
 ||tonies-de.com^
-||tonies-geschaft.com^
 ||tonies-rabattpreis.com^
 ||tonies-sonderangebot.com^
 ||tonies-spezialangebot.com^
@@ -227667,7 +227667,6 @@
 ||ub-xjp.vvbrd.com^
 ||ub.finanzfrage.net^
 ||ub.gutefrage.net^
-||ub1.job592.com^
 ||ub6weu52p.com^
 ||uba.huaweicloud.com^
 ||ubacollect-drcn.cloud.dbankcloud.cn^
@@ -250110,7 +250109,6 @@
 ||zzdvsgnxamcmq.website^
 ||zzdyhq.com^
 ||zzfikyawmqtmw.website^
-||zzfxfz.com^
 ||zzgxqlzh.com^
 ||zzhengre.com^
 ||zzhizbzowrzlvy.com^
