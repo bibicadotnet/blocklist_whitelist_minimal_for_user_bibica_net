@@ -15,7 +15,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 120
 
     steps:
       - name: Checkout
@@ -49,8 +49,6 @@ jobs:
           mkdir -p "$DL_DIR"
 
           # Chuẩn hoá mọi định dạng (hosts, adblock, plain domain) về danh sách domain thuần
-          # $1 = 0: bỏ qua rule @@ (dùng cho blocklist)
-          # $1 = 1: nhận cả rule @@ (dùng cho whitelist)
           normalize() {
             awk -v keep_exceptions="$1" '
               {
@@ -69,9 +67,6 @@ jobs:
           }
 
           # Ghi file kèm header.
-          # Nếu phần rule không đổi so với file hiện có thì giữ nguyên
-          # (Version/Last modified không đổi -> không sinh commit thừa)
-          # $1 = file output, $2 = title, $3 = description, $4 = file chứa phần rule
           write_list() {
             local out="$1" title="$2" desc="$3" body="$4"
             if [[ -f "$out" ]] && diff -q <(grep -v -e '^!' -e '^\[Adblock' "$out") "$body" > /dev/null; then
@@ -102,12 +97,11 @@ jobs:
             -o "$DL_DIR/white1.txt" https://raw.githubusercontent.com/bibicadotnet/AdGuard-Home-blocklists/main/whitelist.txt \
             -o "$DL_DIR/white2.txt" https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Whitelists/Whitelist
 
-          # Tránh commit nhầm danh sách rỗng nếu 1 nguồn bị lỗi
           for f in "$DL_DIR"/*.txt; do
             [[ -s "$f" ]] || { echo "File rỗng hoặc tải lỗi: $f"; exit 1; }
           done
 
-          # ---------------- WHITELIST ----------------
+          # ---------------- WHITELIST GỐC ----------------
           cat "$DL_DIR"/white*.txt | normalize 1 | sort -u | sed 's/.*/@@||&^/' > "$WHITE_BODY"
           echo "Whitelist: $(wc -l < "$WHITE_BODY")"
           write_list "$WHITE_OUT" \
@@ -115,12 +109,11 @@ jobs:
             "Whitelisted domains merged from multiple sources, converted to AdGuard syntax." \
             "$WHITE_BODY"
 
-          # ---------------- BLOCKLIST ----------------
+          # ---------------- BLOCKLIST GỐC ----------------
           cat "$DL_DIR"/block*.txt | normalize 0 | sort -u > "$BLOCK_TMP"
           TOTAL=$(wc -l < "$BLOCK_TMP")
           echo "Total: $TOTAL"
 
-          # Pass 1 – concurrency 800, tự retry SERVFAIL 1 lần
           echo "Pass 1..."
           massdns -r "$RESOLVERS_FILE" -t A -o J -s 800 --retry SERVFAIL "$BLOCK_TMP" 2>/dev/null > "$PASS1_JSON"
 
@@ -131,20 +124,13 @@ jobs:
           SERVFAIL_COUNT=$(wc -l < "$SERVFAIL_TMP")
           REFUSED_COUNT=$(wc -l < "$REFUSED_TMP")
           echo "Pass 1 done – SERVFAIL còn: $SERVFAIL_COUNT | REFUSED: $REFUSED_COUNT"
-          if [[ "$REFUSED_COUNT" -gt 0 ]]; then
-            echo "--- REFUSED domains ---"
-            cat "$REFUSED_TMP"
-            echo "-----------------------"
-          fi
 
-          # Pass 2 – retry SERVFAIL với concurrency thấp hơn
           if [[ "$SERVFAIL_COUNT" -gt 0 ]]; then
             echo "Pass 2..."
             massdns -r "$RESOLVERS_FILE" -t A -o J -s 200 --retry SERVFAIL "$SERVFAIL_TMP" 2>/dev/null \
             | jq -r 'select(.status == "NOERROR") | .name | rtrimstr(".")' >> "$VALID_TMP"
           fi
 
-          # Xuất ra định dạng AdGuard: ||domain^
           sort -u "$VALID_TMP" | sed 's/.*/||&^/' > "$BLOCK_BODY"
           echo "Valid: $(wc -l < "$BLOCK_BODY") / $TOTAL"
           write_list "$BLOCK_OUT" \
@@ -155,20 +141,61 @@ jobs:
           rm -rf "$DL_DIR" "$BLOCK_TMP" "$BLOCK_BODY" "$WHITE_BODY" "$VALID_TMP" \
                  "$RESOLVERS_FILE" "$SERVFAIL_TMP" "$REFUSED_TMP" "$PASS1_JSON"
                  
-          # ---------------- TẢI THÊM CÁC FILE TỪ JSON ----------------
+          # ---------------- TẢI VÀ CHECK CÁC BỘ LỌC TỪ JSON ----------------
           EXTRA_JSON='[{"url":"https://lists.bibica.net/whitelist.txt"},{"label":"DNS Rewrites","url":"https://lists.bibica.net/rewrites.txt"},{"label":"HaGeZi Light","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt"},{"label":"HaGeZi Multi NORMAL","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt"},{"label":"HaGeZi Pro","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt"},{"label":"HaGeZi Pro++","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt"},{"label":"HaGeZi Ultimate","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt"},{"label":"HaGeZi Threat Intelligence (Medium)","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt"},{"label":"HaGeZi NSFW","url":"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt"},{"label":"StevenBlack Unified Hosts","url":"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"},{"label":"OISD Big","url":"https://big.oisd.nl"},{"label":"OISD NSFW","url":"https://nsfw.oisd.nl"}]'
 
           echo "$EXTRA_JSON" | jq -c '.[]' | while read -r item; do
             url=$(echo "$item" | jq -r '.url')
-            filename=$(basename "$url")
+            label=$(echo "$item" | jq -r '.label // empty')
             
-            # Thêm đuôi .txt nếu file chưa có
-            if [[ "$filename" != *.txt ]]; then
-              filename="${filename}.txt"
+            if [[ -n "$label" ]]; then
+              filename=$(echo "$label" | tr '[:upper:]' '[:lower:]' | sed 's/++/-plus/g' | sed -E 's/[^a-z0-9]+/-/g' | sed 's/^-//;s/-$//').txt
+            else
+              filename=$(basename "$url")
+              if [[ "$filename" != *.txt ]]; then
+                filename="${filename}.txt"
+              fi
+              label="$filename"
             fi
             
-            curl -fsSL -o "$filename" "$url"
+            echo "--- Processing & Checking: $label ---"
+            curl -fsSL --max-time 90 -o "ext_raw.tmp" "$url" || { echo "Tải lỗi: $url"; continue; }
+            
+            is_white=0
+            if [[ "$label" =~ "whitelist" || "$label" =~ "Whitelist" ]]; then
+               is_white=1
+            fi
+            
+            cat "ext_raw.tmp" | normalize "$is_white" | sort -u > "ext_norm.tmp"
+            TOTAL_EXT=$(wc -l < "ext_norm.tmp")
+            echo "Total domains ($label): $TOTAL_EXT"
+            
+            # Pass 1 cho list thêm vào
+            massdns -r "$RESOLVERS_FILE" -t A -o J -s 800 --retry SERVFAIL "ext_norm.tmp" 2>/dev/null > "ext_pass1.json"
+            jq -r 'select(.status == "NOERROR") | .name | rtrimstr(".")' "ext_pass1.json" > "ext_valid.tmp"
+            jq -r 'select(.status == "SERVFAIL") | .name | rtrimstr(".")' "ext_pass1.json" > "ext_servfail.tmp"
+            
+            SERVFAIL_EXT_COUNT=$(wc -l < "ext_servfail.tmp")
+            
+            # Pass 2 cho list thêm vào
+            if [[ "$SERVFAIL_EXT_COUNT" -gt 0 ]]; then
+              massdns -r "$RESOLVERS_FILE" -t A -o J -s 200 --retry SERVFAIL "ext_servfail.tmp" 2>/dev/null \
+              | jq -r 'select(.status == "NOERROR") | .name | rtrimstr(".")' >> "ext_valid.tmp"
+            fi
+            
+            if [[ "$is_white" == 1 ]]; then
+               sort -u "ext_valid.tmp" | sed 's/.*/@@||&^/' > "ext_body.tmp"
+            else
+               sort -u "ext_valid.tmp" | sed 's/.*/||&^/' > "ext_body.tmp"
+            fi
+            
+            VALID_EXT=$(wc -l < "ext_body.tmp")
+            echo "Valid ($label): $VALID_EXT / $TOTAL_EXT"
+            
+            write_list "$filename" "$label" "Checked list from $url" "ext_body.tmp"
           done
+          
+          rm -f ext_raw.tmp ext_norm.tmp ext_pass1.json ext_valid.tmp ext_servfail.tmp ext_body.tmp
 
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v5
