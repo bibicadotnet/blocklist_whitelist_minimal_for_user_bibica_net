@@ -1,8 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Light (Checked)
-! Version: 2026.11.08.0826
-! Last modified: 2026-11-08T08:26:27Z
+! Version: 2026.11.08.0845
+! Last modified: 2026-11-08T08:45:30Z
 ! Expires: 12 hours (update frequency)
+! Source MD5: 0e1ea33e839b535349600dffcaa05024
 ! Description: Resolvable domains for HaGeZi Light, checked via massdns.
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_light.txt
@@ -6956,6 +6957,7 @@
 ||adserver.meska.hu^
 ||adserver.mia.mk^
 ||adserver.miasto-info.pl^
+||adserver.middlestart.com^
 ||adserver.mk^
 ||adserver.molbuk.cv.ua^
 ||adserver.mtrust.cn^
@@ -7476,6 +7478,7 @@
 ||advmd.com^
 ||advmob.cn^
 ||advnt01.com^
+||advokatemelyanov.ru^
 ||advolution.de^
 ||advolve.io^
 ||advortex.cloud^
@@ -31485,7 +31488,6 @@
 ||free-5493597.webadorsite.com^
 ||free-counter.co.uk^
 ||free-counter.com^
-||free-counters.co.uk^
 ||free-counters.net^
 ||free-datings.com^
 ||free-fire.shop^
@@ -35762,7 +35764,6 @@
 ||hourglassinedible.com^
 ||house-spirit.com^
 ||housemaiddevolution.com^
-||houseofnordberg.com^
 ||houseofpubs.com^
 ||housingtrap.com^
 ||housitba5.firebaseapp.com^
@@ -60259,7 +60260,6 @@
 ||report.merrickbnk.gbqofs.io^
 ||report.mimun.gbqofs.io^
 ||report.mizrahi.gbqofs.io^
-||report.nestle.gbqofs.io^
 ||report.netapp.gbqofs.io^
 ||report.nfa.qq.com^
 ||report.onemain.gbqofs.io^
@@ -67450,7 +67450,6 @@
 ||sportaza-online.de^
 ||sportbaron.de^
 ||sported.xyz^
-||sportjump.ru^
 ||sportnewsdirect.com^
 ||sportoboz.ru^
 ||sportolymp.de^
@@ -69819,6 +69818,7 @@
 ||static.intentarget.com^
 ||static.jampp.com^
 ||static.journify.io^
+||static.lcwaikiki.com^
 ||static.leaddyno.com^
 ||static.leadpages.net^
 ||static.luscious.net^
@@ -78219,7 +78219,6 @@
 ||userreplay.com^
 ||userreporting.cloud.unity3d.com^
 ||users-boardds.com^
-||users.51.la^
 ||users.vidy.st^
 ||userstat.net^
 ||usersync.gumgum.com^

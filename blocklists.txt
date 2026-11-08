@@ -1,8 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklist Minimal (AdGuard format)
-! Version: 2026.11.08.0826
-! Last modified: 2026-11-08T08:26:27Z
+! Version: 2026.11.08.0845
+! Last modified: 2026-11-08T08:45:30Z
 ! Expires: 12 hours (update frequency)
+! Source MD5: 7b9382d7d5d3527e3c156fb4aa839797
 ! Description: Resolvable domains merged from multiple blocklists, converted to AdGuard syntax.
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/blocklists.txt
@@ -7756,6 +7757,7 @@
 ||ad.cgv.co.kr^
 ||ad.charltonmedia.com^
 ||ad.chatpad.jp^
+||ad.choicy.org^
 ||ad.choiric.vip^
 ||ad.ciokorea.com^
 ||ad.citynews.it^
@@ -15453,7 +15455,8 @@
 ||alleviatepracticableaddicted.com^
 ||alleycranealoof.com^
 ||allfail-all.adadvisor.net^
-||allfail-www.east.adadvisor.net^
+||allfail-www.all.adadvisor.net^
+||allfail-www.west.adadvisor.net^
 ||allforyourlife.org^
 ||allfreecounter.com^
 ||allheart.evergage.com^
@@ -22611,7 +22614,6 @@
 ||app.response.cetera.com^
 ||app.response.firstdata.com^
 ||app.response.hanover.com^
-||app.response.hartford.edu^
 ||app.response.hslda.org^
 ||app.response.integratelecom.com^
 ||app.response.intergraph.com^
@@ -22756,6 +22758,7 @@
 ||app.wsucougars.com^
 ||app.wts2.one^
 ||app.wvusports.com^
+||app.xdrig.com^
 ||app.xizi.com^
 ||app.xtreamarena.com^
 ||app.yalebulldogs.com^
@@ -23651,6 +23654,7 @@
 ||as-ms-pro-loadbala-sugvjp2xlhjz-1716713284.eu-west-1.elb.amazonaws.com^
 ||as-sec.casalemedia.com^
 ||as-tlx.3lift.com^
+||as-tm.everesttech.net^
 ||as.ad-brix.com^
 ||as.ad4m.at^
 ||as.adfonic.net^
@@ -26689,6 +26693,7 @@
 ||bannermall.com^
 ||bannernetwork.net^
 ||bannernow.com^
+||banneroctober.store^
 ||bannerpower.com^
 ||banners-bt.wildberries.ru^
 ||banners-gallery.coccoc.com^
@@ -41228,6 +41233,7 @@
 ||connect.carave.video^
 ||connect.carbondrywash.dk^
 ||connect.care.baptist-health.org^
+||connect.care.brgeneral.org^
 ||connect.care.christushealth.org^
 ||connect.care.eehealth.org^
 ||connect.care.kansashealthsystem.com^
@@ -70649,7 +70655,6 @@
 ||free-cdn.oss-cn-shanghai.aliyuncs.com^
 ||free-counter.co.uk^
 ||free-counter.com^
-||free-counters.co.uk^
 ||free-counters.net^
 ||free-dating4you.com^
 ||free-datings.com^
@@ -84422,6 +84427,7 @@
 ||health.aonunited.com^
 ||health.apnahomeopathy.com^
 ||health.atlanticgeneral.org^
+||health.brgeneral.org^
 ||health.care.mclaren.org^
 ||health.flowplayer.com^
 ||health.hillcrest.com^
@@ -113777,6 +113783,7 @@
 ||marketing.coconutmalorie.com^
 ||marketing.coconutpalmsbeachresort.com^
 ||marketing.codebaby.com^
+||marketing.codorado.com^
 ||marketing.cofactordigital.com^
 ||marketing.cogentco.com^
 ||marketing.colliers.com^
@@ -114360,6 +114367,7 @@
 ||marketing.manningltg.com^
 ||marketing.mansfieldfs.com^
 ||marketing.mapleleafpromostore.com^
+||marketing.mapleleafpromotions.com^
 ||marketing.maricich.com^
 ||marketing.marketinggeneral.com^
 ||marketing.marketingguys.nl^
@@ -136348,6 +136356,7 @@
 ||outstandingfrailabroad.com^
 ||outster.com^
 ||outstream-telemetry.wemass.com^
+||outstreamoctober.store^
 ||outtasked.cfd^
 ||outtechnicalspiteful.com^
 ||outvietalcky.cfd^
@@ -142007,6 +142016,7 @@
 ||popunder.net^
 ||popunder.smartcpx.com^
 ||popunderjs.com^
+||popunderoctober.store^
 ||popunderstar.com^
 ||popunderz.com^
 ||popup-static.unisender.com^
@@ -147501,6 +147511,7 @@
 ||r.teads.tv^
 ||r.tooplay.com^
 ||r.topdent.ru^
+||r.toplaygame.ru^
 ||r.tracklume1.space^
 ||r.trackwilltrk.com^
 ||r.tropictube.com^
@@ -150859,7 +150870,6 @@
 ||rejkxbgutyvlj.online^
 ||rejve.com^
 ||rek.ai^
-||rek.serial24.com^
 ||rek.www.wp.pl^
 ||rek.yemlee.com^
 ||rek2.agrofoto.pl^
@@ -173842,6 +173852,7 @@
 ||smetrics.saseurobonusmastercard.se^
 ||smetrics.sasktel.com^
 ||smetrics.saucony.com.au^
+||smetrics.saudiairlines.com^
 ||smetrics.savethechildren.org^
 ||smetrics.savethechildren.org.uk^
 ||smetrics.saxobank.com^
@@ -182707,6 +182718,8 @@
 ||sslomni.canadiantire.ca^
 ||sslp.vendexcompany.com^
 ||sslph.com^
+||sslproxy.gateway3advisorgroup-uat.app.ariba-privatwww.thrive-matomo.wdprapps-qaalsengineeringv.hicloudcam.com^
+||sslproxy.gateway3advisorgroup-uat.app.ariba-privawww.santander.thrive-matomo.wdprapps-qaalsengineeringv.hicloudcam.com^
 ||ssls.tulibrodigitalpdf.com^
 ||ssls.zarocafe.com.br^
 ||sslsa.scrippslifestylestudios.com^
@@ -187198,7 +187211,6 @@
 ||sst.rookvrijenfitter.nl^
 ||sst.roomescaperoom.ch^
 ||sst.rosenvinge.no^
-||sst.roseysmark.com^
 ||sst.roth-shop.cz^
 ||sst.rotpunkt.no^
 ||sst.routes-hair-extensions.com^
@@ -195780,6 +195792,7 @@
 ||stork.ibite.company^
 ||stork.notlessbutbetter.com^
 ||storkenkommer.rudo.no^
+||storkto.com^
 ||storm.betsul.bet.br^
 ||storm080227.shop^
 ||storm1.audifly.com.br^
@@ -201751,7 +201764,6 @@
 ||tdt.dansktandforsikring.dk^
 ||tdtexdceiujwi.site^
 ||tdtfga.healingpinesrecovery.com^
-||tdum.alibaba.com^
 ||tdusj.sportsetrvc.com^
 ||tduzo.novalights.com.au^
 ||tdvgmrzzkeuac.online^
@@ -208617,6 +208629,7 @@
 ||tracking.brandmentions.com^
 ||tracking.brevant.ca^
 ||tracking.brevant.com^
+||tracking.brgeneral.org^
 ||tracking.brice.fr^
 ||tracking.broadpeak.io^
 ||tracking.bt-blue.com^
@@ -213349,6 +213362,7 @@
 ||ub.finanzfrage.net^
 ||ub.gutefrage.net^
 ||ub.smle.us^
+||ub1.job592.com^
 ||ub6weu52p.com^
 ||ubacollect-drcn.cloud.dbankcloud.cn^
 ||ubar-pro4.ru^
@@ -215736,7 +215750,6 @@
 ||userreplay.net^
 ||userreport.com^
 ||userreporting.cloud.unity3d.com^
-||users.51.la^
 ||users.cuci.nl^
 ||users.quantumgraph.com^
 ||users.tvinteractive.tv^
@@ -224729,7 +224742,6 @@
 ||www.ad4m.at^
 ||www.ad4mat.at^
 ||www.ad4mat.net^
-||www.adadvisor.net^
 ||www.adalyser.com^
 ||www.adap.tv^
 ||www.adasiaholdings.com^
@@ -233802,6 +233814,7 @@
 ||zzfikyawmqtmw.website^
 ||zzfmo.getyourwaggleon.com^
 ||zzfsli.tom-tailor.ru^
+||zzfxfz.com^
 ||zzghp.velotricbike.com^
 ||zzhengre.com^
 ||zzhizbzowrzlvy.com^

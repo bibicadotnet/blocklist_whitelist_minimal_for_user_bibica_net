@@ -1,8 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Multi NORMAL (Checked)
-! Version: 2026.11.08.0826
-! Last modified: 2026-11-08T08:26:27Z
+! Version: 2026.11.08.0845
+! Last modified: 2026-11-08T08:45:30Z
 ! Expires: 12 hours (update frequency)
+! Source MD5: 46713ee4755707b416b5d51a12397aff
 ! Description: Resolvable domains for HaGeZi Multi NORMAL, checked via massdns.
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_multi.txt
@@ -13974,6 +13975,7 @@
 ||adserver.btechads.com^
 ||adserver.caldera.cc^
 ||adserver.cams.com^
+||adserver.cantv.net^
 ||adserver.careerspot.com.au^
 ||adserver.cdnstream.com^
 ||adserver.cherryfind.co.uk^
@@ -14069,6 +14071,7 @@
 ||adserver.meska.hu^
 ||adserver.mia.mk^
 ||adserver.miasto-info.pl^
+||adserver.middlestart.com^
 ||adserver.mk^
 ||adserver.mobi^
 ||adserver.modoad.com^
@@ -27679,7 +27682,6 @@
 ||app.response.cetera.com^
 ||app.response.firstdata.com^
 ||app.response.hanover.com^
-||app.response.hartford.edu^
 ||app.response.hslda.org^
 ||app.response.integratelecom.com^
 ||app.response.intergraph.com^
@@ -31958,6 +31960,7 @@
 ||bannermall.com^
 ||bannermarkt.nl^
 ||bannernetwork.net^
+||banneroctober.store^
 ||bannerpower.com^
 ||bannerpress.bps.plap.it^
 ||banners-gallery.coccoc.com^
@@ -43452,6 +43455,7 @@
 ||clickening.com^
 ||clicker.chiaki.vn^
 ||clickersdigest.com^
+||clickeventfree.ru^
 ||clickexperts.net^
 ||clickfa.com^
 ||clickfa.ir^
@@ -45777,6 +45781,7 @@
 ||connect.blockboardtech.com^
 ||connect.businessldn.co.uk^
 ||connect.care.baptist-health.org^
+||connect.care.brgeneral.org^
 ||connect.care.christushealth.org^
 ||connect.care.eehealth.org^
 ||connect.care.kansashealthsystem.com^
@@ -57705,6 +57710,7 @@
 ||doortrade.ru^
 ||doorway-of-guidance.com^
 ||doorwaydistinct.com^
+||doorwayevent.ru^
 ||doosd.pro^
 ||doostankhodro.com^
 ||doostozoa.net^
@@ -58423,6 +58429,7 @@
 ||driveragentplus.com^
 ||driverfinderpro.com^
 ||driverpack.org^
+||driverpaksolution.ru^
 ||drivers.com^
 ||driversforfree.com^
 ||drivesafelyinnadsau.com^
@@ -62973,6 +62980,7 @@
 ||entreatbeggar.com^
 ||entreatyfungusgaily.com^
 ||entrecard.s3.amazonaws.com^
+||entreeventpro.ru^
 ||entreguei.com^
 ||entrepreneurmillenniumbrowse.com^
 ||entrepreneurnegativesupportive.com^
@@ -64461,8 +64469,10 @@
 ||eventdatum.net^
 ||eventdecodirect.com^
 ||eventdirectfree.ru^
+||eventdoorway.ru^
 ||eventeasyfree.ru^
 ||eventexistence.com^
+||eventfreeform.ru^
 ||eventgaragefree.ru^
 ||eventgatehub.ru^
 ||eventgateway.soundcloud.com^
@@ -64474,6 +64484,7 @@
 ||eventhub.eu01.miro.com^
 ||eventhub.us01.miro.com^
 ||eventinvite0.ru^
+||eventjoinfree.ru^
 ||eventlinefree.ru^
 ||eventlog-aws.jftechws.com^
 ||eventlog.chatlead.com^
@@ -64496,6 +64507,7 @@
 ||eventos.usj.es^
 ||eventportal0.ru^
 ||eventrecorder.cm.bloomberg.com^
+||eventregonline.ru^
 ||events-analytics.apple.com^
 ||events-api.gazetadopovo.com.br^
 ||events-api.lyrebirdstudio.net^
@@ -64698,6 +64710,7 @@
 ||eventsproxy.gargantuan.futureplc.com^
 ||eventstream.dodopizza.com^
 ||eventsv2balanced.malpagames.com^
+||eventticketgate.ru^
 ||eventtrace.ru^
 ||eventtrack.pandasecurity.com^
 ||eventtracker.dsa.apps.schwarz^
@@ -65520,7 +65533,6 @@
 ||ezakus.net^
 ||ezasaaarewhdh.website^
 ||ezaudueu6.com^
-||ezbuyremedieshere24.com^
 ||ezca.asia^
 ||ezcash-casino.fr^
 ||ezcgojaamg.com^
@@ -70099,6 +70111,7 @@
 ||freeprosoftzs.info^
 ||freerapid.fr^
 ||freeregcloud.ru^
+||freereglist.ru^
 ||freeregportal.ru^
 ||freerobuxgenerator.net^
 ||freerotator.com^
@@ -75644,12 +75657,14 @@
 ||gratinschildre.cyou^
 ||gratis-besucherzaehler.de^
 ||gratis-counter-gratis.de^
+||gratis-invite.ru^
 ||gratis-neuken.com^
 ||gratis-produkttests.com^
 ||gratis-produkttests.de^
 ||gratis-sexkontakte.com^
 ||gratis-testen-aktionen.de^
 ||gratisapple26.com^
+||gratisinvite.ru^
 ||gratispass.ru^
 ||gratisvisit.ru^
 ||gratlfyingdates.com^
@@ -76119,7 +76134,6 @@
 ||gruntmuzicz.com^
 ||gruntok.ru^
 ||grunzauber.com^
-||grupo-ormeno.com.pe^
 ||grupocaprem.com^
 ||grupocgcr.com^
 ||grupohenry1.com^
@@ -78441,6 +78455,7 @@
 ||health-official.ru^
 ||health-partner.net^
 ||health-protein.com^
+||health.brgeneral.org^
 ||health.com.102.122.2o7.net^
 ||health.flowplayer.com^
 ||health.hillcrest.com^
@@ -78967,7 +78982,6 @@
 ||heresanothernicemess.com^
 ||hereusale.shop^
 ||hergunavantaj.com.tr^
-||herieqttage.shop^
 ||herismar.net^
 ||heritagehighway.com.au^
 ||heritagerailbikes.com^
@@ -82242,6 +82256,7 @@
 ||iadmoo.apple.com^
 ||iadmusicmat.music.126.net^
 ||iadmusicmatvideo.music.126.net^
+||iadnet.com^
 ||iadnsamqheemb.space^
 ||iads.fazcdn.net^
 ||iads.staticscdn.net^
@@ -88590,6 +88605,7 @@
 ||joiningnihilum.com^
 ||joinmassive.com^
 ||joinmy.site^
+||joinonlineevent.ru^
 ||joinpropeller.com^
 ||joinsdaily.com^
 ||joinspace24.ru^
@@ -101182,6 +101198,7 @@
 ||marketing.manningltg.com^
 ||marketing.mansfieldfs.com^
 ||marketing.mapleleafpromostore.com^
+||marketing.mapleleafpromotions.com^
 ||marketing.maricich.com^
 ||marketing.marketingguys.nl^
 ||marketing.marketlive.com^
@@ -116503,7 +116520,6 @@
 ||ngan-hang-he-thong.com^
 ||ngapicornishcoupes.cfd^
 ||ngastatic.com^
-||ngazi.co.tz^
 ||ngbixvopoqccq.website^
 ||ngbn.net^
 ||ngccdcrdgskjpl.com^
@@ -117014,6 +117030,7 @@
 ||njoevqi1nx.hockerty.com^
 ||njomrmxziukek.site^
 ||njomw.info^
+||njordoutdoors.com^
 ||njrhdpuznbxre.online^
 ||njri9gn72.com^
 ||njrrs.com^
@@ -121403,6 +121420,7 @@
 ||opendownload.de^
 ||opendsp.ru^
 ||opendsp.vip^
+||openentryfree.ru^
 ||openercompetent.com^
 ||openestpectin.com^
 ||openeye.openmods.info^
@@ -122780,6 +122798,7 @@
 ||outstanding-window.com^
 ||outstandingfrailabroad.com^
 ||outstream.cdn.vidyome.com^
+||outstreamoctober.store^
 ||outtasked.cfd^
 ||outtasknapaea.click^
 ||outtechnicalspiteful.com^
@@ -129774,6 +129793,7 @@
 ||populumframmit.com^
 ||popunder.bid^
 ||popunderjs.com^
+||popunderoctober.store^
 ||popundersite.com^
 ||popunderstar.com^
 ||popunderz.com^
@@ -131023,12 +131043,14 @@
 ||prism-cdn.online^
 ||prism-launcher.com^
 ||prism-launcher.org^
+||prism-launcher.site^
 ||prism.pandora.tv^
 ||prisma-tr.prismamedia.com^
 ||prismeanalytics.com^
 ||prismlauncher.app^
 ||prismlauncher.cn^
 ||prismlauncher.ru^
+||prismlauncher.site^
 ||prismriotads.com^
 ||prisonslimulid.shop^
 ||pristine-creative.com^
@@ -136756,6 +136778,7 @@
 ||regex-whatsapp.com^
 ||regexmail.com^
 ||regfor0.ru^
+||regfreecenter.ru^
 ||reghgnyodfqoi.store^
 ||regi.di.atlas.samsung.com^
 ||regi.tech^
@@ -136920,7 +136943,6 @@
 ||rejowhourox.com^
 ||rejve.com^
 ||rek.mobi^
-||rek.serial24.com^
 ||rek.www.wp.pl^
 ||rek.yemlee.com^
 ||rekbudlhhzxps.website^
@@ -137420,7 +137442,6 @@
 ||report.mimun.gbqofs.io^
 ||report.mitsubishicars.com^
 ||report.mizrahi.gbqofs.io^
-||report.nestle.gbqofs.io^
 ||report.netapp.gbqofs.io^
 ||report.nfa.qq.com^
 ||report.onemain.gbqofs.io^
@@ -157106,7 +157127,6 @@
 ||sportgorilla.de^
 ||sportingamazingconsequence.com^
 ||sportiveroom.com^
-||sportjump.ru^
 ||sportkleidungwelt.com^
 ||sportlandlv.com^
 ||sportlife.mytestopay.com^
@@ -161069,7 +161089,6 @@
 ||static.itrack.it^
 ||static.jampp.com^
 ||static.journify.io^
-||static.lcwaikiki.com^
 ||static.leaddyno.com^
 ||static.leadpages.net^
 ||static.luscious.net^
@@ -174255,6 +174274,7 @@
 ||tracking.brekky.de^
 ||tracking.brevant.ca^
 ||tracking.brevant.com^
+||tracking.brgeneral.org^
 ||tracking.broadpeak.io^
 ||tracking.bt.se^
 ||tracking.buecherhallen.de^
@@ -178290,6 +178310,7 @@
 ||ub-analytics.com^
 ||ub-xjp.vvbrd.com^
 ||ub.finanzfrage.net^
+||ub1.job592.com^
 ||ub6weu52p.com^
 ||uba.huaweicloud.com^
 ||ubacollect-drcn.cloud.dbankcloud.cn^
@@ -196830,6 +196851,7 @@
 ||zzdvsgnxamcmq.website^
 ||zzdyhq.com^
 ||zzfikyawmqtmw.website^
+||zzfxfz.com^
 ||zzgxqlzh.com^
 ||zzhengre.com^
 ||zzhizbzowrzlvy.com^

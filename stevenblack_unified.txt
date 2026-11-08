@@ -1,8 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: StevenBlack Unified Hosts (Checked)
-! Version: 2026.11.08.0826
-! Last modified: 2026-11-08T08:26:27Z
+! Version: 2026.11.08.0845
+! Last modified: 2026-11-08T08:45:30Z
 ! Expires: 12 hours (update frequency)
+! Source MD5: 8abb31a7427854b64c7efa4822cce712
 ! Description: Resolvable domains for StevenBlack Unified Hosts, checked via massdns.
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/stevenblack_unified.txt
@@ -2739,6 +2740,7 @@
 ||ads.botbanhang.vn^
 ||ads.boylesports.com^
 ||ads.brand.net^
+||ads.brazzers.com^
 ||ads.bridgebase.com^
 ||ads.bridgetrack.com.edgesuite.net^
 ||ads.bsplayer.com^
@@ -2786,6 +2788,7 @@
 ||ads.colombiaonline.com^
 ||ads.com.com^
 ||ads.comeon.com^
+||ads.contentabc.com^
 ||ads.contextweb.com^
 ||ads.corusradionetwork.com^
 ||ads.courierpostonline.com^
@@ -3728,7 +3731,6 @@
 ||adserver.break-even.it^
 ||adserver.bridgebase.com^
 ||adserver.cams.com^
-||adserver.cantv.net^
 ||adserver.cdnstream.com^
 ||adserver.cebu-online.com^
 ||adserver.cherryfind.co.uk^
@@ -3737,6 +3739,7 @@
 ||adserver.com^
 ||adserver.corusradionetwork.com^
 ||adserver.creative-asia.com^
+||adserver.creativeinspire.com^
 ||adserver.cxad.cxense.com^
 ||adserver.dayrates.com^
 ||adserver.dbusiness.com^
@@ -10341,7 +10344,6 @@
 ||cmp-lb-ap-southeast.tubemogul.com^
 ||cmp.112.2o7.net^
 ||cmp.dmgmediaprivacy.co.uk^
-||cmp.geodns.tubemogul.com^
 ||cmp.optad360.io^
 ||cmp.quantcast.com^
 ||cmp.uniconsent.com^
@@ -16836,7 +16838,6 @@
 ||herbolo-new.com^
 ||herbonix.net^
 ||hercules.iad.appboy.com^
-||herieqttage.shop^
 ||herismar.net^
 ||hermesmax.com^
 ||hertz.122.2o7.net^
@@ -35231,6 +35232,7 @@
 ||vast.optimatic.com^
 ||vast.quantserve.com^
 ||vast.ssp.optimatic.com^
+||vast.tubemogul.com^
 ||vast.vertamedia.com^
 ||vast.w.inmobi.com^
 ||vastacuotanza.net^
@@ -41609,7 +41611,6 @@
 ||www.herbalife.pl^
 ||www.herbolo-new.com^
 ||www.herbonix.net^
-||www.herieqttage.shop^
 ||www.herismar.net^
 ||www.hervaxo.shop^
 ||www.heryonvirela.com^
