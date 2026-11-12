@@ -2,13 +2,11 @@
 
 Blocklist và whitelist dạng `||domain^` / `@@||domain^`, dùng cho AdGuard Home và các công cụ chặn quảng cáo hỗ trợ cú pháp AdGuard. Tự động cập nhật mỗi giờ.
 
-## Link đăng ký
-
-### 1. Bộ lọc Gộp Cơ Bản (Khuyên dùng)
+## 1. Bộ lọc khuyên dùng
 
 **Blocklist**
 
-Gộp các bộ lọc: ABPVN List (Việt Nam) + AdGuard DNS filter + 1Hosts (Lite) + danh sách bổ sung riêng. Đủ dùng cho nhu cầu chặn quảng cáo thông thường.
+- Bao gồm các bộ lọc: [ABPVN List (Việt Nam)](https://adguardteam.github.io/HostlistsRegistry/assets/filter_16.txt) + [AdGuard DNS filter](https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt) + [1Hosts (Lite)](https://badmojr.github.io/1Hosts/Lite/adblock.txt) + danh sách [bổ sung](https://raw.githubusercontent.com/bibicadotnet/AdGuard-Home-blocklists/refs/heads/main/byme.txt) riêng, đủ cho 99% các nhu cầu chặn quảng cáo tại Việt Nam.
 
 ```
 https://lists.bibica.net/blocklists.txt
@@ -16,7 +14,7 @@ https://lists.bibica.net/blocklists.txt
 
 **Whitelist**
 
-Gộp từ [bibicadotnet](https://github.com/bibicadotnet/AdGuard-Home-blocklists) và [ShadowWhisperer](https://github.com/ShadowWhisperer/BlockLists), giúp tránh chặn nhầm các dịch vụ phổ biến.
+- Bao gồm danh sách [bổ sung riêng](https://raw.githubusercontent.com/bibicadotnet/AdGuard-Home-blocklists/main/whitelist.txt) và [ShadowWhisperer](https://github.com/ShadowWhisperer/BlockLists), giúp tránh chặn nhầm các dịch vụ phổ biến.
 
 ```
 https://lists.bibica.net/whitelist.txt
@@ -24,7 +22,9 @@ https://lists.bibica.net/whitelist.txt
 
 ---
 
-### 2. Các Bộ Lọc Quốc Tế (Đã được làm sạch domain lỗi thời)
+### 2. Các Bộ Lọc thông dụng (Đã được làm sạch domain lỗi thời)
+
+Không đề xuất dùng, user tại Việt Nam, dùng danh sách blocklist, whitelist đề xuất ở trên là đủ, các bộ lọc bên dưới chặn các domain quốc tế, đôi lúc chặn quá mức cần thiết, gây ra tình huống chặn nhầm
 
 
 **HaGeZi Light**
