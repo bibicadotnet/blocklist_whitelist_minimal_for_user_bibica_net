@@ -1,8 +1,8 @@
 # AdGuard Filters
 
 - Blocklist và whitelist dạng `||domain^` / `@@||domain^`, dùng cho AdGuard Home và các công cụ chặn quảng cáo hỗ trợ cú pháp AdGuard. 
+- Các url chạy qua cache từ Cloudflare, tốc độ sẽ ổn định hơn so với `raw.githubusercontent.com` truyền thống.
 - Tự động cập nhật mỗi giờ.
-- Các url chạy qua cache từ Cloudflare, tốc độ sẽ ổn định hơn so với `raw.githubusercontent.com` truyền thống
 
 ## 1. Bộ lọc khuyên dùng
 
