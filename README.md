@@ -93,7 +93,7 @@ https://lists.bibica.net/stevenblack_unified.txt
 
 ## Cách hoạt động & Công nghệ tối ưu
 
-Mọi domain trong các bộ lọc ở trên, đều được kiểm tra lại, các domain "chết" ( trả về SERVFAIL/NXDOMAIN) sẽ bị lạoi bỏ, chỉ giữ lại các domain **còn đang hoạt động**. Điều này giúp danh sách gọn nhẹ đi đáng kể, không chứa domain chết, giảm tải bộ nhớ cho thiết bị mạng/AdGuard Home trong khi vẫn giữ nguyên sức mạnh chặn quảng cáo thực tế.
+Mọi domain trong các bộ lọc ở trên, đều được kiểm tra lại, các domain "chết" ( trả về `SERVFAIL`/`NXDOMAIN`) sẽ bị lạoi bỏ, chỉ giữ lại các domain **còn đang hoạt động**. Điều này giúp danh sách gọn nhẹ đi đáng kể, không chứa domain chết, giảm tải bộ nhớ cho thiết bị mạng/AdGuard Home trong khi vẫn giữ nguyên sức mạnh chặn quảng cáo thực tế.
 
 ## Cách dùng với AdGuard Home
 
