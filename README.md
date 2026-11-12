@@ -1,6 +1,8 @@
 # AdGuard Filters
 
-Blocklist và whitelist dạng `||domain^` / `@@||domain^`, dùng cho AdGuard Home và các công cụ chặn quảng cáo hỗ trợ cú pháp AdGuard. Tự động cập nhật mỗi giờ.
+- Blocklist và whitelist dạng `||domain^` / `@@||domain^`, dùng cho AdGuard Home và các công cụ chặn quảng cáo hỗ trợ cú pháp AdGuard. 
+- Tự động cập nhật mỗi giờ.
+- Các url chạy qua cache từ Cloudflare, tốc độ sẽ ổn định hơn so với `raw.githubusercontent.com` truyền thống
 
 ## 1. Bộ lọc khuyên dùng
 
@@ -22,7 +24,7 @@ https://lists.bibica.net/whitelist.txt
 
 ---
 
-### 2. Các Bộ Lọc thông dụng (Đã được làm sạch domain lỗi thời)
+### 2. Các Bộ Lọc thông dụng (đã làm sạch domain lỗi thời)
 
 Không đề xuất dùng, user tại Việt Nam, dùng danh sách blocklist, whitelist đề xuất ở trên là đủ, các bộ lọc bên dưới chặn các domain quốc tế, đôi lúc chặn quá mức cần thiết, gây ra tình huống chặn nhầm
 
@@ -91,9 +93,7 @@ https://lists.bibica.net/stevenblack_unified.txt
 
 ## Cách hoạt động & Công nghệ tối ưu
 
-Mọi domain trong các **blocklist** ở trên (bao gồm blocklist gộp gốc và tất cả các bộ lọc mở rộng như HaGeZi, OISD, StevenBlack) đều được kiểm tra trạng thái phân giải DNS bằng công cụ [massdns](https://github.com/blechschmidt/massdns).
-
-Chương trình sẽ tự động loại bỏ các domain "chết" (SERVFAIL/NXDOMAIN), chỉ giữ lại file cuối cùng các domain **còn đang hoạt động**. Điều này giúp danh sách gọn nhẹ đi đáng kể, không chứa domain chết, giảm tải bộ nhớ cho thiết bị mạng/AdGuard Home trong khi vẫn giữ nguyên sức mạnh chặn quảng cáo thực tế.
+Mọi domain trong các bộ lọc ở trên, đều được kiểm tra lại, các domain "chết" ( trả về SERVFAIL/NXDOMAIN) sẽ bị lạoi bỏ, chỉ giữ lại các domain **còn đang hoạt động**. Điều này giúp danh sách gọn nhẹ đi đáng kể, không chứa domain chết, giảm tải bộ nhớ cho thiết bị mạng/AdGuard Home trong khi vẫn giữ nguyên sức mạnh chặn quảng cáo thực tế.
 
 ## Cách dùng với AdGuard Home
 
