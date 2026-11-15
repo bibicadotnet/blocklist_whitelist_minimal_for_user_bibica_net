@@ -237,7 +237,7 @@ jobs:
             echo "=> Whitelist gộp không thay đổi. Bỏ qua massdns."
           else
             check_and_write "white_rules.txt" "$WHITE_OUT" \
-              "Bibica Merged Allowlist (Bibica + ShadowWhisperer)" \
+              "Allowlist (user.bibica.net + ShadowWhisperer)" \
               "Exception rules that prevent false positives. Merged from bibicadotnet's manual allowlist, ShadowWhisperer's whitelist and the @@ exceptions found in the source blocklists. Unresolvable domains removed (checked via massdns). Use together with blocklists.txt." \
               "$WHITE_MD5"
           fi
@@ -251,7 +251,7 @@ jobs:
             echo "=> Blocklist gộp không thay đổi. Bỏ qua massdns."
           else
             check_and_write "block_rules.txt" "$BLOCK_OUT" \
-              "Bibica Merged Blocklist (AdGuard DNS + ABPVN + 1Hosts Lite + Custom)" \
+              "AdGuard DNS + ABPVN + 1Hosts Lite + Custom" \
               "Ads, trackers and malware domains merged from AdGuard DNS filter, ABPVN (Vietnamese ads), 1Hosts Lite and bibicadotnet's custom list (CocCoc, MSN, DNS canary). Unresolvable domains removed (checked via massdns). Hosts-style entries are kept as exact-match rules (|domain^)." \
               "$BLOCK_MD5"
           fi
