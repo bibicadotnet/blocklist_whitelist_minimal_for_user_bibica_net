@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Title: Local Domains
-! Description: Blocks local domains, router hostnames, private reverse DNS and internal network queries.
+! Title: Local & Router Domains
+! Description: Blocks local network domains, router hostnames and reserved internal domains.
 ! Expires: 12 hours (update frequency)
 ! Syntax: AdGuard Home Adblock-style filtering rules
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
