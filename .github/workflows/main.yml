@@ -317,6 +317,10 @@ jobs:
             "StevenBlack Unified Hosts: Adware and malware" \
             "Unified hosts file from StevenBlack, merged from reputable ad, tracker and malware sources. Hosts entries are kept as exact-match rules (|domain^), so subdomains are not blocked."
 
+          process_remote_list "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts" "velesila_yhosts.txt" \
+            "VeleSila yhosts: Chinese ads, trackers and malware" \
+            "Hosts file maintained by VeleSila that blocks Chinese ads, trackers, telemetry and malicious domains. Hosts entries are kept as exact-match rules (|domain^), so subdomains are not blocked."
+
           process_remote_list "https://big.oisd.nl" "oisd_big.txt" \
             "OISD Big: Ads, trackers, phishing and malware" \
             "Large, actively maintained list that blocks ads, trackers, phishing, malware and scam domains while aiming to avoid false positives."
