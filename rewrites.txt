@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: DNS Rewrites
+! Description: Custom DNS rewrite rules (CNAME/A overrides) for AdGuard Home & AdGuard DNS to optimize routing and bypass blocks.
 ! Expires: 12 hours (update frequency)
-! Description: Custom DNS rewrite rules for exact domain matches using AdGuard syntax.
 ! Syntax: |domain^$dnsrewrite=target  (single pipe = exact match)
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/rewrites.txt
-
+!
 ! TikTok
 
 ! Bilibili web
@@ -29,6 +29,7 @@
 ! Shopee
 
 ! voz.vn
+|voz.vn^$dnsrewrite=rocket.net
 
 ! nikke-en.com
 |nikke-en.com^$dnsrewrite=orzzutfk.ovslegodl.sched.ovscdns.com
