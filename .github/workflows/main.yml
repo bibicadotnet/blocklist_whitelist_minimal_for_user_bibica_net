@@ -81,6 +81,29 @@ jobs:
               }'
           }
 
+          # Loại bỏ |domain^ nếu đã có ||domain^ (tương tự với @@| và @@||)
+          dedup_rules() {
+            awk '
+              {
+                rules[NR] = $0
+                if ($0 ~ /^@@\|\|/) { d = $0; sub(/^@@\|\|/, "", d); sub(/\^$/, "", d); white_wild[d] = 1 }
+                else if ($0 ~ /^\|\|/) { d = $0; sub(/^\|\|/, "", d); sub(/\^$/, "", d); block_wild[d] = 1 }
+              }
+              END {
+                for (i = 1; i <= NR; i++) {
+                  r = rules[i]
+                  if (r ~ /^@@\|[^|]/) {
+                    d = r; sub(/^@@\|/, "", d); sub(/\^$/, "", d)
+                    if (d in white_wild) continue
+                  } else if (r ~ /^\|[^|]/) {
+                    d = r; sub(/^\|/, "", d); sub(/\^$/, "", d)
+                    if (d in block_wild) continue
+                  }
+                  if (!seen[r]++) print r
+                }
+              }'
+          }
+
           human_size() {
             awk -v b="$1" 'BEGIN { if (b >= 1048576) printf "%.2f MB", b/1048576; else printf "%.1f KB", b/1024 }'
           }
@@ -181,7 +204,7 @@ jobs:
             echo "Processing: $title"
             
             if curl -fsSL --max-time 120 "$url" -o "tmp_dl.txt"; then
-               normalize 0 < "tmp_dl.txt" | sort -u > "tmp_norm.txt"
+               normalize 0 < "tmp_dl.txt" | dedup_rules | sort -u > "tmp_norm.txt"
                
                CURRENT_MD5=$(md5sum "tmp_norm.txt" | awk '{print $1}')
                OLD_MD5=""
@@ -223,7 +246,7 @@ jobs:
           {
             for f in "$DL_DIR"/white*.txt; do normalize 1 < "$f"; done
             for f in "$DL_DIR"/block*.txt; do normalize 0 < "$f"; done
-          } | sort -u > "all_rules.txt"
+          } | dedup_rules | sort -u > "all_rules.txt"
 
           grep    '^@@' "all_rules.txt" > "white_rules.txt" || true
           grep -v '^@@' "all_rules.txt" > "block_rules.txt" || true
