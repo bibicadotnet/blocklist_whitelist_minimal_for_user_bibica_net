@@ -1,8 +1,8 @@
 # AdGuard Filters
 
-- Blocklist và whitelist dạng `||domain^` / `@@||domain^`, dùng cho AdGuard Home và các công cụ chặn quảng cáo hỗ trợ cú pháp AdGuard. 
-- Các url chạy qua cache từ Cloudflare, tốc độ sẽ ổn định hơn so với `raw.githubusercontent.com` truyền thống.
-- Tự động cập nhật mỗi giờ.
+- Blocklist và whitelist chuẩn hóa theo cú pháp AdGuard (`||domain^`, `|domain^`, `@@||domain^`, `@@|domain^`), dùng cho AdGuard Home và các công cụ chặn quảng cáo hỗ trợ cú pháp AdGuard.
+- Các URL chạy qua cache từ Cloudflare, tốc độ tải ổn định hơn so với `raw.githubusercontent.com` truyền thống.
+- Tự động kiểm tra và cập nhật mỗi giờ.
 
 ## 1. Bộ lọc khuyên dùng
 
@@ -16,7 +16,7 @@ https://lists.bibica.net/blocklists.txt
 
 **Whitelist**
 
-- Bao gồm danh sách [bổ sung riêng](https://raw.githubusercontent.com/bibicadotnet/AdGuard-Home-blocklists/main/whitelist.txt) và [ShadowWhisperer](https://github.com/ShadowWhisperer/BlockLists), giúp tránh chặn nhầm các dịch vụ phổ biến.
+- Bao gồm danh sách [bổ sung riêng](https://raw.githubusercontent.com/bibicadotnet/AdGuard-Home-blocklists/main/whitelist.txt), [ShadowWhisperer](https://github.com/ShadowWhisperer/BlockLists) và các quy tắc ngoại lệ (`@@`) trích xuất từ các bộ lọc nguồn, giúp tránh chặn nhầm các dịch vụ phổ biến.
 
 ```
 https://lists.bibica.net/whitelist.txt
@@ -24,10 +24,9 @@ https://lists.bibica.net/whitelist.txt
 
 ---
 
-### 2. Các Bộ Lọc thông dụng (đã làm sạch domain lỗi thời)
+## 2. Các bộ lọc thông dụng (đã làm sạch domain lỗi thời)
 
-Không đề xuất dùng, user tại Việt Nam, dùng danh sách blocklist, whitelist đề xuất ở trên là đủ, các bộ lọc bên dưới chặn các domain quốc tế, đôi lúc chặn quá mức cần thiết, gây ra tình huống chặn nhầm
-
+Không đề xuất dùng cho người dùng phổ thông tại Việt Nam, chỉ cần dùng cặp `blocklists.txt` và `whitelist.txt` ở trên là đủ. Các bộ lọc bên dưới chặn nhiều domain quốc tế, đôi lúc chặn quá mức cần thiết và dễ gây chặn nhầm.
 
 **HaGeZi Light**
 > Phiên bản nhẹ nhất, chặn quảng cáo và theo dõi cơ bản. Tiêu chí "Zero breakage" (gần như không gây lỗi trang web). Phù hợp cho thiết bị yếu hoặc người không muốn phải cấu hình whitelist nhiều.
@@ -60,7 +59,7 @@ https://lists.bibica.net/hagezi_ultimate.txt
 ```
 
 **HaGeZi Threat Intelligence (Medium)**
-> Chuyên dùng để bảo mật. Ngăn chặn truy cập vào các tên miền độc hại, lừa đảo (phishing), phát tán mã độc (malware), và máy chủ điều khiển botnet.
+> Chuyên dùng để bảo mật. Ngăn chặn truy cập vào các tên miền độc hại, lừa đảo (phishing), phát tán mã độc (malware) và máy chủ điều khiển botnet.
 ```
 https://lists.bibica.net/hagezi_tif_medium.txt
 ```
@@ -89,13 +88,20 @@ https://lists.bibica.net/oisd_nsfw.txt
 https://lists.bibica.net/stevenblack_unified.txt
 ```
 
+**VeleSila yhosts**
+> Bộ lọc định dạng hosts chuyên chặn quảng cáo, trình theo dõi (tracker/telemetry) và tên miền độc hại phổ biến trên các ứng dụng, dịch vụ và trang web Trung Quốc.
+```
+https://lists.bibica.net/velesila_yhosts.txt
+```
+
 ---
 
 ## Cách hoạt động & Công nghệ tối ưu
 
-Mọi domain trong các bộ lọc ở trên, đều được kiểm tra lại, các domain "chết" ( trả về `SERVFAIL`/`NXDOMAIN`) sẽ bị lạoi bỏ, chỉ giữ lại các domain **còn đang hoạt động**. Điều này giúp danh sách gọn nhẹ đi đáng kể, không chứa domain chết, giảm tải bộ nhớ cho thiết bị mạng/AdGuard Home trong khi vẫn giữ nguyên sức mạnh chặn quảng cáo thực tế.
+- **Chuẩn hóa & khử trùng lặp thông minh:** Giữ nguyên phạm vi chặn của nguồn gốc (`||domain^` chặn cả subdomain; các dòng dạng hosts `0.0.0.0 domain` chuyển thành `|domain^` chỉ chặn chính xác domain đó). Nếu một domain vừa xuất hiện ở dạng `|domain^` vừa có `||domain^`, hệ thống tự động loại bỏ rule hẹp hơn để tránh dư thừa.
+- **Lọc sạch domain chết qua `massdns`:** Mọi domain trong các bộ lọc đều được truy vấn DNS thực tế; các domain không còn phân giải được (`NXDOMAIN`, `SERVFAIL`...) sẽ bị loại bỏ, chỉ giữ lại các domain **còn đang hoạt động**. Điều này giúp danh sách gọn nhẹ đáng kể, giảm tải RAM/CPU cho router và AdGuard Home mà vẫn giữ nguyên hiệu quả chặn thực tế.
 
 ## Cách dùng với AdGuard Home
 
-- Blocklist: Chọn **Filters → DNS blocklists → Add blocklist → Add a custom list**, dán link blocklist.
-- Whitelist: Chọn **Filters → DNS allowlists → Add allowlist → Add a custom list**, dán link whitelist.
+- **Blocklist:** Chọn **Filters → DNS blocklists → Add blocklist → Add a custom list**, dán link blocklist.
+- **Whitelist:** Chọn **Filters → DNS allowlists → Add allowlist → Add a custom list**, dán link whitelist.
