@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '0 * * * *'
   workflow_dispatch:
+    inputs:
+      force_update:
+        description: 'Cưỡng bức chạy lại tất cả bộ lọc (bỏ qua kiểm tra MD5)'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -29,6 +35,8 @@ jobs:
           sudo mv /tmp/massdns/bin/massdns /usr/local/bin/massdns
 
       - name: Run
+        env:
+          FORCE_UPDATE: ${{ inputs.force_update || false }}
         run: |
           BLOCK_OUT="blocklists.txt"
           WHITE_OUT="whitelist.txt"
@@ -37,6 +45,8 @@ jobs:
 
           VERSION="$(date -u +%Y.%m.%d.%H%M)"
           LAST_MODIFIED="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+          echo "Force update mode: $FORCE_UPDATE"
 
           printf '%s\n' 8.8.8.8 8.8.4.4 > "$RESOLVERS_FILE"
           mkdir -p "$DL_DIR"
@@ -112,7 +122,8 @@ jobs:
             local out="$1" title="$2" desc="$3" body="$4" md5="$5" source_url="${6:-}"
             
             # Check phụ: Nếu MD5 gốc đổi nhưng sau khi qua massdns kết quả không đổi (hiếm)
-            if [[ -f "$out" ]]; then
+            # Khi bật FORCE_UPDATE=true thì bỏ qua check này để ghi lại header mới
+            if [[ "$FORCE_UPDATE" != "true" && -f "$out" ]]; then
               grep -v -e '^!' -e '^\[Adblock' "$out" > "tmp_compare.txt" 2>/dev/null || true
               if diff -q "tmp_compare.txt" "$body" > /dev/null; then
                 echo "$out: Kết quả sau massdns không đổi, giữ nguyên"
@@ -214,7 +225,7 @@ jobs:
                  OLD_MD5=$(grep -E '^! Source MD5: ' "$out_file" | awk '{print $4}' || true)
                fi
                
-               if [[ -n "$CURRENT_MD5" && "$CURRENT_MD5" == "$OLD_MD5" ]]; then
+               if [[ "$FORCE_UPDATE" != "true" && -n "$CURRENT_MD5" && "$CURRENT_MD5" == "$OLD_MD5" ]]; then
                  echo "=> File gốc không thay đổi (MD5 trùng). Bỏ qua massdns."
                  rm -f "tmp_dl.txt" "tmp_norm.txt"
                  return
@@ -258,7 +269,7 @@ jobs:
           OLD_WHITE_MD5=""
           [[ -f "$WHITE_OUT" ]] && OLD_WHITE_MD5=$(grep -E '^! Source MD5: ' "$WHITE_OUT" | awk '{print $4}' || true)
           
-          if [[ -n "$WHITE_MD5" && "$WHITE_MD5" == "$OLD_WHITE_MD5" ]]; then
+          if [[ "$FORCE_UPDATE" != "true" && -n "$WHITE_MD5" && "$WHITE_MD5" == "$OLD_WHITE_MD5" ]]; then
             echo "=> Whitelist gộp không thay đổi. Bỏ qua massdns."
           else
             check_and_write "white_rules.txt" "$WHITE_OUT" \
@@ -272,7 +283,7 @@ jobs:
           OLD_BLOCK_MD5=""
           [[ -f "$BLOCK_OUT" ]] && OLD_BLOCK_MD5=$(grep -E '^! Source MD5: ' "$BLOCK_OUT" | awk '{print $4}' || true)
 
-          if [[ -n "$BLOCK_MD5" && "$BLOCK_MD5" == "$OLD_BLOCK_MD5" ]]; then
+          if [[ "$FORCE_UPDATE" != "true" && -n "$BLOCK_MD5" && "$BLOCK_MD5" == "$OLD_BLOCK_MD5" ]]; then
             echo "=> Blocklist gộp không thay đổi. Bỏ qua massdns."
           else
             check_and_write "block_rules.txt" "$BLOCK_OUT" \
