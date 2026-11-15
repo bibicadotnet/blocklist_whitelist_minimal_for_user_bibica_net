@@ -109,7 +109,7 @@ jobs:
           }
 
           write_list() {
-            local out="$1" title="$2" desc="$3" body="$4" md5="$5"
+            local out="$1" title="$2" desc="$3" body="$4" md5="$5" source_url="${6:-}"
             
             # Check phụ: Nếu MD5 gốc đổi nhưng sau khi qua massdns kết quả không đổi (hiếm)
             if [[ -f "$out" ]]; then
@@ -134,6 +134,7 @@ jobs:
                 echo "! Version: $VERSION"
                 echo "! Last modified: $LAST_MODIFIED"
                 echo "! Expires: 12 hours (update frequency)"
+                [[ -n "$source_url" ]] && echo "! Source: $source_url"
                 echo "! Source MD5: $md5"
                 echo "! GitHub: https://github.com/$GITHUB_REPOSITORY"
                 echo "! Homepage: https://lists.bibica.net/$out"
@@ -150,7 +151,7 @@ jobs:
             echo "$out: đã cập nhật thành công ($entries entries, $size_label)."
           }
 
-          # check_and_write <rules_file> <out> <title> <desc> <md5>
+          # check_and_write <rules_file> <out> <title> <desc> <md5> [source_url]
           # rules_file chứa rule đã normalize: ||d^  |d^  @@||d^  @@|d^
           # Cả rule chặn lẫn rule whitelist đều qua massdns, domain không resolve được sẽ bị loại.
           check_and_write() {
@@ -159,6 +160,7 @@ jobs:
             local title="$3"
             local desc="$4"
             local md5="$5"
+            local source_url="${6:-}"
 
             TOTAL=$(wc -l < "$in_file")
             echo "Total domains for $out_file: $TOTAL"
@@ -188,7 +190,7 @@ jobs:
             if [[ "$VALID_COUNT" -eq 0 ]]; then
               echo "Cảnh báo: không có domain nào resolve được cho $out_file, giữ nguyên file cũ."
             else
-              write_list "$out_file" "$title" "$desc" "tmp_body.txt" "$md5"
+              write_list "$out_file" "$title" "$desc" "tmp_body.txt" "$md5" "$source_url"
             fi
             rm -f "tmp_domains.txt" "tmp_pass1.json" "tmp_valid.txt" "tmp_servfail.txt" "tmp_body.txt"
           }
@@ -219,7 +221,7 @@ jobs:
                fi
 
                # Rule chặn lẫn rule @@ (exception) của list này nằm chung trong 1 file output
-               check_and_write "tmp_norm.txt" "$out_file" "$title" "$desc Unresolvable domains removed (checked via massdns). Source: $url" "$CURRENT_MD5"
+               check_and_write "tmp_norm.txt" "$out_file" "$title" "$desc Unresolvable domains removed (checked via massdns)." "$CURRENT_MD5" "$url"
                rm -f "tmp_dl.txt" "tmp_norm.txt"
             else
                echo "Lỗi: Không thể tải $url"
