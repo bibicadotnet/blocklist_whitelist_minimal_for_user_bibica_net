@@ -41,21 +41,48 @@ jobs:
           printf '%s\n' 8.8.8.8 8.8.4.4 > "$RESOLVERS_FILE"
           mkdir -p "$DL_DIR"
 
+          # normalize <force_allow>
+          # Output: mỗi dòng là 1 rule AdGuard hoàn chỉnh, giữ đúng ngữ nghĩa nguồn:
+          #   0.0.0.0 domain   -> |domain^     (chỉ domain đó, không gồm subdomain)
+          #   |domain^         -> |domain^
+          #   ||domain^        -> ||domain^    (domain + subdomain)
+          #   domain (thuần)   -> ||domain^
+          #   @@...            -> @@ + rule tương ứng (whitelist)
+          # force_allow=1: ép mọi dòng thành rule whitelist (dùng cho file whitelist nguồn)
           normalize() {
-            awk -v keep_exceptions="$1" '
+            awk -v force_allow="${1:-0}" '
               {
                 line = tolower($0)
                 gsub(/^[[:space:]]+|[[:space:]]+$/, "", line)
                 if (line == "" || line ~ /^[!#;\[]/) next
-                if (line ~ /^@@/) { if (keep_exceptions != 1) next }
-                sub(/^@@/, "", line)
-                sub(/^\|\|?/, "", line)
-                sub(/\^.*/, "", line);     sub(/[#!].*/, "", line)
-                sub(/\/.*/, "", line);     sub(/:.*/, "", line)
-                sub(/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+[[:space:]]+/, "", line)
+
+                allow = force_allow
+                if (line ~ /^@@/) { allow = 1; sub(/^@@/, "", line) }
+
+                exact = 0
+                if (line ~ /^\|\|/) {
+                  sub(/^\|\|/, "", line)
+                } else if (line ~ /^\|/) {
+                  sub(/^\|/, "", line); exact = 1
+                } else if (line ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+[[:space:]]+/) {
+                  sub(/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+[[:space:]]+/, "", line); exact = 1
+                }
+
+                sub(/\^.*/, "", line); sub(/[#!].*/, "", line)
+                if (line ~ /\//) next          # rule có path => không phải rule thuần domain
+                sub(/:.*/, "", line)
                 gsub(/^[[:space:]]+|[[:space:]]+$/, "", line)
-                if (line ~ /^[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?)+$/ && !seen[line]++) print line
+
+                if (line ~ /^[0-9.]+$/) next   # bỏ IP (vd: 0.0.0.0 0.0.0.0)
+                if (line ~ /^[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?)+$/) {
+                  rule = (allow ? "@@" : "") (exact ? "|" : "||") line "^"
+                  if (!seen[rule]++) print rule
+                }
               }'
+          }
+
+          human_size() {
+            awk -v b="$1" 'BEGIN { if (b >= 1048576) printf "%.2f MB", b/1048576; else printf "%.1f KB", b/1024 }'
           }
 
           write_list() {
@@ -72,22 +99,37 @@ jobs:
               rm -f "tmp_compare.txt"
             fi
 
-            {
-              echo "[Adblock Plus 2.0]"
-              echo "! Title: $title"
-              echo "! Version: $VERSION"
-              echo "! Last modified: $LAST_MODIFIED"
-              echo "! Expires: 12 hours (update frequency)"
-              echo "! Source MD5: $md5"
-              echo "! Description: $desc"
-              echo "! GitHub: https://github.com/$GITHUB_REPOSITORY"
-              echo "! Homepage: https://lists.bibica.net/$out"
-              echo "!"
-              cat "$body"
-            } > "$out"
-            echo "$out: đã cập nhật thành công."
+            local entries size_label="0 KB" new_label i
+            entries=$(wc -l < "$body")
+
+            # Header có chứa dung lượng file -> ghi lại vài lần cho tới khi con số ổn định
+            for i in 1 2 3 4; do
+              {
+                echo "[Adblock Plus 2.0]"
+                echo "! Title: $title"
+                echo "! Description: $desc"
+                echo "! Version: $VERSION"
+                echo "! Last modified: $LAST_MODIFIED"
+                echo "! Expires: 12 hours (update frequency)"
+                echo "! Source MD5: $md5"
+                echo "! GitHub: https://github.com/$GITHUB_REPOSITORY"
+                echo "! Homepage: https://lists.bibica.net/$out"
+                echo "! Syntax: AdBlock"
+                echo "! Number of entries: $entries"
+                echo "! Size: $size_label"
+                echo "!"
+                cat "$body"
+              } > "$out"
+              new_label=$(human_size "$(wc -c < "$out")")
+              [[ "$new_label" == "$size_label" ]] && break
+              size_label="$new_label"
+            done
+            echo "$out: đã cập nhật thành công ($entries entries, $size_label)."
           }
 
+          # check_and_write <rules_file> <out> <title> <desc> <md5>
+          # rules_file chứa rule đã normalize: ||d^  |d^  @@||d^  @@|d^
+          # Cả rule chặn lẫn rule whitelist đều qua massdns, domain không resolve được sẽ bị loại.
           check_and_write() {
             local in_file="$1"
             local out_file="$2"
@@ -99,7 +141,10 @@ jobs:
             echo "Total domains for $out_file: $TOTAL"
             if [[ "$TOTAL" -eq 0 ]]; then return; fi
 
-            massdns -r "$RESOLVERS_FILE" -t A -o J -s 800 --retry SERVFAIL "$in_file" 2>/dev/null > "tmp_pass1.json"
+            # Rút domain từ rule để đưa vào massdns
+            sed -E 's/^@@//; s/^\|\|?//; s/\^$//' "$in_file" | sort -u > "tmp_domains.txt"
+
+            massdns -r "$RESOLVERS_FILE" -t A -o J -s 800 --retry SERVFAIL "tmp_domains.txt" 2>/dev/null > "tmp_pass1.json"
             jq -r 'select(.status == "NOERROR") | .name | rtrimstr(".")' "tmp_pass1.json" > "tmp_valid.txt"
             jq -r 'select(.status == "SERVFAIL") | .name | rtrimstr(".")' "tmp_pass1.json" > "tmp_servfail.txt"
             
@@ -109,18 +154,28 @@ jobs:
               | jq -r 'select(.status == "NOERROR") | .name | rtrimstr(".")' >> "tmp_valid.txt"
             fi
             
-            sort -u "tmp_valid.txt" | sed 's/.*/||&^/' > "tmp_body.txt"
+            # Giữ lại đúng rule gốc (| / || / @@) của những domain resolve được
+            awk 'NR==FNR { ok[$0]=1; next }
+                 { d=$0; sub(/^@@/, "", d); sub(/^\|\|?/, "", d); sub(/\^$/, "", d); if (d in ok) print }' \
+                "tmp_valid.txt" "$in_file" | sort -u > "tmp_body.txt"
             VALID_COUNT=$(wc -l < "tmp_body.txt")
             echo "Valid for $out_file: $VALID_COUNT / $TOTAL"
-            
-            write_list "$out_file" "$title" "$desc" "tmp_body.txt" "$md5"
-            rm -f "tmp_pass1.json" "tmp_valid.txt" "tmp_servfail.txt" "tmp_body.txt"
+
+            # An toàn: massdns/DNS lỗi hàng loạt thì không ghi đè list cũ bằng file rỗng
+            if [[ "$VALID_COUNT" -eq 0 ]]; then
+              echo "Cảnh báo: không có domain nào resolve được cho $out_file, giữ nguyên file cũ."
+            else
+              write_list "$out_file" "$title" "$desc" "tmp_body.txt" "$md5"
+            fi
+            rm -f "tmp_domains.txt" "tmp_pass1.json" "tmp_valid.txt" "tmp_servfail.txt" "tmp_body.txt"
           }
 
+          # process_remote_list <url> <out_file> <title> <description>
           process_remote_list() {
             local url="$1"
             local out_file="$2"
             local title="$3"
+            local desc="$4"
             
             echo "----------------------------------------"
             echo "Processing: $title"
@@ -140,7 +195,8 @@ jobs:
                  return
                fi
 
-               check_and_write "tmp_norm.txt" "$out_file" "$title (Checked)" "Resolvable domains for $title, checked via massdns." "$CURRENT_MD5"
+               # Rule chặn lẫn rule @@ (exception) của list này nằm chung trong 1 file output
+               check_and_write "tmp_norm.txt" "$out_file" "$title" "$desc Unresolvable domains removed (checked via massdns). Source: $url" "$CURRENT_MD5"
                rm -f "tmp_dl.txt" "tmp_norm.txt"
             else
                echo "Lỗi: Không thể tải $url"
@@ -161,45 +217,90 @@ jobs:
             [[ -s "$f" ]] || { echo "File rỗng hoặc tải lỗi: $f"; exit 1; }
           done
 
-          # ---------------- WHITELIST GỐC ----------------
-          cat "$DL_DIR"/white*.txt | normalize 1 | sort -u > "original_white_norm.txt"
-          WHITE_MD5=$(md5sum "original_white_norm.txt" | awk '{print $1}')
+          # Normalize từng file riêng (tránh dòng cuối file này dính vào dòng đầu file kế tiếp)
+          # - white*: mọi dòng đều là whitelist
+          # - block*: dòng thường là chặn, dòng @@ là whitelist
+          {
+            for f in "$DL_DIR"/white*.txt; do normalize 1 < "$f"; done
+            for f in "$DL_DIR"/block*.txt; do normalize 0 < "$f"; done
+          } | sort -u > "all_rules.txt"
+
+          grep    '^@@' "all_rules.txt" > "white_rules.txt" || true
+          grep -v '^@@' "all_rules.txt" > "block_rules.txt" || true
+
+          # ---------------- WHITELIST GỘP (white* + các dòng @@ trong block*) ----------------
+          WHITE_MD5=$(md5sum "white_rules.txt" | awk '{print $1}')
           OLD_WHITE_MD5=""
           [[ -f "$WHITE_OUT" ]] && OLD_WHITE_MD5=$(grep -E '^! Source MD5: ' "$WHITE_OUT" | awk '{print $4}' || true)
           
           if [[ -n "$WHITE_MD5" && "$WHITE_MD5" == "$OLD_WHITE_MD5" ]]; then
-            echo "=> Whitelist gộp không thay đổi. Bỏ qua."
+            echo "=> Whitelist gộp không thay đổi. Bỏ qua massdns."
           else
-            sed 's/.*/@@||&^/' "original_white_norm.txt" > "whitelist_body.tmp"
-            write_list "$WHITE_OUT" "Whitelist Minimal (AdGuard format)" "Whitelisted domains merged from multiple sources, converted to AdGuard syntax." "whitelist_body.tmp" "$WHITE_MD5"
-            rm -f "whitelist_body.tmp"
+            check_and_write "white_rules.txt" "$WHITE_OUT" \
+              "Bibica Merged Allowlist (Bibica + ShadowWhisperer)" \
+              "Exception rules that prevent false positives. Merged from bibicadotnet's manual allowlist, ShadowWhisperer's whitelist and the @@ exceptions found in the source blocklists. Unresolvable domains removed (checked via massdns). Use together with blocklists.txt." \
+              "$WHITE_MD5"
           fi
-          rm -f "original_white_norm.txt"
 
           # ---------------- BLOCKLIST GỐC ----------------
-          cat "$DL_DIR"/block*.txt | normalize 0 | sort -u > "original_block_norm.txt"
-          BLOCK_MD5=$(md5sum "original_block_norm.txt" | awk '{print $1}')
+          BLOCK_MD5=$(md5sum "block_rules.txt" | awk '{print $1}')
           OLD_BLOCK_MD5=""
           [[ -f "$BLOCK_OUT" ]] && OLD_BLOCK_MD5=$(grep -E '^! Source MD5: ' "$BLOCK_OUT" | awk '{print $4}' || true)
 
           if [[ -n "$BLOCK_MD5" && "$BLOCK_MD5" == "$OLD_BLOCK_MD5" ]]; then
             echo "=> Blocklist gộp không thay đổi. Bỏ qua massdns."
           else
-            check_and_write "original_block_norm.txt" "$BLOCK_OUT" "Blocklist Minimal (AdGuard format)" "Resolvable domains merged from multiple blocklists, converted to AdGuard syntax." "$BLOCK_MD5"
+            check_and_write "block_rules.txt" "$BLOCK_OUT" \
+              "Bibica Merged Blocklist (AdGuard DNS + ABPVN + 1Hosts Lite + Custom)" \
+              "Ads, trackers and malware domains merged from AdGuard DNS filter, ABPVN (Vietnamese ads), 1Hosts Lite and bibicadotnet's custom list (CocCoc, MSN, DNS canary). Unresolvable domains removed (checked via massdns). Hosts-style entries are kept as exact-match rules (|domain^)." \
+              "$BLOCK_MD5"
           fi
-          rm -f "original_block_norm.txt"
+
+          # Dọn file tạm (tránh bị commit vì file_pattern '*.txt')
+          rm -f "all_rules.txt" "white_rules.txt" "block_rules.txt"
 
           # ==================== PHẦN 2: BỘ LỌC MỚI ====================
-          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt" "hagezi_light.txt" "HaGeZi Light"
-          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt" "hagezi_multi.txt" "HaGeZi Multi NORMAL"
-          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt" "hagezi_pro.txt" "HaGeZi Pro"
-          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt" "hagezi_pro_plus.txt" "HaGeZi Pro++"
-          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt" "hagezi_ultimate.txt" "HaGeZi Ultimate"
-          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt" "hagezi_tif_medium.txt" "HaGeZi Threat Intelligence (Medium)"
-          process_remote_list "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt" "hagezi_nsfw.txt" "HaGeZi NSFW"
-          process_remote_list "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" "stevenblack_unified.txt" "StevenBlack Unified Hosts"
-          process_remote_list "https://big.oisd.nl" "oisd_big.txt" "OISD Big"
-          process_remote_list "https://nsfw.oisd.nl" "oisd_nsfw.txt" "OISD NSFW"
+          HZ="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock"
+
+          process_remote_list "$HZ/light.txt" "hagezi_light.txt" \
+            "HaGeZi Multi LIGHT: Basic protection (ads, trackers, telemetry)" \
+            "Lightweight list that blocks ads, trackers, metrics, telemetry and some badware with minimal breakage. Best for weak devices or when no admin is around to unblock things."
+
+          process_remote_list "$HZ/multi.txt" "hagezi_multi.txt" \
+            "HaGeZi Multi NORMAL: All-round protection" \
+            "Balanced list that blocks ads, trackers, telemetry, phishing, malware, scams, fakes and cryptojacking. Rarely causes breakage."
+
+          process_remote_list "$HZ/pro.txt" "hagezi_pro.txt" \
+            "HaGeZi Multi PRO: Extended protection (recommended)" \
+            "Larger list that blocks ads, trackers, telemetry, phishing, malware, scams, fakes and cryptojacking. Good balance of coverage and few false positives."
+
+          process_remote_list "$HZ/pro.plus.txt" "hagezi_pro_plus.txt" \
+            "HaGeZi Multi PRO++: Advanced protection (more aggressive)" \
+            "More aggressive than PRO against ads, trackers, telemetry, phishing, malware, scams and cryptojacking. May block a few legitimate domains, for experienced users."
+
+          process_remote_list "$HZ/ultimate.txt" "hagezi_ultimate.txt" \
+            "HaGeZi Multi ULTIMATE: Maximum protection (most aggressive)" \
+            "Strictest HaGeZi multi list. Blocks ads, trackers, telemetry, phishing, malware, scams and more, including popular trackers. Can break some apps or websites, only use it if you know how to whitelist."
+
+          process_remote_list "$HZ/tif.medium.txt" "hagezi_tif_medium.txt" \
+            "HaGeZi Threat Intelligence Feeds (Medium): Malware and phishing protection" \
+            "Medium-sized threat intelligence list built from the most important feeds. Targets malware, phishing, scam and other threat domains, not general ads."
+
+          process_remote_list "$HZ/nsfw.txt" "hagezi_nsfw.txt" \
+            "HaGeZi NSFW: Adult content blocker" \
+            "Blocks adult (NSFW) content domains. Does not block ads or trackers."
+
+          process_remote_list "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" "stevenblack_unified.txt" \
+            "StevenBlack Unified Hosts: Adware and malware" \
+            "Unified hosts file from StevenBlack, merged from reputable ad, tracker and malware sources. Hosts entries are kept as exact-match rules (|domain^), so subdomains are not blocked."
+
+          process_remote_list "https://big.oisd.nl" "oisd_big.txt" \
+            "OISD Big: Ads, trackers, phishing and malware" \
+            "Large, actively maintained list that blocks ads, trackers, phishing, malware and scam domains while aiming to avoid false positives."
+
+          process_remote_list "https://nsfw.oisd.nl" "oisd_nsfw.txt" \
+            "OISD NSFW: Adult content blocker" \
+            "OISD list that blocks adult (NSFW) content domains. Does not block ads or trackers."
 
           rm -rf "$DL_DIR" "$RESOLVERS_FILE"
 
