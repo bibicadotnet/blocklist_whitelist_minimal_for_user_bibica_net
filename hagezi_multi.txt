@@ -1,14 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Multi NORMAL: All-round protection
-! Description: Balanced list that blocks ads, trackers, telemetry, phishing, malware, scams, fakes and cryptojacking. Rarely causes breakage. Unresolvable domains removed (checked via massdns). Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt
-! Version: 2026.11.15.0936
-! Last modified: 2026-11-15T09:36:49Z
+! Description: Balanced list that blocks ads, trackers, telemetry, phishing, malware, scams, fakes and cryptojacking. Rarely causes breakage. Unresolvable domains removed (checked via massdns).
+! Version: 2026.11.15.1020
+! Last modified: 2026-11-15T10:20:29Z
 ! Expires: 12 hours (update frequency)
+! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt
 ! Source MD5: d5178d4538e85828e3b1f70cf52a0789
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_multi.txt
 ! Syntax: AdBlock
-! Number of entries: 212929
+! Number of entries: 212917
 ! Size: 4.77 MB
 !
 ||0--d.com^
@@ -9001,6 +9002,7 @@
 ||accesrewards.web.app^
 ||access-authority-2faa9bb814.s3.eu-north-1.amazonaws.com^
 ||access-the-website.com^
+||access-ticket.ru^
 ||access.hikaritv.net^
 ||access.vidox.net^
 ||access2creative.com^
@@ -9025,6 +9027,7 @@
 ||accessplug.com^
 ||accessport.jp^
 ||accessticket.ru^
+||accesstoevent.ru^
 ||accesstrade.com.vn^
 ||accesstrade.in.th^
 ||accessv.org^
@@ -9532,7 +9535,6 @@
 ||activemetering.com^
 ||activeplanetsale.com^
 ||activeprospects.com^
-||activeschools.net^
 ||activesearchbar.me^
 ||activewatch.ro^
 ||activexsportswear.com^
@@ -14159,6 +14161,7 @@
 ||ads.verticalresponse.com^
 ||ads.vertikal.net^
 ||ads.vg.no^
+||ads.vgchartz.com^
 ||ads.vgd.no^
 ||ads.vglive.no^
 ||ads.vgtv.no^
@@ -14672,6 +14675,7 @@
 ||adserver.btechads.com^
 ||adserver.caldera.cc^
 ||adserver.cams.com^
+||adserver.cantv.net^
 ||adserver.careerspot.com.au^
 ||adserver.cdnstream.com^
 ||adserver.cherryfind.co.uk^
@@ -20342,6 +20346,7 @@
 ||analytics-collector.apps.yle.fi^
 ||analytics-collector.flowcode.com^
 ||analytics-collector.loic.top^
+||analytics-conomi.line.me^
 ||analytics-console-r1.sussybaka.store^
 ||analytics-console.sift.com^
 ||analytics-d-datadriven.estaleiro.serpro.gov.br^
@@ -26340,6 +26345,7 @@
 ||analytics.shein.com^
 ||analytics.shelbyklein.com^
 ||analytics.shemaroome.com^
+||analytics.shephertz.com^
 ||analytics.sheridan.hu^
 ||analytics.sherleyco.com^
 ||analytics.sherpa.com.tr^
@@ -30025,7 +30031,6 @@
 ||app.response.cetera.com^
 ||app.response.firstdata.com^
 ||app.response.hanover.com^
-||app.response.hartford.edu^
 ||app.response.hslda.org^
 ||app.response.integratelecom.com^
 ||app.response.intergraph.com^
@@ -36107,7 +36112,6 @@
 ||berritiber.cyou^
 ||berryen.com^
 ||berryhillfarmgwent.com^
-||berrysseweranddraincleaning.com^
 ||berrytots.com^
 ||berserkhydrant.com^
 ||bertapert.com^
@@ -39084,7 +39088,6 @@
 ||bookrecommendations.org^
 ||books-analytics-events.apple.com^
 ||books555.com^
-||bookseatfree.ru^
 ||bookshelf07.com^
 ||bookshelfcomplaint.com^
 ||bookspot.shop^
@@ -41087,7 +41090,6 @@
 ||buvassa.com^
 ||buvduzguloj.in^
 ||buvhlspktqqoi.online^
-||buvhtest-analytics.mosua.ru^
 ||buwal.uni-wuppertal.de^
 ||buwiibffvwhjs.online^
 ||buwik3-cdn-settings.appsflyersdk.com^
@@ -45065,7 +45067,6 @@
 ||checke.biz^
 ||checkeffect.at^
 ||checkfivem.com^
-||checkinevent.ru^
 ||checkisreal.com^
 ||checkitoutxx.com^
 ||checkm8.com^
@@ -47681,7 +47682,6 @@
 ||collagenselect.pl^
 ||collanetti.com^
 ||collarity.com^
-||collarsapce.com^
 ||collationuppermodel.com^
 ||collect-ap2.attraqt.io^
 ||collect-be.prod.tds-p.com^
@@ -49902,7 +49902,6 @@
 ||cortesdigital.click^
 ||cortexalite.net^
 ||cortexalite.org^
-||cortexultraai.net^
 ||corticalinhofaianca.com^
 ||corto.www.wp.pl^
 ||corveesferrums.com^
@@ -67304,7 +67303,6 @@
 ||enriquetomasshop.shop^
 ||enrol.cud.ac.ae^
 ||enrolldi.glic.com^
-||enrollfasthub2025.ru^
 ||enrtx.com^
 ||ens-edge.edge.nc0.co^
 ||ens.appenzellerzeitung.ch^
@@ -67343,7 +67341,6 @@
 ||entangleversatile.com^
 ||entek.fr^
 ||entelia-adserver.com^
-||enter-event.ru^
 ||entercash.ru^
 ||entercasino.com^
 ||enterdrama.com^
@@ -68887,6 +68884,7 @@
 ||event-logger.tagboard.com^
 ||event-open.ru^
 ||event-portal.dailyinnovation.biz^
+||event-quick.ru^
 ||event-reporting-dot-webylytics.appspot.com^
 ||event-router.chime.com^
 ||event-router.olympics.com^
@@ -68904,6 +68902,7 @@
 ||event-tracking.hellohealthgroup.com^
 ||event-tracking.samsung.com^
 ||event-us.ssp.taxssp.com^
+||event-welcome.ru^
 ||event.100ms.live^
 ||event.aieverythingabudhabi.com^
 ||event.aieverythingegypt.com^
@@ -68982,14 +68981,14 @@
 ||eventabsorbedrichard.com^
 ||eventadmit.ru^
 ||eventapi.sooplive.com^
-||eventboardfree.ru^
 ||eventcollector.mcf-prod.a.intuit.com^
 ||eventcollectorv2-1131000179.us-east-1.elb.amazonaws.com^
 ||eventcom.api.np.km.playstation.net^
 ||eventdatum.net^
 ||eventdecodirect.com^
-||eventeasyfree.ru^
+||eventdoorway.ru^
 ||eventexistence.com^
+||eventgatehub.ru^
 ||eventgateway.soundcloud.com^
 ||eventgeek.goatcounter.com^
 ||eventgw.twilio.com^
@@ -68999,7 +68998,6 @@
 ||eventhub.eu01.miro.com^
 ||eventhub.us01.miro.com^
 ||eventinvite0.ru^
-||eventlinefree.ru^
 ||eventlog-aws.jftechws.com^
 ||eventlog.chatlead.com^
 ||eventlog.gryphline.com^
@@ -69009,7 +69007,6 @@
 ||eventlog.setka.ru^
 ||eventlogged.ru^
 ||eventlogger.soundcloud.com^
-||evento-pass.ru^
 ||eventopass.ru^
 ||eventos.abastur.com^
 ||eventos.cihac.com^
@@ -74735,6 +74732,7 @@
 ||freebiesurveys.com^
 ||freebitco.in^
 ||freebloghitcounter.com^
+||freebookingru.ru^
 ||freecamdollars.com^
 ||freecamsexposed.com^
 ||freecharnow.com^
@@ -74767,6 +74765,8 @@
 ||freedownloadhq.com^
 ||freedownloadzone.com^
 ||freeentrynow.ru^
+||freeeventpanel.ru^
+||freeeventsite.ru^
 ||freeexchange.ru^
 ||freefiles-upload.com^
 ||freefilesync.com^
@@ -74789,6 +74789,7 @@
 ||freehostedscripts.net^
 ||freehswz.com^
 ||freeimg.ru^
+||freeinvitehub.ru^
 ||freekacoupons.com^
 ||freelanced.fr^
 ||freelogs.com^
@@ -77321,7 +77322,6 @@
 ||gekko.spiceworks.com^
 ||gekpjfmuzimlg.online^
 ||gekwhplfmbvuz.online^
-||gelbboru.com^
 ||geldcounter.de^
 ||geldermans.com^
 ||geldfex.com^
@@ -78988,6 +78988,7 @@
 ||globalsmarturl.com^
 ||globalsmokehub.com^
 ||globalsolutions.risk.lexisnexis.com^
+||globalstars.ru^
 ||globalstat.thehost.ua^
 ||globalsun.io^
 ||globaltakeoff.net^
@@ -80120,7 +80121,6 @@
 ||goto.suno.com^
 ||goto.www.iciba.com^
 ||gotoda.co^
-||gotoeventfree.ru^
 ||gotohouse1.club^
 ||gotohouse2.cc^
 ||gotomeet.online^
@@ -80498,7 +80498,6 @@
 ||gratinschildre.cyou^
 ||gratis-besucherzaehler.de^
 ||gratis-counter-gratis.de^
-||gratis-invite.ru^
 ||gratis-neuken.com^
 ||gratis-produkttests.com^
 ||gratis-produkttests.de^
@@ -80506,7 +80505,6 @@
 ||gratis-sexkontakte.com^
 ||gratis-testen-aktionen.de^
 ||gratisapple26.com^
-||gratisinvite.ru^
 ||gratispass.ru^
 ||gratisvisit.ru^
 ||gratlfyingdates.com^
@@ -80705,7 +80703,6 @@
 ||grg1n.com^
 ||grgalylnihcym.space^
 ||grgov.com^
-||grhgq.printique.com^
 ||grht.perchemtl.com^
 ||griate.com^
 ||gribidi1.com^
@@ -89884,6 +89881,7 @@
 ||immitmalkite.click^
 ||immo-news24.de^
 ||immo.oralia.fr^
+||immobilien-schaller.at^
 ||immobilien-verwaltung-walter.de^
 ||immoderatebreathtaking.com^
 ||immoderateconstellation.com^
@@ -94985,7 +94983,6 @@
 ||joiningnihilum.com^
 ||joinmassive.com^
 ||joinmy.site^
-||joinonlineevent.ru^
 ||joinpropeller.com^
 ||joinsdaily.com^
 ||joinspace24.ru^
@@ -94994,6 +94991,7 @@
 ||joint-hurry.pro^
 ||jointriosolar.com^
 ||joinus.holidayseniorliving.com^
+||joinzerofee.ru^
 ||jojackal.com^
 ||jojoad.com^
 ||jojobet-online-2026.com^
@@ -98814,7 +98812,6 @@
 ||kowt80ufwg.com^
 ||koxuwurutihugi.com^
 ||koy.jp^
-||koyewin.com^
 ||koyoom.shop^
 ||koz1.net^
 ||kozmari.shop^
@@ -99138,7 +99135,6 @@
 ||kspotson.de^
 ||ksprjvv.com^
 ||kspyqwogczssl.website^
-||ksqjatyuv.com^
 ||ksr.goatcounter.com^
 ||ksr6uu1mk.com^
 ||kss-iiicps.ca^
@@ -106867,6 +106863,7 @@
 ||makeoverbought.com^
 ||makeoverprevention.com^
 ||makeovertool.com^
+||makeprogress24.ru^
 ||makergot.com^
 ||makesimpact.com^
 ||makethebusiness.com^
@@ -108823,7 +108820,6 @@
 ||martincouture.ch^
 ||martinicounite.com^
 ||martinoticias.122.2o7.net^
-||martinundjulia.com^
 ||martlochoco2.online^
 ||martpleadescended.com^
 ||martted.com^
@@ -113179,7 +113175,6 @@
 ||matshernantgedds.cyou^
 ||matstats.theindiestone.com^
 ||matsuro.ru^
-||matsvxoevd.com^
 ||matt.mercadolibre.cl^
 ||matt.mercadolibre.com.ar^
 ||matt.mercadolibre.com.bo^
@@ -124811,6 +124806,7 @@
 ||newupdatesnow.com^
 ||newv88.com^
 ||newvaluetool.de^
+||newventures2025.ru^
 ||newvoice.chiq5.smart-tv.cn^
 ||newwy3-natus55.sbs^
 ||newwy3-nihil84.sbs^
@@ -130047,7 +130043,6 @@
 ||onclickalgo.com^
 ||onclickbright.com^
 ||onclickclear.com^
-||onclickfree.ru^
 ||onclickgenius.com^
 ||onclickmax.com^
 ||onclickmega.com^
@@ -130343,7 +130338,6 @@
 ||onlinedrugsnorx.com^
 ||onlineeinkaufswelt.com^
 ||onlineenter.ru^
-||onlineentryhub.ru^
 ||onlineeylity.com^
 ||onlinefilmy.pl^
 ||onlinefinanceworld.com^
@@ -130717,7 +130711,6 @@
 ||opendownload.de^
 ||opendsp.ru^
 ||opendsp.vip^
-||openentryfree.ru^
 ||openercompetent.com^
 ||openestpectin.com^
 ||openeye.openmods.info^
@@ -136484,7 +136477,6 @@
 ||pitbulloutlet.shop^
 ||pitbullsportsi.shop^
 ||pitbullstock.shop^
-||pitbullstyle.shop^
 ||pitbullzakupy.shop^
 ||pitchedfurs.com^
 ||pitchifermium.com^
@@ -137505,7 +137497,6 @@
 ||pl-92827729f27272oferta111028280202982.cfd^
 ||pl-98260026276272oferta7171027293939.sbs^
 ||pl-ad-lgsmartad-com.aws-prd.net^
-||pl-aukcja1234781821.shop^
 ||pl-bilety.shop^
 ||pl-bilety8543212.beer^
 ||pl-config.sensic.net^
@@ -137546,7 +137537,6 @@
 ||pl-ogloszezenie78912318732.shop^
 ||pl-ogloszezenie7891241891.shop^
 ||pl-ogloszezenie789213789012.shop^
-||pl-ogloszezenie8124122.shop^
 ||pl-ogloszezenie812810481.shop^
 ||pl-ogloszezenie897124.shop^
 ||pl-ogloszezenie9118219.shop^
@@ -140872,7 +140862,6 @@
 ||prism-cdn.online^
 ||prism-launcher.com^
 ||prism-launcher.org^
-||prism-launcher.site^
 ||prism.pandora.tv^
 ||prisma-tr.prismamedia.com^
 ||prismeanalytics.com^
@@ -144622,6 +144611,7 @@
 ||quickdomainfwd.com^
 ||quickdriverupdater.com^
 ||quickerapparently.com^
+||quickeventjoin2025.ru^
 ||quickfindresults.com^
 ||quickflirt.com^
 ||quickieboilingplayground.com^
@@ -146872,7 +146862,6 @@
 ||register.purina.com^
 ||register.redhat.com^
 ||register04.top^
-||register0ru.ru^
 ||registerk.com^
 ||registerswoop.com^
 ||registerzentrale.de^
@@ -161171,7 +161160,10 @@
 ||signup.vovici.com^
 ||signupandturnyourscreenoffsafepowernow.date^
 ||signupbunq.com^
+||signupcenter24.ru^
 ||signupkey24.ru^
+||signupsmart-2025.ru^
+||signupsmart2025.ru^
 ||signupzone24.ru^
 ||signwallet-land.com^
 ||signxture.shop^
@@ -161356,6 +161348,7 @@
 ||simplestickynotes.app^
 ||simpleswap-exchange.com^
 ||simpleswap-io.at^
+||simpleswap.at^
 ||simpleswap.casa^
 ||simpleswap.cyou^
 ||simpleswap.org^
@@ -165645,6 +165638,7 @@
 ||smetrics.saseurobonusmastercard.se^
 ||smetrics.sasktel.com^
 ||smetrics.saucony.com.au^
+||smetrics.saudiairlines.com^
 ||smetrics.savethechildren.org.uk^
 ||smetrics.saxobank.com^
 ||smetrics.saxxanlage.ostsaechsische-sparkasse-dresden.de^
@@ -169174,9 +169168,6 @@
 ||spsfurntiure.com^
 ||spsiqdfdkjgqv.space^
 ||spsmetric.sports.betway.be^
-||spspsp.shop^
-||spspspdspd.shop^
-||spspsps.shop^
 ||spst2.com^
 ||spswjytxnvunp.online^
 ||spt.ahram.org.eg^
@@ -173967,6 +173958,7 @@
 ||st.eberspaecher.com^
 ||st.fahrkartenshop2-bahn.de^
 ||st.fileclip.cloud^
+||st.film.ru^
 ||st.freedom24.com^
 ||st.hbrd.io^
 ||st.iceportal.de^
@@ -175532,7 +175524,6 @@
 ||stats-newsroom.industryarena.com^
 ||stats-newyork1.bloxcms.com^
 ||stats-ontwikkel.milieuinfo.be^
-||stats-ontwikkel.omgeving.vlaanderen.be^
 ||stats-partner.trafficmanager.net^
 ||stats-prosermo.brandcom.de^
 ||stats-proto.pandora.com^
@@ -192135,7 +192126,6 @@
 ||tryonline.bid^
 ||trypurisaki.com^
 ||trysoftr.com^
-||trysolara.store^
 ||trysorelle.com^
 ||tryspinea.com^
 ||trystpage.com^
@@ -199278,12 +199268,12 @@
 ||virtonnews.com^
 ||virtuacorner.com^
 ||virtuagirlhd.com^
+||virtual-gate.ru^
 ||virtualbox.es^
 ||virtualconfidential.com^
 ||virtualdataserver.com^
 ||virtualdesign.ba^
 ||virtualedufairnepal.com^
-||virtualentry.ru^
 ||virtualgift-online.com^
 ||virtuallyk.com^
 ||virtuallyprotestantamplitude.com^
@@ -212897,7 +212887,6 @@
 ||zzdyhq.com^
 ||zzejvcepzzkv.com^
 ||zzfikyawmqtmw.website^
-||zzfxfz.com^
 ||zzgxqlzh.com^
 ||zzhengre.com^
 ||zzhizbzowrzlvy.com^

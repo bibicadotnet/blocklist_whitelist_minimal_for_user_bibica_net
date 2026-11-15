@@ -1,14 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: OISD Big: Ads, trackers, phishing and malware
-! Description: Large, actively maintained list that blocks ads, trackers, phishing, malware and scam domains while aiming to avoid false positives. Unresolvable domains removed (checked via massdns). Source: https://big.oisd.nl
-! Version: 2026.11.15.0936
-! Last modified: 2026-11-15T09:36:49Z
+! Description: Large, actively maintained list that blocks ads, trackers, phishing, malware and scam domains while aiming to avoid false positives. Unresolvable domains removed (checked via massdns).
+! Version: 2026.11.15.1020
+! Last modified: 2026-11-15T10:20:29Z
 ! Expires: 12 hours (update frequency)
+! Source: https://big.oisd.nl
 ! Source MD5: c35c3d872a8f9011f3b938216f752f3a
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/oisd_big.txt
 ! Syntax: AdBlock
-! Number of entries: 207290
+! Number of entries: 207268
 ! Size: 4.47 MB
 !
 ||0-0-2day.vercel.app^
@@ -22842,6 +22843,7 @@
 ||asfbvawqabjaz.space^
 ||asfohjolrojj.com^
 ||asfsdf.ivertiipolska.com.pl^
+||asfthaehynw.com^
 ||asfxzmdxzvdbq.space^
 ||asg.animehdl.net^
 ||asg.aphex.me^
@@ -23944,7 +23946,6 @@
 ||audaxsummit.com^
 ||audaxvault.com^
 ||audentiswealth.com^
-||auderda.ellogroup.ru^
 ||audhwnmaanyqg.website^
 ||audibet.com^
 ||audible.demdex.net^
@@ -33575,7 +33576,6 @@
 ||brave-earnings.com^
 ||brave-instruct.com^
 ||brave-tide.com^
-||brave-tilt.com^
 ||brave-tranquility-production-c4dd.up.railway.app^
 ||braveacquire.com^
 ||bravealto.com^
@@ -33973,7 +33973,6 @@
 ||bright-rendigate.live^
 ||bright-report-424918.framer.app^
 ||bright-sdk.com^
-||bright-throttle.com^
 ||bright-vaultmere.live^
 ||bright-yieldenance.info^
 ||bright-yieldenance.pro^
@@ -34643,7 +34642,6 @@
 ||bservr.com^
 ||bsf9dspsaz.appspot.com^
 ||bsfwoiljskare.site^
-||bsfxvouc.shop^
 ||bsgbcdzmvggpc.site^
 ||bsgbd77l.de^
 ||bsgefrduwiaxk.site^
@@ -47395,7 +47393,6 @@
 ||cortexalite.org^
 ||cortextrade.shop^
 ||cortextradeix.net^
-||cortexultraai.net^
 ||cortexverditrade.net^
 ||corthiqember-ai.com^
 ||corthiqember-ai.net^
@@ -59364,7 +59361,6 @@
 ||drealvog.ddns.net^
 ||dream-bet.fr^
 ||dream-cars-it.com^
-||dream-gearbox.com^
 ||dream.football^
 ||dream.managingforresults.com^
 ||dreambetcasino.fr^
@@ -59577,6 +59573,7 @@
 ||driverdetails.com^
 ||driverfinderpro.com^
 ||driverhugoverblown.com^
+||driverpaksolution.ru^
 ||driverreservation.info^
 ||drivers.com^
 ||drivers4you.com^
@@ -72705,7 +72702,6 @@
 ||fortniteformobile.com^
 ||fortnitegame-generator59.blogspot.com^
 ||fortnitegenerator.com^
-||fortnitetournament.shop^
 ||fortnitetournaments.shop^
 ||fortolv.com^
 ||fortoriko.ddns.net^
@@ -74124,7 +74120,6 @@
 ||frontthirteencuff.com^
 ||fronttoad.com^
 ||frookshop-winsive.com^
-||frost-chassis.com^
 ||frost-yields.com^
 ||frostbone.playground.ru^
 ||frostburst-coat.com^
@@ -74152,7 +74147,6 @@
 ||frosty-gurgle-overdraft.ngrok-free.dev^
 ||frosty-loom.com^
 ||frosty-pinnacle.com^
-||frosty-quest.com^
 ||frosty-study.com^
 ||frosty-traction.com^
 ||frostzinshof.net^
@@ -74965,7 +74959,6 @@
 ||fuzzy-funds.com^
 ||fuzzy-giggle-eta.vercel.app^
 ||fuzzy-growth.com^
-||fuzzy-hub.com^
 ||fuzzy-market.com^
 ||fuzzy-value.com^
 ||fuzzyaudio.com^
@@ -76297,6 +76290,7 @@
 ||gazkohjzcdbty.online^
 ||gazmoons.com^
 ||gazooptrade.com^
+||gazovinjekcion.com^
 ||gazplsdavay.com^
 ||gazprom-app.digital^
 ||gazprombank.fr^
@@ -78199,7 +78193,6 @@
 ||glganltcs.space^
 ||glglasad.xyz^
 ||glgyxkvmbamoy.website^
-||glide-bridge.com^
 ||glide-knowledge.com^
 ||glide-sense.site^
 ||glideinmeadowvale.com^
@@ -81696,7 +81689,6 @@
 ||guildbot.top^
 ||guildcapitaldale.shop^
 ||guilderleigh-mews.live^
-||guilderleighmews.pro^
 ||guildguard.xyz^
 ||guildjoin.vercel.app^
 ||guildmember.xyz^
@@ -99841,7 +99833,6 @@
 ||koxk.com^
 ||koxuwurutihugi.com^
 ||koyefg.shop^
-||koyewin.com^
 ||kozmari.shop^
 ||kp.daynetgown.cfd^
 ||kp.nextlgsdp.com^
@@ -111841,7 +111832,6 @@
 ||matrycafintrix-pl.net^
 ||matrycafintrixtrade.com^
 ||mats.medivise.de^
-||matsvxoevd.com^
 ||matta-001.hstn.me^
 ||mattca.com^
 ||mattelcreationshop.com^
@@ -122364,7 +122354,6 @@
 ||ngbclncfxjdsmmribt.com^
 ||ngbixvopoqccq.website^
 ||ngbzjq.com^
-||ngcc.8800.org^
 ||ngccdcrdgskjpl.com^
 ||ngcjqomtyvdhl.site^
 ||ngcluster-a.online^
@@ -124332,7 +124321,6 @@
 ||nova-cheats.net^
 ||nova-client.com^
 ||nova-client.st^
-||nova-drift.com^
 ||nova-inviolex.pro^
 ||nova-jackpot-casino.fr^
 ||nova-jackpot-fr.fr^
@@ -134798,7 +134786,6 @@
 ||pitbullsportsi.shop^
 ||pitbullstock.shop^
 ||pitbullstreet.shop^
-||pitbullstyle.shop^
 ||pitbulltactical.shop^
 ||pitbullwave.shop^
 ||pitbullwest.club^
@@ -135215,7 +135202,6 @@
 ||pl-92827729f27272oferta111028280202982.cfd^
 ||pl-98260026276272oferta7171027293939.sbs^
 ||pl-add.shop^
-||pl-aukcja1234781821.shop^
 ||pl-bilet.club^
 ||pl-bilety.shop^
 ||pl-bilety8543212.beer^
@@ -135331,7 +135317,6 @@
 ||pl-ogloszezenie78912318732.shop^
 ||pl-ogloszezenie7891241891.shop^
 ||pl-ogloszezenie789213789012.shop^
-||pl-ogloszezenie8124122.shop^
 ||pl-ogloszezenie812810481.shop^
 ||pl-ogloszezenie897124.shop^
 ||pl-ogloszezenie9118219.shop^
@@ -158121,7 +158106,6 @@
 ||shadevenezuela.com.ve^
 ||shadoreaverless.info^
 ||shadow-1790030388103.staticrun.app^
-||shadow-cruise.com^
 ||shadow-hopper.com^
 ||shadow-quester.com^
 ||shadow45921.github.io^
@@ -160661,6 +160645,7 @@
 ||sl8mr.mjt.lu^
 ||slaappillen.net^
 ||slack-communication-toolkit-download.github.io^
+||slack.com.ru^
 ||slackastonishing.com^
 ||slackentheatres.com^
 ||slackk.com^
@@ -164648,9 +164633,6 @@
 ||spsfjtvdgbfmo.website^
 ||spsiqdfdkjgqv.space^
 ||spskamin.ru^
-||spspsp.shop^
-||spspspdspd.shop^
-||spspsps.shop^
 ||spspspsps.shop^
 ||spst2.com^
 ||spswjytxnvunp.online^
@@ -167679,7 +167661,6 @@
 ||stellar-humane-supply.glitch.me^
 ||stellar-income.com^
 ||stellar-message-200886.framer.app^
-||stellar-piston.com^
 ||stellar-revolt.com^
 ||stellar-valnexsystem.com^
 ||stellarbalms.com^
@@ -170462,7 +170443,6 @@
 ||swift-bintex-pro.pages.dev^
 ||swift-bintex.pro^
 ||swift-bondcrest.live^
-||swift-bumper.com^
 ||swift-comprehend.com^
 ||swift-cove.com^
 ||swift-earnings.com^
@@ -177041,7 +177021,6 @@
 ||thorn-fondwell.online^
 ||thorn-kapsted-shop.pages.dev^
 ||thorn-kapsted.shop^
-||thorn-transport.com^
 ||thornaboo.online^
 ||thornbury.online^
 ||thornburykapsted.net^
@@ -183626,7 +183605,6 @@
 ||uazhaixvzaggm.space^
 ||ub-xjp.vvbrd.com^
 ||ub.finanzfrage.net^
-||ub1.job592.com^
 ||ub16502.firebaseapp.com^
 ||ub16502.web.app^
 ||ub6weu52p.com^
@@ -191680,7 +191658,6 @@
 ||volt-glow.com^
 ||volt-mirror.com^
 ||volt-peak.com^
-||volt-stroke.com^
 ||voltacapitenza-it.live^
 ||voltacapitenza.com^
 ||voltacapitenza.live^
@@ -194548,7 +194525,6 @@
 ||webtrekk.net^
 ||webtrends.thisis.co.uk^
 ||webtroniq.wixstudio.com^
-||webtrustland.ru^
 ||webtwvbbnnnbvddhhlk.weebly.com^
 ||webualg.weebly.com^
 ||webuildwellbeing.com^
@@ -198865,6 +198841,7 @@
 ||xaxokpulmicmv.site^
 ||xaxoro.com^
 ||xaybhsrjuonew.online^
+||xayjr.cn^
 ||xaytmgqquplhx.website^
 ||xayywzcbeudmh.website^
 ||xaz2.com^
@@ -205540,6 +205517,7 @@
 ||zi8ivy4b0c7l.com^
 ||zi992883923923.web.app^
 ||zia.org.in^
+||ziajacom.shop^
 ||ziajana.shop^
 ||ziamarqueehire.co.uk^
 ||ziarnokawy.com^
@@ -207003,6 +206981,7 @@
 ||zwrbgfinmhmns.site^
 ||zwrotinwestix.store^
 ||zwtpmjjbuvfyr.website^
+||zwtring.shop^
 ||zwubipwic.com^
 ||zwuesdewosddn.site^
 ||zwv28.com^

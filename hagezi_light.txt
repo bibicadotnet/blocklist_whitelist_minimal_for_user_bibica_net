@@ -1,14 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Multi LIGHT: Basic protection (ads, trackers, telemetry)
-! Description: Lightweight list that blocks ads, trackers, metrics, telemetry and some badware with minimal breakage. Best for weak devices or when no admin is around to unblock things. Unresolvable domains removed (checked via massdns). Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt
-! Version: 2026.11.15.0936
-! Last modified: 2026-11-15T09:36:49Z
+! Description: Lightweight list that blocks ads, trackers, metrics, telemetry and some badware with minimal breakage. Best for weak devices or when no admin is around to unblock things. Unresolvable domains removed (checked via massdns).
+! Version: 2026.11.15.1020
+! Last modified: 2026-11-15T10:20:29Z
 ! Expires: 12 hours (update frequency)
+! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt
 ! Source MD5: 421bbefd9c77b257fb6814d4bd5ea3fb
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_light.txt
 ! Syntax: AdBlock
-! Number of entries: 88897
+! Number of entries: 88886
 ! Size: 2.08 MB
 !
 ||0--d.com^
@@ -13543,6 +13544,7 @@
 ||analytics.shein.com^
 ||analytics.shelbyklein.com^
 ||analytics.shemaroome.com^
+||analytics.shephertz.com^
 ||analytics.sherpa.com.tr^
 ||analytics.shesfreaky.com^
 ||analytics.shift.agency^
@@ -20192,7 +20194,6 @@
 ||butyrhopers.com^
 ||butytimberland.com^
 ||buvduzguloj.in^
-||buvhtest-analytics.mosua.ru^
 ||buwal.uni-wuppertal.de^
 ||buwik3-cdn-settings.appsflyersdk.com^
 ||buwik3-launches.appsflyersdk.com^
@@ -24485,7 +24486,6 @@
 ||corteiz.co^
 ||cortexalite.net^
 ||cortexalite.org^
-||cortexultraai.net^
 ||corvetseverett.qpon^
 ||corvexan.shop^
 ||corvidae.co.uk^
@@ -42749,7 +42749,6 @@
 ||kowela.com^
 ||koxuwurutihugi.com^
 ||koy.jp^
-||koyewin.com^
 ||kpck4q-attr.appsflyersdk.com^
 ||kpck4q-cdn-settings.appsflyersdk.com^
 ||kpck4q-conversions.appsflyersdk.com^
@@ -42859,7 +42858,6 @@
 ||ksmllfcdblqqw.site^
 ||ksn-stat-install.kaspersky-labs.com^
 ||ksnt7h-cdn-settings.appsflyersdk.com^
-||ksqjatyuv.com^
 ||ksr.goatcounter.com^
 ||kss-iiicps.ca^
 ||kstil.de^
@@ -46419,7 +46417,6 @@
 ||martincasino-fr.fr^
 ||martincouture.ch^
 ||martinoticias.122.2o7.net^
-||martinundjulia.com^
 ||martlochoco2.online^
 ||martted.com^
 ||martyrspitifulnatick.qpon^
@@ -49145,7 +49142,6 @@
 ||matshernantgedds.cyou^
 ||matstats.theindiestone.com^
 ||matsuro.ru^
-||matsvxoevd.com^
 ||matt.mercadolibre.cl^
 ||matt.mercadolibre.com.ar^
 ||matt.mercadolibre.com.co^
@@ -58170,7 +58166,6 @@
 ||pitayasamites.cfd^
 ||pitbull24hours.shop^
 ||pitbulldiscount.shop^
-||pitbullstyle.shop^
 ||pitchifermium.com^
 ||pitchpublishprosper.com^
 ||pitchupmedia.org^
@@ -58888,7 +58883,6 @@
 ||pl-92827729f27272oferta111028280202982.cfd^
 ||pl-98260026276272oferta7171027293939.sbs^
 ||pl-ad-lgsmartad-com.aws-prd.net^
-||pl-aukcja1234781821.shop^
 ||pl-d-ogloszenie-offer499229.cyou^
 ||pl-foodango-prd-main-2049787397.eu-west-1.elb.amazonaws.com^
 ||pl-info-lgsmartad-com.aws-prd.net^
@@ -58907,7 +58901,6 @@
 ||pl-ogloszezenie147890.shop^
 ||pl-ogloszezenie4128900.shop^
 ||pl-ogloszezenie478912.shop^
-||pl-ogloszezenie8124122.shop^
 ||pl-ogloszezenie812810481.shop^
 ||pl-ogloszezenie897124.shop^
 ||pl-ogloszezenie9118219.shop^
@@ -61572,7 +61565,6 @@
 ||px102.mediahills.ru^
 ||px3rq7e9jhtm25e3yrv34xkr3233j.cyou^
 ||px802.cmediahub.ru^
-||pxaction.com^
 ||pxb9nb3bghif9j8.cfd^
 ||pxc.otto.de^
 ||pxdtkukiwrgiy.site^
@@ -71023,9 +71015,6 @@
 ||sprw.io^
 ||spseplzen-cz.weebly.com^
 ||spsfurntiure.com^
-||spspsp.shop^
-||spspspdspd.shop^
-||spspsps.shop^
 ||spst2.com^
 ||sptr.eocampaign1.com^
 ||sptrck.com^
@@ -73055,6 +73044,7 @@
 ||st.appsad.cn^
 ||st.eberspaecher.com^
 ||st.fahrkartenshop2-bahn.de^
+||st.film.ru^
 ||st.freedom24.com^
 ||st.hbrd.io^
 ||st.iceportal.de^
@@ -80051,7 +80041,6 @@
 ||tryedesign.com^
 ||tryinglwop.com^
 ||tryonline.bid^
-||trysolara.store^
 ||trysorelle.com^
 ||trystpage.com^
 ||trytestifysupply.com^
@@ -82106,6 +82095,7 @@
 ||userprofile.push.heytapmobi.com^
 ||userreplay.com^
 ||userreporting.cloud.unity3d.com^
+||users.51.la^
 ||users.vidy.st^
 ||usersonlinecounter.com^
 ||userstat.net^

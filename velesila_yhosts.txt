@@ -1,14 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: VeleSila yhosts: Chinese ads, trackers and malware
-! Description: Hosts file maintained by VeleSila that blocks Chinese ads, trackers, telemetry and malicious domains. Hosts entries are kept as exact-match rules (|domain^), so subdomains are not blocked. Unresolvable domains removed (checked via massdns). Source: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
-! Version: 2026.11.15.0936
-! Last modified: 2026-11-15T09:36:49Z
+! Description: Hosts file maintained by VeleSila that blocks Chinese ads, trackers, telemetry and malicious domains. Hosts entries are kept as exact-match rules (|domain^), so subdomains are not blocked. Unresolvable domains removed (checked via massdns).
+! Version: 2026.11.15.1020
+! Last modified: 2026-11-15T10:20:29Z
 ! Expires: 12 hours (update frequency)
+! Source: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
 ! Source MD5: e538b62d9b1223f226eeddfb0e9a27de
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/velesila_yhosts.txt
 ! Syntax: AdBlock
-! Number of entries: 4489
+! Number of entries: 4488
 ! Size: 86.7 KB
 !
 |018520.com^
@@ -712,6 +713,7 @@
 |app.uu.cc^
 |app.wapx.cn^
 |app.wumii.com^
+|app.xdrig.com^
 |app.xizi.com^
 |appdriver.cn^
 |appget.cn^
@@ -3022,7 +3024,6 @@
 |s.ddgjjj.com^
 |s.ddstu.com^
 |s.domob.cn^
-|s.doyo.cn^
 |s.fastapi.net^
 |s.go.sohu.com^
 |s.hyz86.com^
@@ -4453,7 +4454,6 @@
 |z2.cnzz.com^
 |z4.cnzz.com^
 |z5.cnzz.com^
-|z5y.bnnxklj.cn^
 |z6.cnzz.com^
 |z7.cnzz.com^
 |z8.cnzz.com^

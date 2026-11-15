@@ -1,14 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi NSFW: Adult content blocker
-! Description: Blocks adult (NSFW) content domains. Does not block ads or trackers. Unresolvable domains removed (checked via massdns). Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt
-! Version: 2026.11.15.0936
-! Last modified: 2026-11-15T09:36:49Z
+! Description: Blocks adult (NSFW) content domains. Does not block ads or trackers. Unresolvable domains removed (checked via massdns).
+! Version: 2026.11.15.1020
+! Last modified: 2026-11-15T10:20:29Z
 ! Expires: 12 hours (update frequency)
+! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt
 ! Source MD5: f0714b051a7a343c949128c70c22a64b
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_nsfw.txt
 ! Syntax: AdBlock
-! Number of entries: 81702
+! Number of entries: 81703
 ! Size: 1.49 MB
 !
 ||0-0.asia^
@@ -17395,7 +17396,6 @@
 ||cumalong.cam^
 ||cumalong.pics^
 ||cumantoto.com^
-||cumbaenterprise.com^
 ||cumbakery.com^
 ||cumbang.com^
 ||cumbatarena.com^
@@ -60858,6 +60858,7 @@
 ||rupnagarpolice.com^
 ||rupo-share.biz^
 ||ruporn.cc^
+||ruporn.mobi^
 ||ruporno.me^
 ||ruporno.net^
 ||ruporno.org^
@@ -64889,6 +64890,7 @@
 ||sexygand.com^
 ||sexygat.com^
 ||sexygatasnaweb.com.br^
+||sexygayporn.net^
 ||sexygaysex.click^
 ||sexygayxxxmovies.click^
 ||sexyge.com^
