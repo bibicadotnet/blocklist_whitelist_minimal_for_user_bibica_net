@@ -16,6 +16,15 @@
 #
 # Biến môi trường: FORCE_UPDATE=true|false, GITHUB_REPOSITORY, GITHUB_EVENT_NAME
 # =============================================================================
+# =============================================================================
+# NGOẠI LỆ: KHÔNG CHẶN  -  thêm domain vào đây, áp dụng cho TẤT CẢ bộ lọc
+# Mỗi dòng 1 domain (không cần @@ hay ||). Domain con cũng được cho phép theo.
+# Sửa danh sách này là lần chạy sau tự ghi lại toàn bộ bộ lọc.
+# =============================================================================
+ALLOW_DOMAINS=(
+  "pagead2.googlesyndication.com"   # tránh một số trang bypass Adblock cảnh báo nhầm
+)
+
 set -Eeuo pipefail
 export LC_ALL=C
 
@@ -31,13 +40,14 @@ WHITE_OUT="whitelist.txt"
 TTL_VALID=$((7 * 86400))   # domain resolve được: kiểm tra lại sau 7 ngày
 TTL_DEAD=$((1 * 86400))    # domain NXDOMAIN: kiểm tra lại sau 1 ngày (phòng domain sống lại)
 TTL_UNKNOWN=$((1 * 86400)) # không có kết luận (timeout/SERVFAIL): giữ rule, thử lại sau 1 ngày
-RATE_A=500                 # số truy vấn đồng thời, nhóm resolver A
-RATE_B=300                 # số truy vấn đồng thời, nhóm resolver B (xác nhận)
+RATE_A=800                 # số truy vấn đồng thời, nhóm resolver A
+RATE_B=200                 # số truy vấn đồng thời, nhóm resolver B (xác nhận)
 MIN_ANSWER_PCT=70          # < 70% domain có phản hồi rõ ràng => coi như DNS lỗi, không ghi gì
 MAX_SHRINK_PCT=30          # list mới nhỏ hơn bản cũ > 30% => giữ bản cũ (trừ khi FORCE_UPDATE)
 
-VERSION="$(date -u +%Y.%m.%d.%H%M)"
-LAST_MODIFIED="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+# Giờ Việt Nam (GMT+7). Dùng TZ kiểu POSIX "UTC-7" (nghĩa là UTC+7) để không phụ thuộc tzdata.
+VERSION="$(TZ='UTC-7' date +%Y.%m.%d.%H%M)"
+LAST_MODIFIED="$(TZ='UTC-7' date '+%d/%m/%Y at %I:%M %p')"   # vd: 09/12/2023 at 02:25 PM
 HZ="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock"
 
 # --- Nguồn của blocklists.txt / whitelist.txt (gộp) --------------------------
@@ -216,6 +226,22 @@ AWK
 
 normalize() { awk -v force_allow="${1:-0}" -f "$WORK/normalize.awk"; }
 
+# Chuyển ALLOW_DOMAINS thành rule @@||domain^ (dạng đã gắn tiền tố DOMAIN|)
+build_allow_rules() {
+  local d
+  : > "$WORK/allow.rules"
+  for d in ${ALLOW_DOMAINS[@]+"${ALLOW_DOMAINS[@]}"}; do
+    d="$(tr 'A-Z' 'a-z' <<< "$d")"
+    if [[ "$d" =~ ^[a-z0-9_]([a-z0-9_-]*[a-z0-9_])?(\.[a-z0-9_]([a-z0-9_-]*[a-z0-9_])?)+$ ]]; then
+      echo "DOMAIN|@@||$d^" >> "$WORK/allow.rules"
+    else
+      warn "ALLOW_DOMAINS: '$d' không phải domain hợp lệ, bỏ qua"
+    fi
+  done
+  sort -u -o "$WORK/allow.rules" "$WORK/allow.rules"
+  echo "Ngoại lệ không chặn: $(wc -l < "$WORK/allow.rules") domain"
+}
+
 # =============================================================================
 # Tải nguồn
 # =============================================================================
@@ -250,7 +276,8 @@ prepare() {
     warn "$out: nguồn không có rule hợp lệ nào, giữ nguyên file cũ"
     return 0
   fi
-  md5="$(md5sum "$tagged" | awk '{print $1}')"
+  # MD5 gồm cả danh sách ngoại lệ: đổi ALLOW_DOMAINS thì list tự được ghi lại
+  md5="$({ cat "$tagged" "$WORK/allow.rules"; } | md5sum | awk '{print $1}')"
   [[ -f "$out" ]] && old="$(header_value "$out" "Source MD5")"
   if [[ "$SKIP_MD5" != 1 && "$md5" == "$old" ]]; then
     echo "= $out: nguồn không đổi, bỏ qua"
@@ -467,6 +494,9 @@ finalize_pending() {
       { d = $0; sub(/^DOMAIN\|(@@)?\|\|?/, "", d); sub(/\^$/, "", d); if (!(d in dead)) print }
     ' "$WORK/dead.txt" "$file" > "$WORK/filtered.rules"
 
+    # 1b. Thêm ngoại lệ "không chặn" (sau bước lọc DNS nên không bị loại nhầm)
+    cat "$WORK/allow.rules" >> "$WORK/filtered.rules"
+
     # 2. Loại rule thừa, bỏ tiền tố, sắp xếp
     awk -f "$WORK/final_dedup.awk" "$WORK/filtered.rules" "$WORK/filtered.rules" \
       | sed -E 's/^(DOMAIN|RAW)\|//' | sort -u > "$WORK/body.rules"
@@ -488,6 +518,7 @@ main() {
   mkdir -p "$DL" "$WORK/pending"
   : > "$WORK/pending.tsv"
   write_awk_scripts
+  build_allow_rules
 
   # SKIP_MD5=1: xử lý lại mọi list dù nguồn không đổi
   #   - FORCE_UPDATE=true (chạy tay)
