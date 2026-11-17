@@ -59,14 +59,14 @@ REMOTE_LISTS=(
   "hagezi_ultimate.txt|$HZ/ultimate.txt|HaGeZi Multi ULTIMATE: Maximum protection (most aggressive)|Strictest HaGeZi multi list. Blocks ads, trackers, telemetry, phishing, malware, scams and more, including popular trackers. Can break some apps or websites, only use it if you know how to whitelist."
   "hagezi_tif_medium.txt|$HZ/tif.medium.txt|HaGeZi Threat Intelligence Feeds (Medium): Malware and phishing protection|Medium-sized threat intelligence list built from the most important feeds. Targets malware, phishing, scam and other threat domains, not general ads."
   "hagezi_nsfw.txt|$HZ/nsfw.txt|HaGeZi NSFW: Adult content blocker|Blocks adult (NSFW) content domains. Does not block ads or trackers."
-  "stevenblack_unified.txt|https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts|StevenBlack Unified Hosts: Adware and malware|Unified hosts file from StevenBlack, merged from reputable ad, tracker and malware sources. Hosts entries are kept as exact-match rules (|domain^), so subdomains are not blocked."
-  "velesila_yhosts.txt|https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts|VeleSila yhosts: Chinese ads, trackers and malware|Hosts file maintained by VeleSila that blocks Chinese ads, trackers, telemetry and malicious domains. Hosts entries are kept as exact-match rules (|domain^), so subdomains are not blocked."
+  "stevenblack_unified.txt|https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts|StevenBlack Unified Hosts: Adware and malware|Unified hosts file from StevenBlack, merged from reputable ad, tracker and malware sources."
+  "velesila_yhosts.txt|https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts|VeleSila yhosts: Chinese ads, trackers and malware|Hosts file maintained by VeleSila that blocks Chinese ads, trackers, telemetry and malicious domains."
   "oisd_big.txt|https://big.oisd.nl|OISD Big: Ads, trackers, phishing and malware|Large, actively maintained list that blocks ads, trackers, phishing, malware and scam domains while aiming to avoid false positives."
   "oisd_nsfw.txt|https://nsfw.oisd.nl|OISD NSFW: Adult content blocker|OISD list that blocks adult (NSFW) content domains. Does not block ads or trackers."
 )
 
 MERGED_BLOCK_TITLE="Blocklist (ABPVN + AdGuard DNS + 1Hosts Lite)"
-MERGED_BLOCK_DESC="Ads, trackers and malware domains merged from AdGuard DNS filter, ABPVN (Vietnamese ads), 1Hosts Lite and bibicadotnet's custom list (CocCoc, MSN, DNS canary). Hosts-style entries are kept as exact-match rules (|domain^)."
+MERGED_BLOCK_DESC="Ads, trackers and malware domains merged from AdGuard DNS filter, ABPVN (Vietnamese ads), 1Hosts Lite and bibicadotnet's custom list (CocCoc, MSN, DNS canary)."
 MERGED_WHITE_TITLE="Whitelist (ShadowWhisperer)"
 MERGED_WHITE_DESC="Exception rules that prevent false positives. Merged from bibicadotnet's manual allowlist, ShadowWhisperer's whitelist and the @@ exceptions found in the source blocklists. Use together with blocklists.txt."
 
@@ -334,7 +334,7 @@ resolve_domains() {
   printf '%s\n' 1.1.1.1 1.0.0.1 > "$WORK/resolvers_b.txt"   # không dùng Quad9: nó tự chặn domain độc hại bằng NXDOMAIN
 
   # Gom domain của tất cả list đang chờ
-  { cat "$WORK"/pending/*.rules | grep '^DOMAIN|' || true; } \
+  { grep -h '^DOMAIN|' "$WORK"/pending/*.rules || true; } \
     | sed -E 's/^DOMAIN\|(@@)?\|\|?//; s/\^$//' | sort -u > "$WORK/domains.txt"
   echo "Tổng domain cần kiểm tra (đã gộp mọi list): $(wc -l < "$WORK/domains.txt")"
 
@@ -436,7 +436,7 @@ write_list() {
     {
       echo "[Adblock Plus 2.0]"
       echo "! Title: $title"
-      echo "! Description: $desc Unresolvable domains removed (checked via massdns)."
+      echo "! Description: $desc"
       echo "! Version: $VERSION"
       echo "! Last modified: $LAST_MODIFIED"
       echo "! Expires: 12 hours (update frequency)"
