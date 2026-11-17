@@ -1,14 +1,14 @@
 [Adblock Plus 2.0]
 ! Title: Blocklist (ABPVN + AdGuard DNS + 1Hosts Lite)
 ! Description: Ads, trackers and malware domains merged from AdGuard DNS filter, ABPVN (Vietnamese ads), 1Hosts Lite and bibicadotnet's custom list (CocCoc, MSN, DNS canary).
-! Version: 2026.11.17.1000
-! Last modified: 17/11/2026 at 10:00 AM
+! Version: 2026.11.17.1128
+! Last modified: 17/11/2026 at 11:28 AM
 ! Expires: 12 hours (update frequency)
-! Source MD5: e9b30833577d834b163b7660cb3162d5
+! Source MD5: f6b096694cc5101c061fdcc5f190286e
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/blocklists.txt
 ! Syntax: AdGuard
-! Number of entries: 227722
+! Number of entries: 227743
 ! Size: 5.21 MB
 !
 *ad.durasite.net^
@@ -19,9 +19,6 @@
 -ulog.*.kwai-pro.com^
 -ulog.*.kwaipros.com^
 -ulogl*.kwai-pro.com^
-/(https?:\/\/)213\.32\.115\..{100,}/
-/(https?:\/\/)217\.182\.11\..{100,}/
-/(https?:\/\/)51\.195\.31\..{100,}/
 /193.200.64.24:/
 /62.76.25.2(7|8)/
 /^(a|c)\.[0-9a-f]{56}\.com$/
@@ -38,8 +35,6 @@
 /^94\.242\.247\.(2[0-9]|3[0-2])/
 /^94\.242\.247\.(2[0-9]|3[0-2]):/
 /^anon1.gt\d{6}.com$/
-/^https:\/\/(a|c)\.[0-9a-f]{56}\.com$/
-/^https:\/\/anon1.gt\d{6}.com/
 @@||pagead2.googlesyndication.com^
 analytics-*.aasaam.com
 wykop.pl$badfilter
@@ -20389,6 +20384,7 @@ wykop.pl$badfilter
 ||ancientmurine.com^
 ||ancientsnow.com^
 ||anciliasowfutural.cfd^
+||ancilladysnomyangles.cfd^
 ||ancillammmm.com^
 ||ancqie.finanztrends.info^
 ||ancykwplparfu.website^
@@ -27693,6 +27689,7 @@ wykop.pl$badfilter
 ||bczaq.quikcamo.com^
 ||bcznrf.paprcuts.de^
 ||bczro.boxhill.co.nz^
+||bczyozzodvlit.space^
 ||bd-adaptive.pull.yximgs.com^
 ||bd-livemate.pull.yximgs.com^
 ||bd-origin.pull.yximgs.com^
@@ -37315,6 +37312,7 @@ wykop.pl$badfilter
 ||ckaibkxlldgui.site^
 ||ckaoqzkpod.in^
 ||ckauyijrivige.site^
+||ckbjldzhgicne.site^
 ||ckbwbclddktqr.space^
 ||ckcikq.dondup.com^
 ||ckct.ru^
@@ -42227,6 +42225,7 @@ wykop.pl$badfilter
 ||cpxinteractive.com^
 ||cpxl.golem.de^
 ||cpxzyul.com^
+||cpzavqapdxjqz.space^
 ||cpzylv.jetcost.co.za^
 ||cq0.co^
 ||cq1.contequebec.ca^
@@ -55180,6 +55179,7 @@ wykop.pl$badfilter
 ||djs.baomihua.com^
 ||djsalcbhew47.lol^
 ||djtciijwpgrxx.online^
+||djtifbpdu.com^
 ||djucew6ul1t0k.cloudfront.net^
 ||djummer.com^
 ||djuqmseuelmct.site^
@@ -56681,6 +56681,7 @@ wykop.pl$badfilter
 ||dscenn.com^
 ||dsceri.com^
 ||dscex7u1h4a9a.cloudfront.net^
+||dscfli.com^
 ||dscga.diveshopcuracao.com^
 ||dscgcu.com^
 ||dscgz.bulletjournal.com^
@@ -56736,6 +56737,7 @@ wykop.pl$badfilter
 ||dsetx3.com^
 ||dseukg.com^
 ||dseyzk.com^
+||dsezzn.com^
 ||dsfdzo.com^
 ||dsfixu.com^
 ||dsfjcz.com^
@@ -67551,6 +67553,7 @@ wykop.pl$badfilter
 ||fmmeesqlnspbb.website^
 ||fmmxfomnbpisz.space^
 ||fmnboblykckin.website^
+||fmnlvucnsepeg.website^
 ||fmnmuuo7c.com^
 ||fmnoa.rarecarat.com^
 ||fmnoaqebhe.com^
@@ -67614,6 +67617,7 @@ wykop.pl$badfilter
 ||fngwdl.allheart.com^
 ||fnhryddxsfvyv.site^
 ||fnimszzhutvpo.website^
+||fnixizwtxbgtk.online^
 ||fnjdphpor.com^
 ||fnjtzyenumtxd.space^
 ||fnkejfbxhvkox.website^
@@ -69111,6 +69115,7 @@ wykop.pl$badfilter
 ||ftflqcbjxbonu.space^
 ||ftg3ppp04u-3.net.mydays.de^
 ||ftgqp.mybeautyexchange.com^
+||fthtekeprokcb.website^
 ||ftjcfx.com^
 ||ftjgfjeg.rain.co.za^
 ||ftkhknxsfimhp.site^
@@ -72115,6 +72120,7 @@ wykop.pl$badfilter
 ||gjiruqrsnzrsi.store^
 ||gjiympgypuqkl.space^
 ||gjj.mybluehost.me^
+||gjjhudchozspp.website^
 ||gjjtey.mystylebags.it^
 ||gjk1sc9o2.com^
 ||gjkha.beautyandtheboutique.com^
@@ -73573,6 +73579,7 @@ wykop.pl$badfilter
 ||godpvqnszo.com^
 ||godroonrefrig.com^
 ||godsave.lgbt^
+||godsonrusts.com^
 ||godvd.cleansimpleeats.com^
 ||goe.edm.globalsources.com^
 ||goeco.mobi^
@@ -86030,6 +86037,7 @@ wykop.pl$badfilter
 ||ifsau-in.coloros.com^
 ||ifsau.coloros.com^
 ||ifsec.ubm-events.com^
+||iftiifyaodbek.online^
 ||iftqaq.benerent.com^
 ||iftuzvnyudfus.online^
 ||ifuqpatr.com^
@@ -92297,6 +92305,7 @@ wykop.pl$badfilter
 ||jkvoqhtethcvl.space^
 ||jkwdsl.videt.ro^
 ||jkwybt9hc.com^
+||jkx1w6el24tb2fbccq2tz8ltehc4j8.cfd^
 ||jkxihdymwxueh.space^
 ||jkxlzrxhtqrdr.online^
 ||jky.mybluehost.me^
@@ -109966,6 +109975,7 @@ wykop.pl$badfilter
 ||magicaljoin.com^
 ||magicallypenitentiary.com^
 ||magicalpiano.com^
+||magicalrecord.info^
 ||magicbell.com^
 ||magiccandles.eu^
 ||magiceyes.igealasanitaria.it^
@@ -125402,6 +125412,7 @@ wykop.pl$badfilter
 ||ngoahotanglong.vn^
 ||ngowvulz.com^
 ||ngpao.mesotheliomaveterans.org^
+||ngpxthejwqrak.site^
 ||ngqedenika.com^
 ||ngqljdqitwjgd.online^
 ||ngsekdkrkwixb.site^
@@ -131027,6 +131038,7 @@ wykop.pl$badfilter
 ||ohl8.j2nt9i6wbey18eyrve3rmm27jx8lkr.cyou^
 ||ohlanaizn.com^
 ||ohldfugmwlllb.online^
+||ohldghxfcaupj.online^
 ||ohldsplu.com^
 ||ohlladamnak.in^
 ||ohmageochred.com^
@@ -156419,6 +156431,7 @@ wykop.pl$badfilter
 ||seodatamanage.com^
 ||seogift.ru^
 ||seogreat.net^
+||seojifolqvzik.online^
 ||seomaster.com.br^
 ||seomonitor.ro^
 ||seomoz.org^
@@ -165985,6 +165998,7 @@ wykop.pl$badfilter
 ||slooshsnarer.com^
 ||slopeac.com^
 ||slopeaota.com^
+||slopedcharter.com^
 ||slopepointlesstin.com^
 ||slopesoap.com^
 ||slos.slobisporemodelers.com^
@@ -191955,6 +191969,7 @@ wykop.pl$badfilter
 ||stw.tirexo.gold^
 ||stw.zone-telechargement.
 ||stwg.wishup.gifts^
+||stwjnsbnfckka.space^
 ||stx.startax.it^
 ||style.lighthouseink.de^
 ||style.onvz.nl^
@@ -200343,6 +200358,7 @@ wykop.pl$badfilter
 ||touao.thesewingstudio.co.uk^
 ||toucan.ateliermilky.com^
 ||toucan.the-faithful.com^
+||toucanmaple.biz^
 ||toucanmaple.pro^
 ||touch-moblie.com^
 ||touch.brouwers-bedding.nl^
@@ -210293,6 +210309,7 @@ wykop.pl$badfilter
 ||urmoaztq.www.bayesian.co^
 ||urnki.pjsalvage.com^
 ||urnstallols.com^
+||urntppvexpflh.website^
 ||urnvloeigdtzk.site^
 ||urnwhereabouts.com^
 ||urologyperoses.com^
@@ -212629,6 +212646,7 @@ wykop.pl$badfilter
 ||vesuvinaqueity.top^
 ||vet.mexicoveterinario.com.mx^
 ||veta.naver.com^
+||vetbcuibwqjpu.online^
 ||vetchesthiever.com^
 ||vetedo.my^
 ||veterancommentary.com^
@@ -222911,6 +222929,7 @@ wykop.pl$badfilter
 ||xscueumaijhmk.website^
 ||xscwpv.camping-des-alberes.com^
 ||xscwsgdmgnjfo.space^
+||xsdnb.com^
 ||xsdsemgyxukwx.space^
 ||xsdsr.whatgoesaroundnyc.com^
 ||xse5vfg6.micpn.com^
@@ -224558,6 +224577,7 @@ wykop.pl$badfilter
 ||ynwibbkll.com^
 ||ynwqna.mayblue.co.kr^
 ||ynwsxvtfm.com^
+||ynwulhrmqrgnq.site^
 ||ynxkrnzsgnrfd.online^
 ||ynylicdrkzbtp.space^
 ||ynzhby.com^
@@ -224934,6 +224954,7 @@ wykop.pl$badfilter
 ||ys73fwrg.xyz^
 ||ysa.mybluehost.me^
 ||ysaaks.mobiauto.com.br^
+||ysadumvcqjihy.website^
 ||ysafcv.auto-platinium.com^
 ||ysaohbqahvvyq.online^
 ||ysarhyrgeanij.site^

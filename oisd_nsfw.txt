@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: OISD NSFW: Adult content blocker
 ! Description: OISD list that blocks adult (NSFW) content domains. Does not block ads or trackers.
-! Version: 2026.11.17.1000
-! Last modified: 17/11/2026 at 10:00 AM
+! Version: 2026.11.17.1128
+! Last modified: 17/11/2026 at 11:28 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://nsfw.oisd.nl
-! Source MD5: 0071f3e173b907f95df1774e4d21a14a
+! Source MD5: 47f52afbd7bf6b5524e50e8bc519672c
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/oisd_nsfw.txt
 ! Syntax: AdGuard
-! Number of entries: 487661
+! Number of entries: 487664
 ! Size: 9.61 MB
 !
 @@||pagead2.googlesyndication.com^
@@ -103405,6 +103405,7 @@
 ||congtydaukhihoaphat.online^
 ||congtydichvuthamtusaigon.net^
 ||congxiashangmao.com^
+||congxinjj.com^
 ||congzhijianchuanchuderenzhendereqing.cn^
 ||congzhijianchuanchuderenzhendereqing.org.cn^
 ||conhdvsk.lol^
@@ -348416,6 +348417,7 @@
 ||qlg006.sbs^
 ||qlgouwu.com^
 ||qlh396.sbs^
+||qlhfx.com^
 ||qlhwealth.com^
 ||qlink777.blogspot.com^
 ||qlintang.com^
@@ -485305,6 +485307,7 @@
 ||zjlvfeng.com^
 ||zjlvsen.com^
 ||zjm700.sbs^
+||zjmaite.com^
 ||zjmczx.com^
 ||zjmtdmc4s.com^
 ||zjmxfm.com^
