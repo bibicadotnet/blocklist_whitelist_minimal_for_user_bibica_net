@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: Whitelist (ShadowWhisperer)
 ! Description: Exception rules that prevent false positives. Merged from bibicadotnet's manual allowlist, ShadowWhisperer's whitelist and the @@ exceptions found in the source blocklists. Use together with blocklists.txt.
-! Version: 2026.11.17.1128
-! Last modified: 17/11/2026 at 11:28 AM
+! Version: 2026.11.18.0123
+! Last modified: 18/11/2026 at 01:23 AM
 ! Expires: 12 hours (update frequency)
-! Source MD5: b68ef7b3dde89247fa3e7a56c27dec01
+! Source MD5: 837cddbf5720c2b9514c45c4f6fcc44c
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/whitelist.txt
 ! Syntax: AdGuard
-! Number of entries: 888
-! Size: 24.2 KB
+! Number of entries: 916
+! Size: 24.7 KB
 !
 @@-ds.metric.gstatic.com^|
 @@|ads.adsterra.com^|
@@ -32,6 +32,7 @@
 @@|statcounter.com^|
 @@|www.daraz.pk^|
 @@|www3.doubleclick.net^|
+@@||3gppnetwork.org^
 @@||5471782.fls.doubleclick.net^|
 @@||79423.analytics.edgekey.net^|
 @@||7eer.net^
@@ -124,7 +125,6 @@
 @@||appboot.netflix.com^
 @@||appldnld.apple.com.akadns.net^
 @@||appldnld.apple.com^
-@@||appldnld^
 @@||appleid.apple.com.akadns.net^
 @@||appleid.cdn-apple.com^
 @@||aps-web.adobe.io^
@@ -155,13 +155,17 @@
 @@||awstrack.me^
 @@||awsusor0.fds.api.xiaomi.com^
 @@||b-graph.facebook.com^
+@@||b.barracudacentral.org^
 @@||b.c2r.ts.cdn.office.net^
+@@||backscatterer.org^
 @@||bag.itunes.apple.com^
 @@||bam-sdk-configs.bamgrid.com^
 @@||bcicl.*.evergage.com^|
 @@||belgium.wolterskluwer.com^|
 @@||bit.ly^
 @@||bitwarden.com^
+@@||bl.blocklist.de^
+@@||bl.spamcop.net^
 @@||blob.officehome.msocdn.com^
 @@||blobs.officehome.msocdn.com^
 @@||blocklist.addons.mozilla.org^
@@ -293,10 +297,12 @@
 @@||dellupdater.dell.com^
 @@||deposit.us.shopifycs.com^
 @@||device.auth.xboxlive.com^
+@@||direct.quickconnect.to^
 @@||directory.id.hp.com^
 @@||disc-prod.iot.irobotapi.com^
 @@||discover-pa.googleapis.com^
 @@||discovery.services.gearboxsoftware.com^
+@@||dishy.starlink.com^
 @@||disney.api.edge.bamgrid.com^
 @@||disney.content.edge.bamgrid.com^
 @@||disney.images.edge.bamgrid.com^
@@ -304,8 +310,11 @@
 @@||dl.dropboxusercontent.com^
 @@||dl.google.com^
 @@||dmp.mgapex.com^
+@@||dnsbl.dronebl.org^
+@@||dnswl.org^
 @@||dpbolvw.net^
 @@||dpservice.fidelity.com^
+@@||dq.spamhaus.net^
 @@||dsm-efz.ms-acdc.office.com^
 @@||dts.podtrac.com^
 @@||dyncdn.me^
@@ -423,11 +432,13 @@
 @@||guce.advertising.com^|
 @@||gue1-spclient.spotify.com^
 @@||halostats.svc.halowaypoint.com^
+@@||hash.cymru.com^
 @@||hb.afl.rakuten.co.jp^|
 @@||health.halodoc.com^|
 @@||hidive.com^|
 @@||home.focusatwill.com^|
 @@||honzik.avcdn.net^
+@@||hostkarma.junkemailfilter.com^
 @@||href.li^|
 @@||http-a-darwin.hulustream.com^
 @@||http-fa-darwin.hulustream.com^
@@ -451,9 +462,12 @@
 @@||init.itunes.apple.com^
 @@||insideruser.microsoft.com^
 @@||intersport.peerius.com^|
+@@||ip-api.com^
 @@||iplocate.io^
 @@||ipqs.com^
 @@||ipv4.google.com^
+@@||ipv4only.arpa^
+@@||ipwho.is^
 @@||ir.ebaystatic.com^
 @@||iris06-gold-ssl.gameloft.com^
 @@||itop.mgapex.com^
@@ -513,6 +527,8 @@
 @@||ls.apple.com^
 @@||ma135-r.analytics.edgekey.net^|
 @@||mach-100.ebay.com^
+@@||mail.abusix.zone^
+@@||mailspike.net^
 @@||main.prod.marketplacepartnerdirectory.azure.com^
 @@||mandrillapp.com^
 @@||mapsmobilesdks-pa.googleapis.com^
@@ -554,6 +570,7 @@
 @@||my-win.avast.com^
 @@||my.microsoftpersonalcontent.com^
 @@||my.tealiumiq.com^|
+@@||myunraid.net^
 @@||n-device-api.tplinkcloud.com^
 @@||n-use1-dw.tplinkcloud.com^
 @@||n-use1-wap.i.tplinkcloud.com^
@@ -568,6 +585,7 @@
 @@||news.warhammer.com^|
 @@||next-services.apps.microsoft.com^
 @@||nineto5mac-d.openx.net^|
+@@||nordspam.com^
 @@||notifications-pa.googleapis.com^
 @@||nrdp52-appboot.netflix.com^
 @@||nsf-2.dropbox.com^
@@ -624,7 +642,6 @@
 @@||ping.avast.com^
 @@||ping.ubnt.com^
 @@||ping.ui.com^
-@@||ping1.tnt-ea.com^
 @@||pixelweatherhub-pa.googleapis.com^
 @@||pjtra.com^
 @@||pki-goog.l.google.com^
@@ -633,6 +650,7 @@
 @@||play.itunes.apple.com^
 @@||player-services.pluto.tv^
 @@||playstoregatewayadapter-pa.googleapis.com^
+@@||plex.direct^
 @@||points.coccoc.com^
 @@||pp.userapi.com^
 @@||preview.page.link^
@@ -651,6 +669,7 @@
 @@||proto2ad.durasite.net^|
 @@||provision.ccs.mcafee.com^
 @@||proxy.novafusion.ea.com^
+@@||psbl.surriel.com^
 @@||pt.afl.rakuten.co.jp^|
 @@||public-cis.exponea.com^|
 @@||pulsar.ebay.com^
@@ -739,8 +758,12 @@
 @@||smtp.focusgroupresearch.com^|
 @@||smtp.mail.yahoo.com^
 @@||social.cdn.ubisoft.com^
+@@||sophosxl.net^
 @@||sp.auth.adobe.com^
 @@||sp.pluto.tv^
+@@||spameatingmonkey.net^
+@@||spamhaus.org^
+@@||spamrats.com^
 @@||spartaindependent.com^|
 @@||spclient.wg.spotify.com^
 @@||sponsor.nitropay.com^|
@@ -774,6 +797,7 @@
 @@||support-beacon.nakanohito.jp^|
 @@||support-widget.nakanohito.jp^|
 @@||supportkb.dell.com^
+@@||surbl.org^
 @@||surveymyopinion.researchnow.com^|
 @@||sus.sophosupd.com^
 @@||swasc.homedepot.com^|
@@ -814,6 +838,8 @@
 @@||tms.capitalone.com^|
 @@||tolt.io^
 @@||tools.google.com^
+@@||tor.dan.me.uk^
+@@||torexit.dan.me.uk^
 @@||torimochi.line-apps.com^|
 @@||tr.rdrtr.com^|
 @@||track.aftership.com^
@@ -832,6 +858,7 @@
 @@||tsfe.trafficshaping.dsp.mp.microsoft.com^
 @@||uapi.adrise.tv^
 @@||ubiquiti.ada.support^
+@@||uceprotect.net^
 @@||ues.svc.ui.com^
 @@||ui-backend.id.hp.com^
 @@||ui-backend.us-east-1.id.hp.com^
@@ -849,6 +876,7 @@
 @@||update.coccoc.com^
 @@||update.microsoft.com^
 @@||updatekeepalive.mcafee.com^
+@@||uribl.com^
 @@||us1.api.ws-hp.com^
 @@||used.ca^|
 @@||user.auth.xboxlive.com^
