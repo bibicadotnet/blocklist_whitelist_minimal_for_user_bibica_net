@@ -129,6 +129,7 @@ function valid_dns_modifiers(mod_str,    n, arr, i, m, key) {
 
   # 1. Regex: /re/, @@/re/, /re/$modifiers  (xử lý trước khi cắt comment vì regex có thể chứa #)
   if (raw ~ /^(@@)?\/.*\/(\$[^[:space:]]*)?$/) {
+    if (raw ~ /https?:|\\\//) next            # bỏ regex URL/path (chỉ dùng cho trình duyệt, DNS không lọc được)
     if (raw ~ /\/\$/) {
       mod_part = raw; sub(/^.*\/\$/, "", mod_part)
       if (!valid_dns_modifiers(mod_part)) next
