@@ -1,17 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Multi ULTIMATE: Maximum protection (most aggressive)
 ! Description: Strictest HaGeZi multi list. Blocks ads, trackers, telemetry, phishing, malware, scams and more, including popular trackers. Can break some apps or websites, only use it if you know how to whitelist.
-! Version: 2026.11.17.0235
-! Last modified: 2026-11-17T02:35:41Z
+! Version: 2026.11.17.1000
+! Last modified: 17/11/2026 at 10:00 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt
-! Source MD5: 3530a3be15fcdd6382bf5ae943c1eb33
+! Source MD5: 4624aa928e48f3c8f021267f83055b38
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_ultimate.txt
 ! Syntax: AdGuard
-! Number of entries: 293134
+! Number of entries: 293135
 ! Size: 6.39 MB
 !
+@@||pagead2.googlesyndication.com^
 ||0--4.com^
 ||0--d.com^
 ||0-0-0-0-0-0-0-0-0-0-0-0-0-18-0-0-0-0-0-0-0-0-0-0-0-0-0.info^

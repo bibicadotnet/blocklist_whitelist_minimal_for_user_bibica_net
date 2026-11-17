@@ -1,17 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Multi LIGHT: Basic protection (ads, trackers, telemetry)
 ! Description: Lightweight list that blocks ads, trackers, metrics, telemetry and some badware with minimal breakage. Best for weak devices or when no admin is around to unblock things.
-! Version: 2026.11.17.0235
-! Last modified: 2026-11-17T02:35:41Z
+! Version: 2026.11.17.1000
+! Last modified: 17/11/2026 at 10:00 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt
-! Source MD5: 2b6347892d5a876b5a13d4377265765e
+! Source MD5: 21ddd397cbea09f5ac6aa7090b9ea43a
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_light.txt
 ! Syntax: AdGuard
-! Number of entries: 91117
+! Number of entries: 91118
 ! Size: 2.13 MB
 !
+@@||pagead2.googlesyndication.com^
 ||0--d.com^
 ||0-02.net^
 ||0-btc.com^

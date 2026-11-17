@@ -1,14 +1,14 @@
 [Adblock Plus 2.0]
 ! Title: Blocklist (ABPVN + AdGuard DNS + 1Hosts Lite)
 ! Description: Ads, trackers and malware domains merged from AdGuard DNS filter, ABPVN (Vietnamese ads), 1Hosts Lite and bibicadotnet's custom list (CocCoc, MSN, DNS canary).
-! Version: 2026.11.17.0235
-! Last modified: 2026-11-17T02:35:41Z
+! Version: 2026.11.17.1000
+! Last modified: 17/11/2026 at 10:00 AM
 ! Expires: 12 hours (update frequency)
-! Source MD5: bf24cd30bc7b5abc15783b250fa5a753
+! Source MD5: e9b30833577d834b163b7660cb3162d5
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/blocklists.txt
 ! Syntax: AdGuard
-! Number of entries: 227721
+! Number of entries: 227722
 ! Size: 5.21 MB
 !
 *ad.durasite.net^
@@ -40,6 +40,7 @@
 /^anon1.gt\d{6}.com$/
 /^https:\/\/(a|c)\.[0-9a-f]{56}\.com$/
 /^https:\/\/anon1.gt\d{6}.com/
+@@||pagead2.googlesyndication.com^
 analytics-*.aasaam.com
 wykop.pl$badfilter
 |1-1ads.com^

@@ -1,17 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi NSFW: Adult content blocker
 ! Description: Blocks adult (NSFW) content domains. Does not block ads or trackers.
-! Version: 2026.11.17.0235
-! Last modified: 2026-11-17T02:35:41Z
+! Version: 2026.11.17.1000
+! Last modified: 17/11/2026 at 10:00 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt
-! Source MD5: 51cf4d144783345a698cafcc8ed43130
+! Source MD5: 677f66608d57b149e13d47d128440839
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_nsfw.txt
 ! Syntax: AdGuard
-! Number of entries: 84401
+! Number of entries: 84402
 ! Size: 1.55 MB
 !
+@@||pagead2.googlesyndication.com^
 ||0-0.asia^
 ||0001xhamster.com^
 ||001dh.top^

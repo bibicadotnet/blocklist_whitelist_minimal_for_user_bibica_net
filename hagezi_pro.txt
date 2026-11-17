@@ -1,17 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Multi PRO: Extended protection (recommended)
 ! Description: Larger list that blocks ads, trackers, telemetry, phishing, malware, scams, fakes and cryptojacking. Good balance of coverage and few false positives.
-! Version: 2026.11.17.0235
-! Last modified: 2026-11-17T02:35:41Z
+! Version: 2026.11.17.1000
+! Last modified: 17/11/2026 at 10:00 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt
-! Source MD5: f3572a6757fbdf9123061811df3e6d89
+! Source MD5: 8d7203f243420507abfb3d0a0d5971fd
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_pro.txt
 ! Syntax: AdGuard
-! Number of entries: 238613
+! Number of entries: 238614
 ! Size: 5.22 MB
 !
+@@||pagead2.googlesyndication.com^
 ||0--4.com^
 ||0--d.com^
 ||0-0-0-0-0-0-0-0-0-0-0-0-0-18-0-0-0-0-0-0-0-0-0-0-0-0-0.info^

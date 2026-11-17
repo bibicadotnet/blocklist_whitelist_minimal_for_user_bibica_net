@@ -1,17 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: StevenBlack Unified Hosts: Adware and malware
 ! Description: Unified hosts file from StevenBlack, merged from reputable ad, tracker and malware sources.
-! Version: 2026.11.17.0235
-! Last modified: 2026-11-17T02:35:41Z
+! Version: 2026.11.17.1000
+! Last modified: 17/11/2026 at 10:00 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-! Source MD5: e58cbd8c61b9bf475a85627efca8e950
+! Source MD5: cadc6edc4fbeecbb452345055f7265de
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/stevenblack_unified.txt
 ! Syntax: AdGuard
-! Number of entries: 51517
+! Number of entries: 51518
 ! Size: 1.10 MB
 !
+@@||pagead2.googlesyndication.com^
 |0.ackzany.com^
 |0.athwartwhoafat.com^
 |0.blissfullyzebra.com^

@@ -1,17 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Multi NORMAL: All-round protection
 ! Description: Balanced list that blocks ads, trackers, telemetry, phishing, malware, scams, fakes and cryptojacking. Rarely causes breakage.
-! Version: 2026.11.17.0235
-! Last modified: 2026-11-17T02:35:41Z
+! Version: 2026.11.17.1000
+! Last modified: 17/11/2026 at 10:00 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt
-! Source MD5: 55b3ec1fffcb1e41496f70fa0f101bec
+! Source MD5: 03bde13a92662c4c16427e9040eea492
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_multi.txt
 ! Syntax: AdGuard
-! Number of entries: 181914
+! Number of entries: 181915
 ! Size: 3.99 MB
 !
+@@||pagead2.googlesyndication.com^
 ||0--d.com^
 ||0-02.net^
 ||0-btc.com^

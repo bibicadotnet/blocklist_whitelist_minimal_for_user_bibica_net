@@ -1,17 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: OISD Big: Ads, trackers, phishing and malware
 ! Description: Large, actively maintained list that blocks ads, trackers, phishing, malware and scam domains while aiming to avoid false positives.
-! Version: 2026.11.17.0235
-! Last modified: 2026-11-17T02:35:41Z
+! Version: 2026.11.17.1000
+! Last modified: 17/11/2026 at 10:00 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://big.oisd.nl
-! Source MD5: 9ca6ab4c2efcac4b985ddf61e4a13bcc
+! Source MD5: 628085a46699bb924bb4379333c3401b
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/oisd_big.txt
 ! Syntax: AdGuard
-! Number of entries: 224211
+! Number of entries: 224212
 ! Size: 4.82 MB
 !
+@@||pagead2.googlesyndication.com^
 ||0--foodwarez.da.ru^
 ||0-0-2day.vercel.app^
 ||0-02.net^

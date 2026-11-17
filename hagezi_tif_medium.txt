@@ -1,17 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Threat Intelligence Feeds (Medium): Malware and phishing protection
 ! Description: Medium-sized threat intelligence list built from the most important feeds. Targets malware, phishing, scam and other threat domains, not general ads.
-! Version: 2026.11.17.0235
-! Last modified: 2026-11-17T02:35:41Z
+! Version: 2026.11.17.1000
+! Last modified: 17/11/2026 at 10:00 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt
-! Source MD5: ed657c7cb007fc2f8ad3cf3793b5d8dc
+! Source MD5: b0323611ffe69dfe775be84e0710264f
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_tif_medium.txt
 ! Syntax: AdGuard
-! Number of entries: 349987
+! Number of entries: 349988
 ! Size: 7.19 MB
 !
+@@||pagead2.googlesyndication.com^
 ||0-0-0-0-0-0-0-0-0-0-0-0-0-37-0-0-0-0-0-0-0-0-0-0-0-0-0.info^
 ||0-0.fr^
 ||0-01-1.com^

@@ -1,17 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: VeleSila yhosts: Chinese ads, trackers and malware
 ! Description: Hosts file maintained by VeleSila that blocks Chinese ads, trackers, telemetry and malicious domains.
-! Version: 2026.11.17.0235
-! Last modified: 2026-11-17T02:35:41Z
+! Version: 2026.11.17.1000
+! Last modified: 17/11/2026 at 10:00 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
-! Source MD5: fca0aaabc3d31169ee9aaf7aebe41fe5
+! Source MD5: e51cd917be485d9725cbbf638a4f180b
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/velesila_yhosts.txt
 ! Syntax: AdGuard
-! Number of entries: 4551
+! Number of entries: 4552
 ! Size: 87.6 KB
 !
+@@||pagead2.googlesyndication.com^
 |018520.com^
 |036e.cn^
 |09_19.supfree.net^
