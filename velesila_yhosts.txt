@@ -1,16 +1,16 @@
 [Adblock Plus 2.0]
 ! Title: VeleSila yhosts: Chinese ads, trackers and malware
 ! Description: Hosts file maintained by VeleSila that blocks Chinese ads, trackers, telemetry and malicious domains.
-! Version: 2026.11.17.1000
-! Last modified: 17/11/2026 at 10:00 AM
+! Version: 2026.11.19.0802
+! Last modified: 19/11/2026 at 08:02 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
 ! Source MD5: e51cd917be485d9725cbbf638a4f180b
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/velesila_yhosts.txt
 ! Syntax: AdGuard
-! Number of entries: 4552
-! Size: 87.6 KB
+! Number of entries: 4554
+! Size: 87.7 KB
 !
 @@||pagead2.googlesyndication.com^
 |018520.com^
@@ -1181,6 +1181,7 @@
 |cnzz.mmstat.com^
 |cod.southmoney.com^
 |code.37cs.com^
+|code.bianxianwu.com^
 |code.fastclick.net^
 |code.hot-mob.com^
 |codenow.cn^
@@ -1412,6 +1413,7 @@
 |dl.kjava.sina.cn^
 |dl.mbsea.com^
 |dl.skysrt.com^
+|dl.sybspools.com^
 |dl.union.ijinshan.com^
 |dl.uu.cc^
 |dlads.cn^
@@ -1562,8 +1564,6 @@
 |edp2.adriver.ru^
 |edu-ad-test-cdn.cdn.bcebos.com^
 |ee.71zrh.cn^
-|ee.89kvh.cn^
-|ee.f2z4d.cn^
 |ee.w82ph.cn^
 |eezdx.erc.18183.com^
 |ef-dongfeng.tanx.com^
@@ -1753,6 +1753,7 @@
 |girlcc.cc^
 |gload.adhood.com^
 |global.ymtracking.com^
+|gm.uc003.com^
 |gmtdmp.mookie1.com^
 |go.hangzhou.com.cn^
 |go.imgdudu.xyz^
@@ -2182,6 +2183,7 @@
 |klk.jdflower.cn^
 |kn.qzdaren.com^
 |kpshx.douguo.com^
+|kr.sybspools.com^
 |kstj.baidu.com^
 |kti.mcjjsdhfg.cn^
 |ku6.cnzz.com^
@@ -2295,7 +2297,6 @@
 |m.649649.com^
 |m.71zrh.cn^
 |m.77vcd.com^
-|m.89kvh.cn^
 |m.937920.com^
 |m.96mob.com^
 |m.acaox.com^
@@ -2330,7 +2331,6 @@
 |m.dydd.xyz^
 |m.edo5.com^
 |m.ejiur.com^
-|m.f2z4d.cn^
 |m.feisia1.cn^
 |m.focuscat.com^
 |m.game.weibo.cn^
@@ -3069,6 +3069,7 @@
 |s.ddgjjj.com^
 |s.ddstu.com^
 |s.domob.cn^
+|s.doyo.cn^
 |s.fastapi.net^
 |s.go.sohu.com^
 |s.hyz86.com^
@@ -3798,7 +3799,6 @@
 |track.hot-mob.com^
 |track.hujiang.com^
 |track.mediav.com^
-|track.recreativ.ru^
 |track.sitetag.us^
 |track.sohu.com^
 |track.tenjin.com^
@@ -3935,6 +3935,7 @@
 |urd103.analysys.cn^
 |urd345.analysys.cn^
 |urh.tylll.com^
+|uri6.com^
 |url.3400.org^
 |url.ms^
 |url.tudown.com^
@@ -4469,6 +4470,7 @@
 |xunlei.adx.admaster.com.cn^
 |xxlargepop.com^
 |xy-log2.tagtic.cn^
+|xyoss.g.com.cn^
 |xz-development.oss-cn-beijing.aliyuncs.com^
 |y.5125129.com^
 |y.da.hunantv.com^

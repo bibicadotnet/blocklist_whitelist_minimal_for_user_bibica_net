@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: StevenBlack Unified Hosts: Adware and malware
 ! Description: Unified hosts file from StevenBlack, merged from reputable ad, tracker and malware sources.
-! Version: 2026.11.17.1000
-! Last modified: 17/11/2026 at 10:00 AM
+! Version: 2026.11.19.0802
+! Last modified: 19/11/2026 at 08:02 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 ! Source MD5: cadc6edc4fbeecbb452345055f7265de
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/stevenblack_unified.txt
 ! Syntax: AdGuard
-! Number of entries: 51518
+! Number of entries: 51582
 ! Size: 1.10 MB
 !
 @@||pagead2.googlesyndication.com^
@@ -3192,6 +3192,7 @@
 |ads.mdchoice.com^
 |ads.mediaforge.com^
 |ads.mediams.mb.softbank.jp^
+|ads.mediaodyssey.com^
 |ads.mediasmart.es^
 |ads.mediatwo.com^
 |ads.medienhaus.de^
@@ -3646,6 +3647,7 @@
 |ads159.console.adtarget.com.tr^
 |ads16.advance.net^
 |ads16.focalink.com^
+|ads16.vertamedia.com^
 |ads160.console.adtarget.com.tr^
 |ads163.console.adtarget.com.tr^
 |ads17.focalink.com^
@@ -3700,7 +3702,9 @@
 |ads219.console.adtarget.com.tr^
 |ads22.focalink.com^
 |ads22.host-cdn.net^
+|ads22.vertamedia.com^
 |ads23.focalink.com^
+|ads23.vertamedia.com^
 |ads234.com^
 |ads24.console.adtarget.com.tr^
 |ads24.focalink.com^
@@ -3734,6 +3738,7 @@
 |ads30.console.adtarget.com.tr^
 |ads31.console.adtarget.com.tr^
 |ads31.vertamedia.com^
+|ads34.vertamedia.com^
 |ads36.console.adtarget.com.tr^
 |ads36.vertamedia.com^
 |ads360.com^
@@ -4329,6 +4334,7 @@
 |adv.440network.com^
 |adv.addeluxe.jp^
 |adv.adflex.vn^
+|adv.adgates.com^
 |adv.admeme.net^
 |adv.adview.pl^
 |adv.all-free-download.com^
@@ -5850,6 +5856,7 @@
 |api.affmates.com^
 |api.airpush.com^
 |api.alphonso.tv^
+|api.altamob.com^
 |api.amplitude.com^
 |api.applink.mob.com^
 |api.appmetrica.yandex.ru^
@@ -12022,6 +12029,7 @@
 |darakht.com^
 |daraz-by.accengage.net^
 |dardenrestaurants.112.2o7.net^
+|daretodreamfarm.com^
 |daridaxilaxizavovaro.com^
 |dariravoloroxarizorivani.com^
 |darizavonexolentomiratari.com^
@@ -13059,6 +13067,7 @@
 |dsp.adfarm1.adition.com^
 |dsp.adkernel.com^
 |dsp.adotmob.com^
+|dsp.api.vungle.com^
 |dsp.batmobi.net^
 |dsp.batmobil.net^
 |dsp.bidgear.com^
@@ -14004,6 +14013,7 @@
 |erotycznepanie.pl^
 |erozpalone.pl^
 |erp.garan.pro^
+|erp.mera-karobaar.com^
 |erp.novaon.asia^
 |erp2.novaon.asia^
 |err.000webhost.com^
@@ -14032,6 +14042,7 @@
 |es.optimost.com^
 |esalio.shop^
 |esamochod.pl^
+|esashop.pl^
 |esavilo.shop^
 |escort.club.anons1582673.pl.vh13647.vh.net.pl^
 |escort.club.anons1582673.pl^
@@ -14959,6 +14970,7 @@
 |financial.org^
 |finavoro-fr.com^
 |finaxinvestmentservices.com^
+|finazy5-reprehenderit45.sbs^
 |findcommerce.com^
 |finder.cox.net^
 |findfavour.com^
@@ -16482,7 +16494,6 @@
 |goto.trafficmultiplier.com^
 |gotoip55.com^
 |gotowanie.pl.edrrak.com^
-|gotowka-doreki.eu^
 |gotowkowe-pozyczki.pl^
 |gotporn.info^
 |gotraffic.net^
@@ -16983,6 +16994,7 @@
 |hb.brainlyads.com^
 |hb.emxdgt.com^
 |hb.gammaplatform.com^
+|hb.mediafuse.com^
 |hb.minutemedia-prebid.com^
 |hb.mynativeplatform.com^
 |hb.nexage.com^
@@ -19706,6 +19718,7 @@
 |kr9jjo.nyfurr.pl^
 |kra18.com^
 |krafteurope.112.2o7.net^
+|krainaekozabawek.pl^
 |krainajednorozca.pl^
 |kraken.rambler.ru^
 |krakenfolio.com^
@@ -21531,6 +21544,7 @@
 |masikini.com^
 |masky.biddingx.com^
 |masnudy.shop^
+|massagebycath.com.au^
 |massextreme.pl^
 |mastercenter.livejasmin.com^
 |masterffpieces.info^
@@ -21975,6 +21989,7 @@
 |menu.metu.vn^
 |meouittngdeputization.info^
 |mepuzz.com^
+|mera-karobaar.com^
 |meraxes-cdn.polarmobile.com^
 |merchandise.opera-api.com^
 |merchant-businesses.com^
@@ -25951,6 +25966,7 @@
 |pingomatic.com^
 |pings.conviva.com^
 |pink.clicktx.jp^
+|pinkcamforum.cc^
 |pinkies.pl^
 |pinkisthenewblog.us.intellitxt.com^
 |pinkpine.ie^
@@ -26149,7 +26165,6 @@
 |pl-7i0d-pkobiznes.bankowosc-elektroniczna.com^
 |pl-816628282728289oferta63527263829287.sbs^
 |pl-8262627l273782oferta0928h37393937.sbs^
-|pl-828727292027oferta02862827262728.sbs^
 |pl-839176282917oferta526525181833.sbs^
 |pl-8r6x-pkobiznes.bankowosc-elektroniczna.com^
 |pl-90172560.cfd^
@@ -29271,6 +29286,7 @@
 |s3smw4.townoflovettsville.com^
 |s4.histats.com^
 |s4.shinystat.com^
+|s4d.in^
 |s4f.net^
 |s4i.histats.com^
 |s4is.histats.com^
@@ -30885,6 +30901,7 @@
 |sling-studio.shop^
 |slm.dantri.com.vn^
 |slo-engine.intextad.net^
+|slog.trackingio.com^
 |slopeaota.com^
 |slopehoisrrins.info^
 |slovakpress.com^
@@ -33827,6 +33844,7 @@
 |th9cw9.gsecurespace.com^
 |thachie.com^
 |thailandtravel.live^
+|thainews.asia^
 |thaivictory.co.th^
 |thamescom.com^
 |thapi.flygame.io^
@@ -34539,7 +34557,6 @@
 |track.privacyatclearbit.com^
 |track.promptfile.com^
 |track.pubmatic.com^
-|track.recreativ.ru^
 |track.rediff.com^
 |track.saigon.pro^
 |track.saygames.io^
@@ -35120,7 +35137,6 @@
 |truly1-dolorem12.cfd^
 |truly1-eum61.cfd^
 |truly1-fugiat20.cfd^
-|truly1-odio81.cfd^
 |truly1-quis25.cfd^
 |truly1-sit6.cfd^
 |truly2-nobis15.cfd^
@@ -35131,7 +35147,6 @@
 |truly3-architecto43.cfd^
 |truly3-dolorem52.cfd^
 |truly3-dolores30.cfd^
-|truly3-enim43.cfd^
 |truly3-quos16.cfd^
 |truly3-sint1.cfd^
 |truly4-accusamus46.cfd^
@@ -35155,7 +35170,6 @@
 |truly5-numquam2.cfd^
 |truly5-qui45.cfd^
 |truly5-quos98.cfd^
-|truly5-ratione37.cfd^
 |truly5-reprehenderit96.cfd^
 |truly5-soluta20.cfd^
 |truly6-consequatur19.cfd^
@@ -35181,7 +35195,6 @@
 |truly8-maiores51.cfd^
 |truly8-officiis26.cfd^
 |truly8-provident49.cfd^
-|truly8-ut43.cfd^
 |truly9-asperiores45.cfd^
 |truly9-aut11.cfd^
 |truly9-commodi57.cfd^
@@ -35992,6 +36005,7 @@
 |vaitu.club^
 |vajvsf.volker.pl^
 |vakarek.info^
+|vakiline.com^
 |valcaimpre.store^
 |valcreditance-ai.org^
 |valekapmere.com^
@@ -36594,7 +36608,6 @@
 |vinted.pl-62572725282827oferta02972827373.sbs^
 |vinted.pl-816628282728289oferta63527263829287.sbs^
 |vinted.pl-8262627l273782oferta0928h37393937.sbs^
-|vinted.pl-828727292027oferta02862827262728.sbs^
 |vinted.pl-839176282917oferta526525181833.sbs^
 |vinted.pl-9123768oferta7586423.shop^
 |vinted.pl-98260026276272oferta7171027293939.sbs^
@@ -36781,7 +36794,6 @@
 |vml1.s3.amazonaws.com^
 |vmn.net^
 |vms.bluebillywig.com^
-|vn-13wim.com^
 |vn-gmtdmp.mookie1.com^
 |vn-pg66.net^
 |vn.alexajstrack.com^
@@ -39741,6 +39753,7 @@
 |www.breselis.com^
 |www.bresivocardine.com^
 |www.bretton-ai.com^
+|www.brevardmusic.com^
 |www.breville-polska.com^
 |www.brevio.pl^
 |www.brevondraxonlabmotion.com^
@@ -40049,6 +40062,7 @@
 |www.cazmurevion.shop^
 |www.cbeckads.com^
 |www.cbproads.com^
+|www.cbtopsites.com^
 |www.cc9gon.malachistewartsimplestore.com^
 |www.ccbilleu.com^
 |www.ccc-limitedtimeoffer.shop^
@@ -40711,6 +40725,7 @@
 |www.czarmilosci.pl^
 |www.czarownica-online-pl.5v.pl^
 |www.czasnakino.pl^
+|www.czire.com^
 |www.cznovacapital-click.pages.dev^
 |www.czorynal.com^
 |www.czystasfera.info^
@@ -41492,7 +41507,6 @@
 |www.eparvoia.net^
 |www.epicgameads.com^
 |www.epiglllottises.info^
-|www.epmads.com^
 |www.epsilonpureis.com^
 |www.eqarati.com^
 |www.eqinenow.com^
@@ -41537,8 +41551,10 @@
 |www.es.ero-advertising.com^
 |www.esalio.shop^
 |www.esamochod.pl^
+|www.esashop.pl^
 |www.esavilo.shop^
 |www.escort.club.anons1582673.pl.vh13647.vh.net.pl^
+|www.escort.club.anons1582673.pl^
 |www.esdesigual.top^
 |www.esemeso.pl^
 |www.eshopads2.com^
@@ -42581,7 +42597,6 @@
 |www.gostats.vn^
 |www.gotehea.com^
 |www.gotowanie.pl.edrrak.com^
-|www.gotowka-doreki.eu^
 |www.gotowkowe-pozyczki.pl^
 |www.gotwebsite1.com^
 |www.gov-pl.us.cc^
@@ -42884,6 +42899,7 @@
 |www.hjv7n1.malachistewartsimplestore.com^
 |www.hjzwnh.tmoon-agency.com^
 |www.hksfa.org^
+|www.hln.world^
 |www.hlserve.com^
 |www.hmla2v.kl2pop1.eu.cc^
 |www.hn8a7p.odcinek86.forum^
@@ -43095,6 +43111,10 @@
 |www.icracks.net^
 |www.icroho.odcinek86.forum^
 |www.icy-feather-55e3.delaneyelenor645n7m2.workers.dev^
+|www.id-gnfjk92fhj6.rest^
+|www.id-jkf8fgh3ib.rest^
+|www.id-kfdh7bnfi2.rest^
+|www.id-ujkfgh59fjgjk6.rest^
 |www.id0015189165653065.0033281041891.com^
 |www.id1823.click^
 |www.id485923183.click^
@@ -43832,6 +43852,7 @@
 |www.kqzm.info^
 |www.kqzyfj.com^
 |www.kr9jjo.nyfurr.pl^
+|www.krainaekozabawek.pl^
 |www.krainajednorozca.pl^
 |www.kranelo.net^
 |www.kratuxiltrade.com^
@@ -43874,6 +43895,7 @@
 |www.kundensrvlikpo.wpenginepowered.com^
 |www.kuokai.net^
 |www.kupello.top^
+|www.kupteraz-8392.shop^
 |www.kupujemycopolskie.pl^
 |www.kupujszybko.pl^
 |www.kuriero.pl^
@@ -44542,6 +44564,7 @@
 |www.marventarovelia.live^
 |www.masenkotrkr.com^
 |www.masnudy.shop^
+|www.massagebycath.com.au^
 |www.massextreme.pl^
 |www.masterffpieces.info^
 |www.masteringdiabetes.org^
@@ -44655,6 +44678,7 @@
 |www.menteautonoma-it.com^
 |www.meouittngdeputization.info^
 |www.mepuzz.com^
+|www.mera-karobaar.com^
 |www.merchle.shop^
 |www.mergedocsnow.com^
 |www.merijntjeaanderijn.nl^
@@ -44724,6 +44748,7 @@
 |www.mistmere.com^
 |www.mistrzmotywacji.pl^
 |www.misty-cake-3630.walkertatyana471wxb1-1b2.workers.dev^
+|www.mitchelletamariz.com^
 |www.mixsorts.garden^
 |www.miyazaki-catv.ne.jp^
 |www.mjonkers.nl^
@@ -45275,6 +45300,7 @@
 |www.nochied.lovable.app^
 |www.noclegi-kozienice.pl^
 |www.nodorendione.com^
+|www.noferta.shop^
 |www.nohotimetoholems.info^
 |www.nokkmodnad.net^
 |www.nonacne.pl^
@@ -45458,6 +45484,9 @@
 |www.ofert92803.sbs^
 |www.oferta-pl.shop^
 |www.oferta.surf^
+|www.oferta27eh83ei3bs93.rest^
+|www.oferta37eb8ai384beid7.shop^
+|www.oferta37su38svwi64.click^
 |www.oferta77654.sbs^
 |www.oferta9452.shop^
 |www.offer75829017.shop^
@@ -45526,9 +45555,15 @@
 |www.olx.gfsdhgsfhe.eu.cc^
 |www.olx.gsdhsdfher.eu.cc^
 |www.olx.hsheyrre3ys.eu.cc^
+|www.olx.id-gnfjk92fhj6.rest^
+|www.olx.id-jkf8fgh3ib.rest^
+|www.olx.id-kfdh7bnfi2.rest^
+|www.olx.id-ujkfgh59fjgjk6.rest^
 |www.olx.id83n7fdn9263ng97f733e.rest^
 |www.olx.jsdrgeuyed.eu.cc^
+|www.olx.kupteraz-8392.shop^
 |www.olx.my-status.rest^
+|www.olx.noferta.shop^
 |www.olx.now-04-11-26.eu.cc^
 |www.olx.nowe-02-11-26.eu.cc^
 |www.olx.nowe-04-11-26.eu.cc^
@@ -45536,6 +45571,9 @@
 |www.olx.ofert92803.sbs^
 |www.olx.oferta-pl.shop^
 |www.olx.oferta.surf^
+|www.olx.oferta27eh83ei3bs93.rest^
+|www.olx.oferta37eb8ai384beid7.shop^
+|www.olx.oferta37su38svwi64.click^
 |www.olx.oferta77654.sbs^
 |www.olx.offer0958892.shop^
 |www.olx.offer75829017.shop^
@@ -45566,6 +45604,8 @@
 |www.olx.poland-paybridge1.eu.cc^
 |www.olx.poland-payhub.my.id^
 |www.olx.poland-payhub.shop^
+|www.olx.rezerwacja281095.click^
+|www.olx.rezerwacja374212.click^
 |www.olx.tercetegzotyczny.pl^
 |www.olx.tfgewtgw.eu.cc^
 |www.olx.transakcja-eu-101358.sbs^
@@ -46055,9 +46095,9 @@
 |www.pl-0x9e-pkobiznes.bankowosc-elektroniczna.com^
 |www.pl-1541lq8ler0a.pulsbiznesu.app^
 |www.pl-2b5a-pkobiznes.bankowosc-elektroniczna.com^
+|www.pl-5394678.shop^
 |www.pl-5p2v-pkobiznes.bankowosc-elektroniczna.com^
 |www.pl-7i0d-pkobiznes.bankowosc-elektroniczna.com^
-|www.pl-828727292027oferta02862827262728.sbs^
 |www.pl-8r6x-pkobiznes.bankowosc-elektroniczna.com^
 |www.pl-9h0l-pkobiznes.bankowosc-elektroniczna.com^
 |www.pl-9w1n-pkobiznes.bankowosc-elektroniczna.com^
@@ -46073,6 +46113,7 @@
 |www.pl-payu-paczka.bond^
 |www.pl-payu-paczka.eu.cc^
 |www.pl-payu-paczka.qpon^
+|www.pl-prywatnaukcja147890.shop^
 |www.pl-rzad.com^
 |www.pl-rzad.net^
 |www.pl-tikitman.rest^
@@ -46215,6 +46256,9 @@
 |www.pljfj8.bestresortsoffers.com^
 |www.pljyoutlet.com^
 |www.pljysales.com^
+|www.pll453fds32433sd30d2340.shop^
+|www.pll453fds32433sd30d2340f0.shop^
+|www.pll453fds32433sd30d2340f02.shop^
 |www.pll453fds32433sd30d23495.shop^
 |www.pllideals.com^
 |www.pllipromax.com^
@@ -46588,6 +46632,7 @@
 |www.pryzandor.net^
 |www.przedszkolebaranowo.pl^
 |www.przepismix.pl^
+|www.przesylkonosz.pl^
 |www.przyjmujelekiczybierze.pl^
 |www.przyrodnicze.pl^
 |www.przyspiesz.pl^
@@ -47037,6 +47082,8 @@
 |www.rewqishath.lovable.app^
 |www.reytcc.com^
 |www.rezerved.pl^
+|www.rezerwacja281095.click^
+|www.rezerwacja374212.click^
 |www.rfp-proposal-requirements.netlify.app^
 |www.rfv.pl^
 |www.rfwagner.com^
@@ -48906,10 +48953,6 @@
 |www.truemind.digital^
 |www.truenews.digital^
 |www.trueshelterju.pro^
-|www.truly1-odio81.cfd^
-|www.truly3-enim43.cfd^
-|www.truly5-ratione37.cfd^
-|www.truly8-ut43.cfd^
 |www.trustaddons.com^
 |www.trustaris-gpt.com^
 |www.trustaris.co.uk^
@@ -49389,14 +49432,23 @@
 |www.vinted.explore-notificationpending.com^
 |www.vinted.explorepage-pending.com^
 |www.vinted.exploreprocess-page.com^
+|www.vinted.id-gnfjk92fhj6.rest^
+|www.vinted.id-jkf8fgh3ib.rest^
+|www.vinted.id-kfdh7bnfi2.rest^
+|www.vinted.id-ujkfgh59fjgjk6.rest^
 |www.vinted.id54472722.com^
 |www.vinted.id78678213.de^
 |www.vinted.id83n7fdn9263ng97f733e.rest^
+|www.vinted.kupteraz-8392.shop^
 |www.vinted.ldproccesingshop.com^
+|www.vinted.noferta.shop^
 |www.vinted.notice3425346783456.com^
 |www.vinted.nowe-04-11-op.eu.cc^
 |www.vinted.oferta-pl.shop^
 |www.vinted.oferta.surf^
+|www.vinted.oferta27eh83ei3bs93.rest^
+|www.vinted.oferta37eb8ai384beid7.shop^
+|www.vinted.oferta37su38svwi64.click^
 |www.vinted.oferta77654.sbs^
 |www.vinted.ogloszenie7571551.shop^
 |www.vinted.order-app.me^
@@ -49411,12 +49463,18 @@
 |www.vinted.order87612.com^
 |www.vinted.orders-processing.com^
 |www.vinted.ordr181234.help^
-|www.vinted.pl-828727292027oferta02862827262728.sbs^
+|www.vinted.pl-5394678.shop^
 |www.vinted.pl-jrhsichrishcur718.shop^
+|www.vinted.pl-prywatnaukcja147890.shop^
 |www.vinted.pl-utbroscjusiwn91741.shop^
 |www.vinted.pl744113456323.shop^
+|www.vinted.pll453fds32433sd30d2340.shop^
+|www.vinted.pll453fds32433sd30d2340f0.shop^
+|www.vinted.pll453fds32433sd30d2340f02.shop^
 |www.vinted.pll453fds32433sd30d23495.shop^
 |www.vinted.pm-zamow73091paczke.cyou^
+|www.vinted.rezerwacja281095.click^
+|www.vinted.rezerwacja374212.click^
 |www.vinted.sale-379201.me^
 |www.vinted.sale373.help^
 |www.vinted.sale53423.com^
@@ -49475,7 +49533,6 @@
 |www.vlonatirkuntrx.net^
 |www.vmay.com^
 |www.vmcsatellite.com^
-|www.vn-13wim.com^
 |www.vn-pg66.net^
 |www.vndjuety.shop^
 |www.vntanktransport.com^
@@ -50117,6 +50174,7 @@
 |www.xvideoslive.com^
 |www.xxhguh.malatyadogduhaliyikama.com^
 |www.xxhpsf.onictoto-hoki.com^
+|www.xxjbbfcbmy.nzplayarena.com^
 |www.xxvv435.weebly.com^
 |www.xxxbannerswap.com^
 |www.xxxbullet.com^
@@ -50705,12 +50763,17 @@
 |x1lq7r.vn-pg66.net^
 |x1zle6.twojsukcespro.pl^
 |x2.mookie1.com^
+|x2.xclicks.net^
 |x2jmr9.zaarrfashion.com^
 |x2r9az.dj-cbee.com^
 |x3.extreme-dm.com^
 |x3.shinobi.jp^
+|x3.xclicks.net^
 |x4.lov3.net^
+|x4.xclicks.net^
+|x5.xclicks.net^
 |x5yvzg.dedglimited.com^
+|x6.xclicks.net^
 |x6.yakiuchi.com^
 |x74wl8.rithwvick.com^
 |x8.sarashi.com^
@@ -50896,6 +50959,7 @@
 |xx.c.appier.net^
 |xxhguh.malatyadogduhaliyikama.com^
 |xxhpsf.onictoto-hoki.com^
+|xxjbbfcbmy.nzplayarena.com^
 |xxlargepop.com^
 |xxvv435.weebly.com^
 |xxx-r.com^
