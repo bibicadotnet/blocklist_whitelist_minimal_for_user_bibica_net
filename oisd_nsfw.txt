@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: OISD NSFW: Adult content blocker
 ! Description: OISD list that blocks adult (NSFW) content domains. Does not block ads or trackers.
-! Version: 2026.11.19.0802
-! Last modified: 19/11/2026 at 08:02 AM
+! Version: 2026.11.19.1708
+! Last modified: 19/11/2026 at 05:08 PM
 ! Expires: 12 hours (update frequency)
 ! Source: https://nsfw.oisd.nl
-! Source MD5: 5e4bb248ca6d456888a115f0936d1cb0
+! Source MD5: 5d13da3a639cf1f1936a2307f7d2e7c2
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/oisd_nsfw.txt
 ! Syntax: AdGuard
-! Number of entries: 491497
+! Number of entries: 491501
 ! Size: 9.67 MB
 !
 @@||pagead2.googlesyndication.com^
@@ -144352,6 +144352,7 @@
 ||fanzuoyu.com^
 ||fanzya.com^
 ||fanzya.net^
+||fap-18.bond^
 ||fap-18.buzz^
 ||fap-18.help^
 ||fap-18.homes^
@@ -176713,6 +176714,7 @@
 ||ggwlive.com^
 ||ggwohlu.cn^
 ||ggx16888.com^
+||ggxiyou.xyz^
 ||ggxly.com^
 ||ggxsls.com^
 ||ggy572.sbs^
@@ -257491,6 +257493,7 @@
 ||luminahomes.info^
 ||luminggeshan.com^
 ||luminosproductions.blogspot.com^
+||lumiocams.com^
 ||lumispafacecare.com^
 ||lumit.cn^
 ||lumitiel.blogspot.com^
@@ -456420,6 +456423,7 @@
 ||wjmlk.com^
 ||wjmxz.cn^
 ||wjmzsh.cn^
+||wjn45fg6ui.xyz^
 ||wjninrywj.xyz^
 ||wjnvyouvucxv.buzz^
 ||wjofusw.net.cn^
