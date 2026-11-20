@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: Whitelist (ShadowWhisperer)
 ! Description: Exception rules that prevent false positives. Merged from bibicadotnet's manual allowlist, ShadowWhisperer's whitelist and the @@ exceptions found in the source blocklists. Use together with blocklists.txt.
-! Version: 2026.11.18.0123
-! Last modified: 18/11/2026 at 01:23 AM
+! Version: 2026.11.21.0129
+! Last modified: 21/11/2026 at 01:29 AM
 ! Expires: 12 hours (update frequency)
-! Source MD5: 837cddbf5720c2b9514c45c4f6fcc44c
+! Source MD5: cb8482641c690e0062538980911819d4
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/whitelist.txt
 ! Syntax: AdGuard
-! Number of entries: 916
-! Size: 24.7 KB
+! Number of entries: 917
+! Size: 24.8 KB
 !
 @@-ds.metric.gstatic.com^|
 @@|ads.adsterra.com^|
@@ -112,6 +112,7 @@
 @@||api.pinterest.com^
 @@||api.samsungknowledge.com^
 @@||api.twitter.com^
+@@||api.windscribe.com^
 @@||api2.sr.roku.com^
 @@||apim.gm.com^
 @@||apis.google.com^
