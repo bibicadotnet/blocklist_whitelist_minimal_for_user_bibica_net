@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: OISD NSFW: Adult content blocker
 ! Description: OISD list that blocks adult (NSFW) content domains. Does not block ads or trackers.
-! Version: 2026.11.21.1510
-! Last modified: 21/11/2026 at 03:10 PM
+! Version: 2026.11.21.2342
+! Last modified: 21/11/2026 at 11:42 PM
 ! Expires: 12 hours (update frequency)
 ! Source: https://nsfw.oisd.nl
-! Source MD5: 4a79b927b3bcae90ac9ba3cc7bacb51b
+! Source MD5: 74d80363203b5b63650397e9ded7a710
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/oisd_nsfw.txt
 ! Syntax: AdGuard
-! Number of entries: 495609
+! Number of entries: 495607
 ! Size: 9.74 MB
 !
 @@||pagead2.googlesyndication.com^
@@ -468102,7 +468102,6 @@
 ||xingkonghot.net^
 ||xingkongrukou.com^
 ||xingkongyingyuangaoqinghanju.org.cn^
-||xingkouzhen.com.cn^
 ||xinglaijuqingjieshao.cn^
 ||xinglaiyanyuanbiao.org.cn^
 ||xinglianqinhang.com^
@@ -495442,7 +495441,6 @@
 ||zzjfhb.com^
 ||zzjgyjz.com^
 ||zzjgyy120.com^
-||zzjhcf.com.cn^
 ||zzjism.com^
 ||zzjj.live^
 ||zzjj.shop^
