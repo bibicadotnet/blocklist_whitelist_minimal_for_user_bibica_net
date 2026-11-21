@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: OISD NSFW: Adult content blocker
 ! Description: OISD list that blocks adult (NSFW) content domains. Does not block ads or trackers.
-! Version: 2026.11.21.0744
-! Last modified: 21/11/2026 at 07:44 AM
+! Version: 2026.11.21.1510
+! Last modified: 21/11/2026 at 03:10 PM
 ! Expires: 12 hours (update frequency)
 ! Source: https://nsfw.oisd.nl
-! Source MD5: bab01cbd6eb4c78a73bb81fd646b042a
+! Source MD5: 4a79b927b3bcae90ac9ba3cc7bacb51b
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/oisd_nsfw.txt
 ! Syntax: AdGuard
-! Number of entries: 495548
+! Number of entries: 495609
 ! Size: 9.74 MB
 !
 @@||pagead2.googlesyndication.com^
@@ -7594,6 +7594,7 @@
 ||28mb.com^
 ||28mmm.com^
 ||28mpp.com^
+||28mu2e.pro^
 ||28n0n8.garden^
 ||28on4v.garden^
 ||28p.xyz^
@@ -11293,6 +11294,7 @@
 ||42gaoxx.com^
 ||42hsj2v.garden^
 ||42huab.com^
+||42k06.pro^
 ||42lost-causes.blogspot.com^
 ||42maobt.com^
 ||42maoby.com^
@@ -13836,6 +13838,7 @@
 ||51qjx.com^
 ||51ql.cc^
 ||51ql1.com^
+||51qmss.com^
 ||51query.cn^
 ||51qxcta.com^
 ||51razs.com^
@@ -24136,6 +24139,7 @@
 ||9p7pm9.garden^
 ||9pa.xyz^
 ||9phb.com^
+||9phjf.pro^
 ||9pjaaemiss.xyz^
 ||9pjflyllcode.xyz^
 ||9pjhanjooa.xyz^
@@ -53832,6 +53836,7 @@
 ||auntymaza.bond^
 ||auntymaza.cafe^
 ||auntymaza.cfd^
+||auntymaza.chat^
 ||auntymaza.city^
 ||auntymaza.co.im^
 ||auntymaza.com.co^
@@ -53849,6 +53854,7 @@
 ||auntymaza.quest^
 ||auntymaza.rest^
 ||auntymaza.team^
+||auntymaza.tech^
 ||auntymaza.uno^
 ||auntymaza.wiki^
 ||auntymaza.work^
@@ -56690,6 +56696,7 @@
 ||ayduhh.icu^
 ||aydykj.com^
 ||aydzkj.com^
+||ayegxzc.asia^
 ||ayemania.blogspot.com^
 ||ayeporn.com^
 ||ayeshafarhantakia.blogspot.com^
@@ -118623,6 +118630,8 @@
 ||desixflix.click^
 ||desixflix.vip^
 ||desixgirl.blogspot.com^
+||desixhub.asia^
+||desixhub.digital^
 ||desiximage.blogspot.com^
 ||desixnxx.cc^
 ||desixnxx.info^
@@ -124383,6 +124392,7 @@
 ||dolphinbank.blogspot.com^
 ||dolphinft.com^
 ||dolphinvibrators.com^
+||dolptech.com^
 ||dolton-sp.com^
 ||dolums.com^
 ||dom-con.com^
@@ -155533,6 +155543,7 @@
 ||forzaarab.com^
 ||forzasex.com^
 ||fosex.ru^
+||foshanguanli2.online^
 ||fosihidaxoci.blogspot.com^
 ||fosil138.lol^
 ||fossil0000.org^
@@ -165891,6 +165902,7 @@
 ||fxu018.sbs^
 ||fxv338.sbs^
 ||fxw483.sbs^
+||fxx83.cn^
 ||fxxkmeghana.blogspot.com^
 ||fxxnjzx.com^
 ||fxxslvs.com^
@@ -180393,6 +180405,7 @@
 ||gk895.com^
 ||gk895a.com^
 ||gk997.sbs^
+||gkaproductions.com^
 ||gkaw265.com^
 ||gkbmk.cn^
 ||gkbnj.com^
@@ -180716,6 +180729,7 @@
 ||globalfreego.com^
 ||globalg25.blogspot.com^
 ||globalgirlescort.com^
+||globalheroes.casa^
 ||globalhosting.info^
 ||globalhotbabes.com^
 ||globalinnovationdesign.org^
@@ -209161,6 +209175,7 @@
 ||huanbaohb.com^
 ||huanbaoshebei3.com^
 ||huanbaoshi24.com^
+||huanbaoxianfeng.com^
 ||huanbodao.com^
 ||huanchacointernational.com^
 ||huanfa688.com^
@@ -213849,6 +213864,7 @@
 ||iijav.com^
 ||iik-duesseldorf.com^
 ||iikkwd.asia^
+||iikyqafawv.top^
 ||iil152.sbs^
 ||iili.de^
 ||iilpox.cn^
@@ -233715,6 +233731,7 @@
 ||jxzhixun.com^
 ||jxzhty.com^
 ||jxznlp.com^
+||jxzotgd.asia^
 ||jxzscpa.com^
 ||jxzsjzfz.com^
 ||jxzxghsb.com.cn^
@@ -234709,9 +234726,12 @@
 ||kamababa.org.im^
 ||kamababa.org.in^
 ||kamababa.org^
+||kamababa.rest^
+||kamababa.store^
 ||kamababa.stream^
 ||kamababa.top^
 ||kamababa.us^
+||kamababa.vip^
 ||kamababa.world^
 ||kamababa.xxx^
 ||kamababa10.com^
@@ -234719,6 +234739,10 @@
 ||kamababa12.com^
 ||kamababa14.com^
 ||kamababa2.com^
+||kamababa22.com^
+||kamababa24.com^
+||kamababa26.com^
+||kamababa27.com^
 ||kamababa3.com^
 ||kamababa4.com^
 ||kamababa8.com^
@@ -234726,6 +234750,8 @@
 ||kamababatv.com^
 ||kamababaviral.com^
 ||kamababax.com^
+||kamababax.skin^
+||kamababax.team^
 ||kamababaxxx.com^
 ||kamac.cn^
 ||kamadharmaarta.blogspot.com^
@@ -244109,6 +244135,7 @@
 ||kzn2014.com^
 ||kznamensk-dd.com^
 ||kzndd.net^
+||kznmwbcb.top^
 ||kznprostitutki.com^
 ||kznsex.xyz^
 ||kzoa.com.cn^
@@ -264697,6 +264724,7 @@
 ||maposexyshop.com^
 ||mapp77.com^
 ||mappola.blogspot.com^
+||mapps.asia^
 ||mapster.cn^
 ||maptiles.xyz^
 ||mapudero.cyou^
@@ -271597,6 +271625,7 @@
 ||mensadultmagazines.com^
 ||mensagemdivina.com.br^
 ||mensbarefeet.blogspot.com^
+||mensbreaker.site^
 ||mensch5punkt0.de^
 ||menscontact.blogspot.com^
 ||mensdaily.ch^
@@ -278609,6 +278638,7 @@
 ||mmsbaba.com^
 ||mmsbaba.vip^
 ||mmsbaba2.com^
+||mmsbabes.com^
 ||mmsbazzar.com^
 ||mmsbazzar.ink^
 ||mmsbazzar.org^
@@ -278678,6 +278708,7 @@
 ||mmsporn.cc^
 ||mmspornvideo.com^
 ||mmsq.cc^
+||mmsraja.com^
 ||mmsscandalvideos.website^
 ||mmsteachsex.com^
 ||mmstown.com^
@@ -301039,6 +301070,7 @@
 ||o3s5dufb88d6.xyz^
 ||o3zvfu.cfd^
 ||o417.top^
+||o420.xyz^
 ||o42e74.asia^
 ||o43.top^
 ||o433.top^
@@ -301382,6 +301414,7 @@
 ||oceanphoenix.com.cn^
 ||oceanporn.pro^
 ||oceanude.com^
+||oceanwin99.org^
 ||oceanws.com^
 ||ocensurerad.se^
 ||ocf6g.cc^
@@ -301568,6 +301601,7 @@
 ||oersex.nl^
 ||oes076.sbs^
 ||oesexpert.sbs^
+||oesg888.art^
 ||oesterreichsexdates.at^
 ||oetdickbusenjv.blogspot.com^
 ||oeuvredespupilles.com^
@@ -302260,8 +302294,10 @@
 ||okczx.com^
 ||okd980.sbs^
 ||oke-sexyblog.blogspot.com^
+||oke388.xyz^
 ||oke664.sbs^
 ||okeanarium.com^
+||okebet99.xyz^
 ||okedoo.com^
 ||okefilezz.blogspot.com^
 ||okejixie.com^
@@ -302958,6 +302994,7 @@
 ||oldyoungporntube.com^
 ||oldyoungpussylove.com^
 ||oldyoungtube.org^
+||ole303.xyz^
 ||ole4ka.com^
 ||oleandeooodainh.blogspot.com^
 ||olecams.com^
@@ -303093,6 +303130,7 @@
 ||olwrycd.asia^
 ||olx.gay^
 ||olx132.com^
+||olx777.xyz^
 ||olxsg.com^
 ||olympicgarden.com.cn^
 ||olympicorchids.com^
@@ -303934,6 +303972,7 @@
 ||onestoppornoshop.com^
 ||onestopxxx.com^
 ||onetalk.online^
+||onetap888.com^
 ||onetaporn.com^
 ||onetapporn.com^
 ||onetaxiride.com^
@@ -305495,6 +305534,10 @@
 ||oolveri.pro^
 ||oolveri.quest^
 ||oolveri.watch^
+||oom.baby^
+||oom.beauty^
+||oom.homes^
+||oom.monster^
 ||oomaal.click^
 ||oomaal.in^
 ||oomenii-oomenii.blogspot.com^
@@ -306967,6 +307010,7 @@
 ||otoko-gay.blogspot.com^
 ||otoko.pink^
 ||otokodoushi.com^
+||otokodoushi.store^
 ||otokokitube.cc^
 ||otokonoko-h.com^
 ||otokosio.com^
@@ -307846,6 +307890,7 @@
 ||oyk181.sbs^
 ||oylog.com^
 ||oyn342.sbs^
+||oyo999.org^
 ||oyobare-wedding.com^
 ||oyoescorts.in^
 ||oyofnlk.com.cn^
@@ -309525,6 +309570,7 @@
 ||paravanporno.pages.dev^
 ||paravoz.biz^
 ||parcars.cn^
+||parcaschosen.blogspot.com^
 ||parcclematiscondo.com.sg^
 ||parccomputaz.blogspot.com^
 ||pardee-homes.com^
@@ -354925,6 +354971,7 @@
 ||quantumxxx.com^
 ||quantus-financial.com^
 ||quanwangke.com^
+||quanwuec.com^
 ||quanxingongyi.com^
 ||quanxinjixie.com^
 ||quanxinkj.com^
@@ -355594,6 +355641,7 @@
 ||qyjtd.com^
 ||qyjyzsc.com^
 ||qykaw.com^
+||qykjjc.com^
 ||qykjsp.com^
 ||qykzyjf.com^
 ||qyl0017.com^
@@ -356413,6 +356461,7 @@
 ||rainbowhaven.cn^
 ||rainbowmasochism.blogspot.com^
 ||rainbown.cn^
+||rainbownetjp.store^
 ||rainbowsendthemovie.com^
 ||rainbowslut.com^
 ||rainbowsurvey.com^
@@ -361298,6 +361347,7 @@
 ||rfe964.sbs^
 ||rfflawyers.com^
 ||rfgen.net^
+||rfgeq.asia^
 ||rfggss.com^
 ||rfid-im-fokus.de^
 ||rfiezxh.net.cn^
@@ -364144,6 +364194,7 @@
 ||rstphonesex.com^
 ||rstsdnl.com^
 ||rstvci.com^
+||rstvjp.online^
 ||rsudwvn.cn^
 ||rsunq.com^
 ||rsurdqr.cn^
@@ -394781,6 +394832,7 @@
 ||shanghaibiyezheng.com^
 ||shanghaiboxu.com^
 ||shanghaich120.cn^
+||shanghaicheng.com^
 ||shanghaichenzheng.cn^
 ||shanghaidake.com^
 ||shanghaiescort.com.cn^
@@ -407088,6 +407140,7 @@
 ||spicymixer.com^
 ||spicymms.com^
 ||spicymms.watch^
+||spicymmsx.guru^
 ||spicymomsporn.com^
 ||spicynubiles.com^
 ||spicynudes.com^
@@ -415282,6 +415335,7 @@
 ||sxyige.com^
 ||sxyland.com^
 ||sxyllhgcw.com^
+||sxymaal.com^
 ||sxymagazine.blogspot.com^
 ||sxymilf.pages.dev^
 ||sxymm.com^
@@ -417887,6 +417941,7 @@
 ||tansuozhedeyuyi.org.cn^
 ||tantalizing-erotic-stories.blogspot.com^
 ||tantalusdiary.blogspot.com^
+||tantanhuo.com^
 ||tantania-eya3w4u.blogspot.com^
 ||tante-bogel.blogspot.com^
 ||tante-boking.blogspot.com^
@@ -428969,6 +429024,7 @@
 ||tjhuayang.com^
 ||tjhun.com^
 ||tjhunyin.com^
+||tjhxbgjj.com^
 ||tjhydhs.com^
 ||tjhylz.com^
 ||tjhypx.net^
@@ -436164,6 +436220,7 @@
 ||ttwlr.cn^
 ||ttwmed.com^
 ||ttxscy.com^
+||ttxuangu.com^
 ||ttxx.tw^
 ||ttxxl.com.cn^
 ||tty2000.com^
@@ -436220,6 +436277,7 @@
 ||tuanpower.com^
 ||tuanqingsong.com^
 ||tuanshan001.com^
+||tuantuanxcx.com^
 ||tuanxm.cn^
 ||tuanziw.com^
 ||tuao.cc^
@@ -479396,6 +479454,7 @@
 ||xxxmmm.email^
 ||xxxmmm.org^
 ||xxxmms.blog^
+||xxxmms.com^
 ||xxxmms.live^
 ||xxxmms.shop^
 ||xxxmms.stream^
@@ -484711,6 +484770,7 @@
 ||yihangexpress.com^
 ||yihao101.com^
 ||yihda.com^
+||yihenst.com^
 ||yihexin1.cn^
 ||yihezhuangyuan.com^
 ||yihongyanglao.com^
@@ -488721,6 +488781,7 @@
 ||yuefengmeizhuang.com^
 ||yuefengshangseo.com^
 ||yuefuke.com^
+||yueganglawfirm.cn^
 ||yuegeniu.com^
 ||yueguichenlunxiaoshuo.cn^
 ||yuehaibuy.com^
