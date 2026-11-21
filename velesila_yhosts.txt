@@ -1,16 +1,16 @@
 [Adblock Plus 2.0]
 ! Title: VeleSila yhosts: Chinese ads, trackers and malware
 ! Description: Hosts file maintained by VeleSila that blocks Chinese ads, trackers, telemetry and malicious domains.
-! Version: 2026.11.19.0802
-! Last modified: 19/11/2026 at 08:02 AM
+! Version: 2026.11.21.0744
+! Last modified: 21/11/2026 at 07:44 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
 ! Source MD5: e51cd917be485d9725cbbf638a4f180b
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/velesila_yhosts.txt
 ! Syntax: AdGuard
-! Number of entries: 4554
-! Size: 87.7 KB
+! Number of entries: 4558
+! Size: 87.8 KB
 !
 @@||pagead2.googlesyndication.com^
 |018520.com^
@@ -3876,6 +3876,7 @@
 |u.qiaobaba.top^
 |u.raidmedia.com.cn^
 |u.ucfly.com^
+|u.umm6.cn^
 |u.vlion.cn^
 |u.x.jd.com^
 |u.yiiwoo.com^
@@ -3935,7 +3936,6 @@
 |urd103.analysys.cn^
 |urd345.analysys.cn^
 |urh.tylll.com^
-|uri6.com^
 |url.3400.org^
 |url.ms^
 |url.tudown.com^
@@ -4053,8 +4053,10 @@
 |w.sharethis.com^
 |w.waacorp.com^
 |w.xiaopiaoyou.com^
+|w.yinyuehu.cn^
 |w1.jinyueya.net^
 |w2528.com^
+|w3.yinyuehu.cn^
 |w6061.move7.com^
 |w88.go.com^
 |wa.gtimg.com^
@@ -4428,6 +4430,8 @@
 |wx.houyi.baofeng.net^
 |wxsnsdy.tc.qq.com^
 |wxsnsdy.video.qq.com^
+|wxwm1.ikuailian.com^
+|wxwm2.ikuailian.com^
 |wz.37wan.com^
 |x.120ask.com^
 |x.adpro.cn^
