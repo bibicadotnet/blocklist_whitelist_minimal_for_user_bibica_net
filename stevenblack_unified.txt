@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: StevenBlack Unified Hosts: Adware and malware
 ! Description: Unified hosts file from StevenBlack, merged from reputable ad, tracker and malware sources.
-! Version: 2026.11.21.0744
-! Last modified: 21/11/2026 at 07:44 AM
+! Version: 2026.11.23.0744
+! Last modified: 23/11/2026 at 07:44 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 ! Source MD5: cadc6edc4fbeecbb452345055f7265de
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/stevenblack_unified.txt
 ! Syntax: AdGuard
-! Number of entries: 51630
+! Number of entries: 51658
 ! Size: 1.10 MB
 !
 @@||pagead2.googlesyndication.com^
@@ -5495,6 +5495,7 @@
 |analytics.ungdungtructuyen.vn^
 |analytics.unive.nl^
 |analytics.unsw.edu.au^
+|analytics.usdm.net^
 |analytics.userreport.com^
 |analytics.vendemore.com^
 |analytics.verizonenterprise.com^
@@ -12836,6 +12837,7 @@
 |domelunesta.shop^
 |domelvaro.shop^
 |domelvexa.shop^
+|domelvoria.shop^
 |domeravento.shop^
 |domerivanta.shop^
 |domerowroclaw.com^
@@ -22403,7 +22405,6 @@
 |minimalplate.eu.cc^
 |minimob.com^
 |minorea.shop^
-|mint-star.pl^
 |mintegral.com^
 |minteterra.top^
 |mintfunnel.co^
@@ -25319,6 +25320,7 @@
 |p7cloud.net^
 |p9i3jq.gertsakiln.shop^
 |pa-cd.com^
+|pa.wme.catchmedia.com^
 |paa-reporting-advertising.amazon^
 |paas-push-api-log.immomo.com^
 |paas-push-api.immomo.com^
@@ -27409,6 +27411,7 @@
 |ps7894.com^
 |pscontent.playstream.media^
 |psi.tubemogul.com^
+|psiakademia.pl^
 |psialapka.pl^
 |psinetutor.com^
 |pson.logging.admicro.vn^
@@ -29721,7 +29724,6 @@
 |sdc.flysas.com^
 |sdc.livingchoices.com^
 |sdc.netiq.com^
-|sdc.prudential.com^
 |sdc.rbistats.com^
 |sdc.roadandtrack.com^
 |sdc.shawinc.com^
@@ -30914,6 +30916,7 @@
 |sling-studio.shop^
 |slm.dantri.com.vn^
 |slo-engine.intextad.net^
+|slog.trackingio.com^
 |slopeaota.com^
 |slopehoisrrins.info^
 |slovakpress.com^
@@ -34218,6 +34221,7 @@
 |toads.osdn.com^
 |tobepure.com^
 |tod1ma.blazebasic.com^
+|todayresearch.com^
 |todayshow.us.intellitxt.com^
 |todolize.com^
 |togatpasco.store^
@@ -36536,6 +36540,7 @@
 |vinted.id93782346383253.rest^
 |vinted.illkategoria32314231.sbs^
 |vinted.illprzedmiot546545.sbs^
+|vinted.info-fulfill.com^
 |vinted.iqikategoria2345232.sbs^
 |vinted.iuipodkategoria35234212.sbs^
 |vinted.kup-aukcja20482.lol^
@@ -38747,6 +38752,7 @@
 |www.aerowisp.pages.dev^
 |www.aerqomelvix.shop^
 |www.aescontoit.com^
+|www.aesypark.eu.cc^
 |www.af-mark.jp^
 |www.afcyhf.com^
 |www.affiliate-b.com^
@@ -38961,6 +38967,7 @@
 |www.anal-acrobats.com^
 |www.anal-love.net^
 |www.anal.cx^
+|www.analdude.com^
 |www.analytics-digit-in.cdn.ampproject.org^
 |www.analytics.247sports.com^
 |www.analytics.ero-advertising.com^
@@ -39284,6 +39291,7 @@
 |www.b1qpo1.cranfordlodge.com^
 |www.b1qpo1.kacsa-peru.com^
 |www.b27mnz.gans-law.com^
+|www.b2bintegration.net^
 |www.b2wdro.widaxl.pl^
 |www.b2work.pl^
 |www.b3d.com^
@@ -41105,6 +41113,7 @@
 |www.domelunesta.shop^
 |www.domelvaro.shop^
 |www.domelvexa.shop^
+|www.domelvoria.shop^
 |www.domeravento.shop^
 |www.domerivanta.shop^
 |www.domerowroclaw.com^
@@ -42543,6 +42552,7 @@
 |www.glovo.com-refund.info^
 |www.glowlabpro.digital^
 |www.glowracequarter.com^
+|www.gls-groeip.eu.cc^
 |www.gls.sowm.eu.cc^
 |www.gluntaro.net^
 |www.glurvextopinplatform.com^
@@ -42622,6 +42632,8 @@
 |www.gotowanie.pl.edrrak.com^
 |www.gotowkowe-pozyczki.pl^
 |www.gotwebsite1.com^
+|www.gov-kiv.eu.cc^
+|www.gov-pl.eu.cc^
 |www.gov-pl.us.cc^
 |www.goveaf.cyou^
 |www.govesa.cyou^
@@ -42893,6 +42905,7 @@
 |www.hiewa.com.my^
 |www.hifv5y.tarza-store.com^
 |www.higherteam.com^
+|www.highley-tech.com^
 |www.hightrafficads.com^
 |www.hilikoa.com^
 |www.hilikoa.lovable.app^
@@ -44758,7 +44771,6 @@
 |www.minhaparapsi.com^
 |www.minimalist-footwear.shop^
 |www.minorea.shop^
-|www.mint-star.pl^
 |www.minure.shop^
 |www.mioveni.pl^
 |www.mipinuy.pro^
@@ -44848,6 +44860,7 @@
 |www.monopartners.pl^
 |www.monvanta.pro^
 |www.moonakama.com^
+|www.moonbootpolska.com^
 |www.moonbootpolskapl.com^
 |www.mopiez.com^
 |www.mopik.pl^
@@ -45393,6 +45406,7 @@
 |www.novexdelivery.com^
 |www.novorvexa.com^
 |www.novpilar.com^
+|www.now-13-11-26.shop^
 |www.nowa.dostawa.64-176-77-106.cpanel.site^
 |www.nowaszkola.github.io^
 |www.nowe-05-11-26.eu.cc^
@@ -45530,6 +45544,7 @@
 |www.ogladajfilmy.pl^
 |www.ogladajmy.pl^
 |www.ogloszenia-ukrainek.pl^
+|www.ogloszeniaizakup.biz^
 |www.ogloszenie7571551.shop^
 |www.ogrod-moje-zycie.myshopify.com^
 |www.ogrod24.slgo.pl^
@@ -45610,6 +45625,7 @@
 |www.olx.offer89551.shop^
 |www.olx.offer9825914.shop^
 |www.olx.offer986902.shop^
+|www.olx.ogloszeniaizakup.biz^
 |www.olx.ogloszenie7571551.shop^
 |www.olx.paczzka5812388.shop^
 |www.olx.payflow-fast-poland.eu.cc^
@@ -45962,6 +45978,7 @@
 |www.peakclick.com^
 |www.peakfinthor-uk.com^
 |www.peakreal.digital^
+|www.peakxa.com^
 |www.pearlrendova.com^
 |www.pearlyappss.pro^
 |www.peatloft.com^
@@ -46138,6 +46155,7 @@
 |www.pl-bu-n2k-2810-3.vercel.app^
 |www.pl-erste.support-auth.my^
 |www.pl-firma.com^
+|www.pl-gov.eu.cc^
 |www.pl-huda.myshopify.com^
 |www.pl-jrhsichrishcur718.shop^
 |www.pl-payme-confirmation.shop^
@@ -46153,6 +46171,7 @@
 |www.pl-tikitman.rest^
 |www.pl-utbroscjusiwn91741.shop^
 |www.pl-wladze.net^
+|www.pl-xbox-series-x-1tb.shop^
 |www.pl10.landofm.com^
 |www.pl10.landovn.com^
 |www.pl10.landurt.com^
@@ -46291,9 +46310,11 @@
 |www.pljfj8.bestresortsoffers.com^
 |www.pljyoutlet.com^
 |www.pljysales.com^
+|www.pll453fd32433sd30d234lm6.shop^
 |www.pll453fds32433sd30d2340.shop^
 |www.pll453fds32433sd30d2340f0.shop^
 |www.pll453fds32433sd30d2340f02.shop^
+|www.pll453fds32433sd30d2340f0lk.shop^
 |www.pll453fds32433sd30d23495.shop^
 |www.pllideals.com^
 |www.pllipromax.com^
@@ -46674,6 +46695,7 @@
 |www.przyspieszkomputer.pl^
 |www.przytulny.com^
 |www.ps7894.com^
+|www.psiakademia.pl^
 |www.psialapka.pl^
 |www.psinetutor.com^
 |www.psorismax.pl^
@@ -49168,6 +49190,7 @@
 |www.unexpuryygated.info^
 |www.ungoag.webwave.dev^
 |www.unicaitaly.it^
+|www.unidlrectpyementcloud.com^
 |www.unifai.com.br^
 |www.unionleisurewear.com^
 |www.unitedproductsllc.net^
@@ -49480,6 +49503,7 @@
 |www.vinted.id54472722.com^
 |www.vinted.id78678213.de^
 |www.vinted.id83n7fdn9263ng97f733e.rest^
+|www.vinted.info-fulfill.com^
 |www.vinted.kupteraz-8392.shop^
 |www.vinted.ldproccesingshop.com^
 |www.vinted.noferta.shop^
@@ -49491,6 +49515,7 @@
 |www.vinted.oferta37eb8ai384beid7.shop^
 |www.vinted.oferta37su38svwi64.click^
 |www.vinted.oferta77654.sbs^
+|www.vinted.ogloszeniaizakup.biz^
 |www.vinted.ogloszenie7571551.shop^
 |www.vinted.order-app.me^
 |www.vinted.order050.me^
@@ -49510,11 +49535,14 @@
 |www.vinted.pl-platnosci.shop^
 |www.vinted.pl-prywatnaukcja147890.shop^
 |www.vinted.pl-utbroscjusiwn91741.shop^
+|www.vinted.pl-xbox-series-x-1tb.shop^
 |www.vinted.pl744113456323.shop^
 |www.vinted.platnosci.shop^
+|www.vinted.pll453fd32433sd30d234lm6.shop^
 |www.vinted.pll453fds32433sd30d2340.shop^
 |www.vinted.pll453fds32433sd30d2340f0.shop^
 |www.vinted.pll453fds32433sd30d2340f02.shop^
+|www.vinted.pll453fds32433sd30d2340f0lk.shop^
 |www.vinted.pll453fds32433sd30d23495.shop^
 |www.vinted.pm-zamow73091paczke.cyou^
 |www.vinted.rezerwacja281095.click^

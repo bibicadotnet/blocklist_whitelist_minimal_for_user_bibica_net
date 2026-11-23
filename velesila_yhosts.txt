@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: VeleSila yhosts: Chinese ads, trackers and malware
 ! Description: Hosts file maintained by VeleSila that blocks Chinese ads, trackers, telemetry and malicious domains.
-! Version: 2026.11.21.0744
-! Last modified: 21/11/2026 at 07:44 AM
+! Version: 2026.11.23.0744
+! Last modified: 23/11/2026 at 07:44 AM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
 ! Source MD5: e51cd917be485d9725cbbf638a4f180b
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/velesila_yhosts.txt
 ! Syntax: AdGuard
-! Number of entries: 4558
+! Number of entries: 4562
 ! Size: 87.8 KB
 !
 @@||pagead2.googlesyndication.com^
@@ -813,6 +813,7 @@
 |baidua2.cardbaobao.com^
 |baiducom.bj.bcebos.com^
 |baidut.github.io^
+|baiduyubaidu.com^
 |bam.nr-data.net^
 |banner.alimama.com^
 |banner.as.admaster.com.cn^
@@ -2079,6 +2080,7 @@
 |j.adeaz.com^
 |j.baminw.cn^
 |j.biquge520.cc^
+|j.chaorenjiaoshi.com^
 |j.fd7c.com^
 |j.hbwcl.com^
 |j.kfd3sm2c.com^
@@ -2601,6 +2603,7 @@
 |nad-stage1.ad-stir.com^
 |nad.ad-stir.com^
 |nad.leadboltads.net^
+|nativeads.cacafly.com^
 |nbsdk-baichuan.alicdn.com^
 |nc.gdt.qq.com^
 |nclog.mars.baofeng.net^
@@ -4354,6 +4357,7 @@
 |www.qchannel03.cn^
 |www.qchannel04.cn^
 |www.rubiconproject.com^
+|www.sa909.com^
 |www.shankejingling.com^
 |www.shouyoutan.com^
 |www.shuqw.com^
