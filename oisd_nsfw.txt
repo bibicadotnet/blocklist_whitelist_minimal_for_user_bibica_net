@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: OISD NSFW: Adult content blocker
 ! Description: OISD list that blocks adult (NSFW) content domains. Does not block ads or trackers.
-! Version: 2026.11.23.0744
-! Last modified: 23/11/2026 at 07:44 AM
+! Version: 2026.11.23.1551
+! Last modified: 23/11/2026 at 03:51 PM
 ! Expires: 12 hours (update frequency)
 ! Source: https://nsfw.oisd.nl
-! Source MD5: 00c435ac0870a54868ad3bb5f143c874
+! Source MD5: cd300cd4e02b47c8fea7d13c45eb62e5
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/oisd_nsfw.txt
 ! Syntax: AdGuard
-! Number of entries: 495888
+! Number of entries: 495891
 ! Size: 9.75 MB
 !
 @@||pagead2.googlesyndication.com^
@@ -44277,6 +44277,7 @@
 ||ancib.org^
 ||anciencombattant.com^
 ||ancienhardeur.over-blog.com^
+||ancjewellers.com^
 ||ancomilo1989.blogspot.com^
 ||anconaeros.com^
 ||anconaerotica.com^
@@ -59268,6 +59269,7 @@
 ||baladaerotica.com.br^
 ||balaescort.com^
 ||balajinagarcallforgirlsin.blogspot.com^
+||balajiwashim.org^
 ||balak55.lol^
 ||balakentu.blogspot.com^
 ||balakovo-dd.com^
@@ -170843,7 +170845,6 @@
 ||gayiptv.com^
 ||gayira.cn^
 ||gayirsanmobilya.com.tr^
-||gayirstr.bulentbilgin.com.tr^
 ||gayisex.com^
 ||gayiskreno.blogspot.com^
 ||gayislamabad.com^
@@ -276241,6 +276242,7 @@
 ||minicity.com.tr^
 ||minicomicsdumptruck.blogspot.com^
 ||minicrazy.cn^
+||minienterprises.in^
 ||minierotica.com^
 ||miniforbes.com^
 ||minifoxvr.com^
@@ -473111,6 +473113,7 @@
 ||xphimsexviet.com^
 ||xphimsexviet.lol^
 ||xphimsexviet.top^
+||xphimsexvl.com^
 ||xphimz.com^
 ||xphones-2019.info^
 ||xphonia.com^
