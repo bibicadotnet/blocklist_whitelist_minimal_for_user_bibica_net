@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: HaGeZi Multi LIGHT: Basic protection (ads, trackers, telemetry)
 ! Description: Lightweight list that blocks ads, trackers, metrics, telemetry and some badware with minimal breakage. Best for weak devices or when no admin is around to unblock things.
-! Version: 2026.11.27.0641
-! Last modified: 27/11/2026 at 06:41 AM
+! Version: 2026.11.27.1457
+! Last modified: 27/11/2026 at 02:57 PM
 ! Expires: 12 hours (update frequency)
 ! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt
-! Source MD5: 7e6684388cd1a2cd7a589ea161ffb998
+! Source MD5: 1da72307ae60a4158dedc84e348393db
 ! GitHub: https://github.com/bibicadotnet/blocklist_whitelist_minimal_for_user_bibica_net
 ! Homepage: https://lists.bibica.net/hagezi_light.txt
 ! Syntax: AdGuard
-! Number of entries: 81452
+! Number of entries: 81434
 ! Size: 1.94 MB
 !
 @@||pagead2.googlesyndication.com^
@@ -176,7 +176,6 @@
 ||07972d3a-6pusefyf.cname.ebis.ne.jp^
 ||07e3965bbd.com^
 ||07sketches.com^
-||0807.st^
 ||08082c0ad5.com^
 ||0822kiseki.com^
 ||08234k.com^
@@ -16435,7 +16434,6 @@
 ||auth.tlauncher.ru^
 ||authanalysis.com^
 ||authbe.sec.intl.miui.com^
-||authentication24.shop^
 ||authentics.de^
 ||authoritativepaulbasic.com^
 ||authoritativewhet.com^
@@ -18079,7 +18077,6 @@
 ||bigdata-lbs-pri-c3.alb.xiaomi.com^
 ||bigdata-scfx-push.kucoin.plus^
 ||bigdata.ssp.samsung.com^
-||bigdatafuturedev.buzz^
 ||bigdatajsext.com^
 ||bigdcdimorrzk.space^
 ||bigduckgames.s3.amazonaws.com^
@@ -20478,7 +20475,6 @@
 ||carlomega.goatcounter.com^
 ||carmen.golem.de^
 ||carmen2.golem.de^
-||carmine-galosh.shop^
 ||carnavalensenada.mx^
 ||carnicunsworn.qpon^
 ||carnifyartgumxystoi.cyou^
@@ -21149,7 +21145,6 @@
 ||cek.to^
 ||cekp9j31krnh4ff2frx4n6ncgbupc7.cyou^
 ||cekrfk.com^
-||celadon-buskin.shop^
 ||celcol.jp^
 ||celebri.com^
 ||celebri.jp^
@@ -21447,7 +21442,6 @@
 ||checkstat.nl^
 ||checkvim.com^
 ||cheekybranding.com^
-||cheekymarket.shop^
 ||cheekysleepyreproof.com^
 ||cheerercrackup.cfd^
 ||cheerfulgames2023.com^
@@ -25485,7 +25479,6 @@
 ||dealchocolate.com^
 ||dealcurrent.com^
 ||dealdotcom.com^
-||dealhaven.shop^
 ||deals.innocode.no^
 ||dealshamza.cyou^
 ||dealshik.com^
@@ -26205,6 +26198,7 @@
 ||dilliskahu.cyou^
 ||diloe.xyz^
 ||diluteeswasherwoeworn.cfd^
+||diluvyvampish.com^
 ||dimax.one^
 ||dimensions-mappy-com-cddc.at-o.net^
 ||dimensionvegana.com^
@@ -27541,6 +27535,7 @@
 ||e3cdhp-inapps.appsflyersdk.com^
 ||e3cdhp-launches.appsflyersdk.com^
 ||e3fbosf1tz3d.xyz^
+||e3hxc6v45tgx9i1o.cfd^
 ||e448bf91d1.com^
 ||e459.kcci.com^
 ||e488.macombdaily.com^
@@ -29869,6 +29864,7 @@
 ||facebaroviger.cyou^
 ||facebbok.com^
 ||facebook-appeal.w3spaces.com^
+||facebook-theta.vercel.app^
 ||facebookcenter1001932473852.firebaseapp.com^
 ||facebookinbox-omni-onapp.haravan.com^
 ||facebookprofile.info^
@@ -33400,6 +33396,7 @@
 ||gre.groobee.io^
 ||greasysquare.com^
 ||great-spin.fr^
+||great-value.shop^
 ||greatamericanland.com^
 ||greatdexchange.com^
 ||greatekran.org^
@@ -36059,6 +36056,7 @@
 ||id-info-lgsmartad-com.aws-prd.net^
 ||id-miuilog.sms.intl.xiaomi.com^
 ||id-msp.newsbreak.com^
+||id-mwkgjh9hfg3.rest^
 ||id-proof.de^
 ||id-rdx2-lgtvsdp-com.aws-prd.net^
 ||id-third-appstore.vivoglobal.com^
@@ -36962,6 +36960,7 @@
 ||inpages.org^
 ||inphonic.com^
 ||inping.com^
+||inpost-pl.site^
 ||inpp.yukigur.click^
 ||inppcdn.com^
 ||inppfinder.info^
@@ -37555,7 +37554,6 @@
 ||iulftx.com^
 ||iuncrcsimshlk.site^
 ||iunikbinqlwjp.website^
-||iuoiklioploi.weebly.com^
 ||iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com^
 ||iut-lille.fr^
 ||iuxrssmctvyft.space^
@@ -37841,7 +37839,6 @@
 ||javhd-trk.com^
 ||javius.com^
 ||javpwyyvcoorg.website^
-||javtaku.com^
 ||jawingsundangrose.cfd^
 ||jawxtjwcijcif.online^
 ||jayleitner.net^
@@ -39596,7 +39593,6 @@
 ||kost.tv^
 ||kostenlose-counter.com^
 ||kostprice.com^
-||koszyk.sbs^
 ||kotharis.in^
 ||koubi.jp^
 ||kouclo.com^
@@ -40681,6 +40677,7 @@
 ||ligatedcabbing.cyou^
 ||ligatus.com^
 ||ligatus.de^
+||light-meaning.pro^
 ||lightbrights2.xyz^
 ||lightchain.ai^
 ||lightgbm.org^
@@ -45572,8 +45569,6 @@
 ||mausoleum.goatcounter.com^
 ||mautic.com^
 ||mauve-pinkgetawhifftime.com^
-||mauveine-chopine.shop^
-||mauveine-curragh.shop^
 ||mavexops.com^
 ||mavexops.net^
 ||mavrtracktor.com^
@@ -49750,6 +49745,7 @@
 ||news.mipcom.com^
 ||news.mirtesen.ru^
 ||news.njbiz.com^
+||news.occasioneweb.com^
 ||news.rin.ru^
 ||news.valawyersweekly.com^
 ||newsbeala.com^
@@ -49787,7 +49783,6 @@
 ||nextchain.at^
 ||nextclick.pl^
 ||nextdigitalkey.com^
-||nextgen4devtech.buzz^
 ||nextgenstats.com^
 ||nextierhg.com^
 ||nextsmarty.com^
@@ -50228,7 +50223,6 @@
 ||nova-ads.aimatch.com^
 ||novadw.com^
 ||novaeillapseetonian.cyou^
-||novafuturetechdev.buzz^
 ||novak24.com^
 ||novanet.vn^
 ||novaon.vn^
@@ -50363,7 +50357,6 @@
 ||ntch6g-conversions.appsflyersdk.com^
 ||ntch6g-inapps.appsflyersdk.com^
 ||ntch6g-launches.appsflyersdk.com^
-||ntdc-ngc-gov-pk.weebly.com^
 ||ntent.com^
 ||ntesgsght.com^
 ||ntgtpdkijhfgj.site^
@@ -50829,7 +50822,6 @@
 ||ocelot.pushbullet.com^
 ||ocelot.studio^
 ||ocgadgets.com^
-||ochre-scaffold.shop^
 ||ochringptolemy.com^
 ||ochslumped.cyou^
 ||ocjoftgcacu.in^
@@ -50969,6 +50961,7 @@
 ||of-results.com^
 ||ofdigrnikzqvp.space^
 ||ofenundholz.de^
+||oferta930231.shop^
 ||ofeylq-pia.appsflyersdk.com^
 ||offaloverapt.com^
 ||offdeck.telkomsel.com^
@@ -55758,7 +55751,6 @@
 ||prod.telemetry.suds.wwro.aws.dev^
 ||prod.webpu.sh^
 ||prod.yektanet.com^
-||prod24.top^
 ||proddedfrantic.cfd^
 ||prodmp.ru^
 ||prodproof.com^
@@ -58311,6 +58303,7 @@
 ||resumessilted.com^
 ||reswearstamper.com^
 ||reswimcaunch.com^
+||retag.xyz^
 ||retagro.com^
 ||retailads.net^
 ||retailmedia-static.criteo.com^
@@ -58609,7 +58602,6 @@
 ||riteszygaena.com^
 ||ritrag.com^
 ||ritsulib-telemetry.ritsukage.com^
-||ritualseurope.com^
 ||rituxan.com.102.122.2o7.net^
 ||ritz-club.net^
 ||ritztours.com^
@@ -58788,7 +58780,6 @@
 ||rockspreading.com^
 ||rocksresort.com.au^
 ||rockstarwriter.com^
-||rockstarxbet.com^
 ||rockwool.112.2o7.net^
 ||rockycollado4403.myportfolio.com^
 ||rocoads.com^
@@ -62896,7 +62887,6 @@
 ||shopsquare.naver.com^
 ||shopthanthoai.com^
 ||shoptule.com^
-||shopvila.shop^
 ||shopwithme.biz^
 ||shopyalili.com^
 ||shopyii.com^
@@ -62976,8 +62966,6 @@
 ||siegeslucken.com^
 ||sielkbqwplccr.site^
 ||siemsmpmfonft.online^
-||sienna-gambado.shop^
-||sienna-solleret.shop^
 ||sieundihn.de^
 ||sievingcarobsinflue.cyou^
 ||sifomedia.se^
@@ -63475,7 +63463,6 @@
 ||smartclip.net^
 ||smartcontext.pl^
 ||smartdatacollective.com^
-||smartdev-tech.buzz^
 ||smartembedhandlelokalt.getbagera.no^
 ||smarterhq.io^
 ||smarthomeace.com^
@@ -67436,7 +67423,6 @@
 ||static.subiz.com^
 ||static.terratraf.io^
 ||static.tieba.baidu.com^
-||static.tnkjmec.com^
 ||static.tpmn.co.kr^
 ||static.tradetracker.net^
 ||static.trafficjunky.com^
@@ -68621,7 +68607,6 @@
 ||superbowl-ads.com^
 ||superclix.de^
 ||supercoupon.my.id^
-||superdiy.shop^
 ||superficialspring.com^
 ||superficialsquare.com^
 ||superga-pl.com^
@@ -68870,7 +68855,6 @@
 ||swsclick.com^
 ||swsdd.simplywall.st^
 ||swssp.simplywall.st^
-||swswsw.shop^
 ||swxna6-cdn-settings.appsflyersdk.com^
 ||swxna6-conversions.appsflyersdk.com^
 ||swxna6-dlsdk.appsflyersdk.com^
@@ -70864,7 +70848,6 @@
 ||terrapops.com^
 ||terratraf.com^
 ||terresdemontaigu.matomo.novacity.fr^
-||tervanis.world^
 ||tescobank-ngt.edge.nc0.co^
 ||tescobank.com.102.122.2o7.net^
 ||tescoims.edge.nc0.co^
@@ -71023,7 +71006,6 @@
 ||thasiandowl.qpon^
 ||thasianhyenine.com^
 ||thasianwearily.cyou^
-||thathislitt.ru^
 ||thatopenly.com^
 ||thatsjustgay.com^
 ||thawpeacock.cyou^
@@ -72129,6 +72111,7 @@
 ||tpmedia-reactads.com^
 ||tpmedia.online^
 ||tpmienbihyqtf.space^
+||tpnfwr2u3nykwl85kg.cfd^
 ||tporlviwb.com^
 ||tpqzaz-cdn-settings.appsflyersdk.com^
 ||tpqzaz-launches.appsflyersdk.com^
@@ -73462,7 +73445,7 @@
 ||trueroas.io^
 ||truevaluepro.com^
 ||truex.com^
-||truly0-qui56.cfd^
+||truly6-rerum81.cfd^
 ||trumeauscrived.cyou^
 ||trumerholz-store.shop^
 ||trumpcommunity.com^
@@ -75061,7 +75044,6 @@
 ||uniqueness.greenmangaming.com^
 ||uniquepharmaceuticals.com^
 ||unirockgestion.com^
-||unisale.lat^
 ||unisound.cdnvideo.ru^
 ||unisvap.godaddysites.com^
 ||unisvap.me^
@@ -75306,7 +75288,6 @@
 ||urban-rituals.shop^
 ||urbanemop.com^
 ||urbanfungose.com^
-||urbania.digital^
 ||urbanlaurel.com^
 ||urbanmap.org^
 ||urceolibycoket.cfd^
@@ -78558,6 +78539,7 @@
 ||woodstockcustom.com^
 ||woodsunset.com^
 ||woodygrownup.com^
+||woogloalee.net^
 ||woolerslungis.com^
 ||woolierexopt.qpon^
 ||woolseygatemen.com^
@@ -79833,6 +79815,7 @@
 ||xzesmujr.in^
 ||xzhzykhlrlisi.website^
 ||xzikwwnrymtny.space^
+||xzkhpowjz7wty329.cfd^
 ||xzknvo-cdn-settings.appsflyersdk.com^
 ||xzknvo-conversions.appsflyersdk.com^
 ||xzknvo-inapps.appsflyersdk.com^
@@ -81443,7 +81426,6 @@
 ||zync-stream.com^
 ||zypenetwork.com^
 ||zyphorbit.at^
-||zyskmonerixtech.com^
 ||zyvhofzjqlvwb.space^
 ||zyxyfy.com^
 ||zz.bdstatic.com^
